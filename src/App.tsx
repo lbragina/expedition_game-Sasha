@@ -6,7 +6,8 @@ import Hud from './components/Hud'
 import MapTab from './components/MapTab'
 import ParentTab from './components/ParentTab'
 import { setSoundEnabled, sfx } from './game/sound'
-import { useGame } from './game/store'
+import { getState, useGame } from './game/store'
+import WelcomeModal, { shouldShowWelcome } from './components/WelcomeModal'
 import { t } from './i18n'
 
 type Tab = 'expedition' | 'map' | 'base' | 'parent'
@@ -21,12 +22,13 @@ export default function App() {
   const state = useGame()
   const [tab, setTab] = useState<Tab>('expedition')
   const [backupOpen, setBackupOpen] = useState(false)
+  const [welcomeOpen, setWelcomeOpen] = useState(() => shouldShowWelcome(getState().expeditionsDone))
 
   useEffect(() => setSoundEnabled(state.settings.sound), [state.settings.sound])
 
   return (
     <div className="mx-auto flex h-full max-w-md flex-col bg-night">
-      <Hud />
+      <Hud onHelp={() => setWelcomeOpen(true)} />
       <main className="flex-1 overflow-y-auto px-3 pb-4">
         {tab === 'expedition' && <ExpeditionTab onBackup={() => setBackupOpen(true)} />}
         {tab === 'map' && <MapTab />}
@@ -52,6 +54,7 @@ export default function App() {
         ))}
       </nav>
       {backupOpen && <BackupModal onClose={() => setBackupOpen(false)} />}
+      {welcomeOpen && <WelcomeModal onClose={() => setWelcomeOpen(false)} />}
     </div>
   )
 }

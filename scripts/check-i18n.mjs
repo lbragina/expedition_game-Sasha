@@ -36,6 +36,7 @@ const dyn = [
   ...['week', 'month', 'all'].map((r) => `parent.range_${r}`),
   ...['wood', 'stone', 'iron', 'gold', 'diamond'].map((r) => `resources.${r}`),
   ...['1', '2', '3'].map((n) => `hints.level_${n}`),
+  ...['rule_combo', 'rule_star', 'rule_workshop'].flatMap((k) => [`welcome.${k}`, `welcome.${k}_title`]),
   'expedition.partial_value_ok',
   'expedition.partial_reason_ok',
   'nav.expedition',

@@ -10,6 +10,20 @@
     "pass": "Saison",
     "parent": "Espace Parent"
   },
+  "welcome": {
+    "help_button": "Aide",
+    "title": "Bienvenue dans L'Expédition, Sasha !",
+    "mission": "Ta mission : explorer le monde, enchaîner les tricks en skate et bâtir ta propre base bloc par bloc.",
+    "rules_title": "3 règles d'explorateur à connaître :",
+    "rule_combo_title": "Le Combo Skate",
+    "rule_combo": "chaque bonne réponse fait monter ton multiplicateur (jusqu'à ×5). Pas de chrono — prends le temps de réfléchir !",
+    "rule_star_title": "Les Défis Étoilés (★)",
+    "rule_star": "n'aie pas peur des tâches dorées. Même si tu te trompes, tu gagnes des points de courage et ton combo reste intact.",
+    "rule_workshop_title": "L'Atelier Secret (???)",
+    "rule_workshop": "il est verrouillé sur ta base... Termine ton échauffement pour débloquer l'éditeur de skins et dessiner ton propre personnage !",
+    "signature": "Bonne chance, Sashka ! J'espère que la découverte du Japon n'est plus très loin. Ta maman :-).",
+    "start": "C'est parti !"
+  },
   "common": {
     "close": "Fermer",
     "cancel": "Annuler",
