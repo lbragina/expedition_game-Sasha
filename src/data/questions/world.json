@@ -1,0 +1,636 @@
+[
+  {
+    "id": "world-0001",
+    "category": "world",
+    "topic": "inventions",
+    "difficulty": 3,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Frise chronologique : remets ces inventions dans l'ordre, de la plus ancienne à la plus récente.",
+    "options": [
+      "La roue",
+      "L'imprimerie de Gutenberg",
+      "La machine à vapeur",
+      "Internet"
+    ],
+    "answer": [
+      "La roue",
+      "L'imprimerie de Gutenberg",
+      "La machine à vapeur",
+      "Internet"
+    ],
+    "explanation": "La roue existe depuis environ 3500 av. J.-C. L'imprimerie date de 1450 environ, la machine à vapeur du XVIIIe siècle et Internet de la fin du XXe siècle.",
+    "tags": [
+      "frise chronologique"
+    ],
+    "skill": "chronology",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l'époque où chaque invention était utile : au temps des chevaliers ? des usines ? des ordinateurs ?",
+      "La roue est la plus ancienne. Internet est la plus récente.",
+      "Il reste à placer l'imprimerie (livres) avant la machine à vapeur (usines et trains)."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0002",
+    "category": "world",
+    "topic": "inventions",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle invention a permis, à partir de 1450 environ, de fabriquer beaucoup de livres beaucoup plus vite ?",
+    "options": [
+      "La boussole",
+      "L'imprimerie",
+      "Le télescope",
+      "Le microscope"
+    ],
+    "answer": 1,
+    "explanation": "Avec l'imprimerie de Gutenberg, on n'avait plus besoin de recopier les livres à la main : les idées ont circulé beaucoup plus vite en Europe.",
+    "tags": [
+      "inventions",
+      "histoire"
+    ],
+    "skill": "chronology",
+    "stars": 0,
+    "ladder": [
+      "world-0001"
+    ],
+    "hints": [
+      "Il s'agit d'une machine liée aux livres et aux lettres.",
+      "Avant, les moines recopiaient les livres à la main. Quelle machine a remplacé ce travail ?",
+      "Elle porte le nom de Gutenberg."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0003",
+    "category": "world",
+    "topic": "history_myths",
+    "difficulty": 6,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Christophe Colomb a découvert en 1492 que la Terre était ronde.",
+    "options": [
+      "Les savants savaient déjà que la Terre est ronde ; Colomb a atteint des terres inconnues des Européens.",
+      "Avant Colomb, tout le monde pensait que la Terre était plate.",
+      "En 1492, il n'existait pas de bateaux assez grands pour voyager."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "Dès l'Antiquité (Ératosthène, vers 240 av. J.-C.), des savants avaient même mesuré la Terre ronde. En 1492, Colomb a atteint l'Amérique, un continent inconnu des Européens.",
+    "tags": [
+      "mythe",
+      "histoire"
+    ],
+    "skill": "chronology",
+    "stars": 1,
+    "ladder": [
+      "world-0001",
+      "world-0002"
+    ],
+    "hints": [
+      "Vérifie la phrase : qu'est-ce que Colomb a vraiment découvert ?",
+      "Des savants grecs avaient déjà calculé la taille de la Terre bien avant 1492.",
+      "Colomb voulait aller en Asie en navigant vers l'ouest et il est arrivé… ailleurs."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0004",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 1,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle est la capitale de l'Italie ?",
+    "options": [
+      "Milan",
+      "Rome",
+      "Naples",
+      "Venise"
+    ],
+    "answer": 1,
+    "explanation": "Rome est la capitale de l'Italie.",
+    "tags": [
+      "capitales"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à la ville du Colisée.",
+      "Une ville célèbre pour son Empire antique.",
+      "Elle commence par la lettre R."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0005",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 1,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est le plus grand océan du monde ?",
+    "options": [
+      "L'océan Atlantique",
+      "L'océan Indien",
+      "L'océan Pacifique",
+      "L'océan Arctique"
+    ],
+    "answer": 2,
+    "explanation": "L'océan Pacifique couvre environ un tiers de la surface de la Terre.",
+    "tags": [
+      "océans"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Il est plus grand que l'Atlantique.",
+      "Son nom veut dire « paisible ».",
+      "Il commence par un P."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0006",
+    "category": "world",
+    "topic": "science",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle planète est la plus proche du Soleil ?",
+    "options": [
+      "Vénus",
+      "La Terre",
+      "Mars",
+      "Mercure"
+    ],
+    "answer": 3,
+    "explanation": "Mercure est la première planète du système solaire en partant du Soleil.",
+    "tags": [
+      "système solaire"
+    ],
+    "skill": "science",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Les planètes sont classées selon leur distance au Soleil.",
+      "Elle porte le nom d'un dieu romain messager.",
+      "Mercure est la première."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0007",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle est la capitale du Luxembourg ?",
+    "options": [
+      "Luxembourg",
+      "Esch-sur-Alzette",
+      "Differdange",
+      "Echternach"
+    ],
+    "answer": 0,
+    "explanation": "La capitale du Grand-Duché est Luxembourg, ville qui porte le même nom que le pays.",
+    "tags": [
+      "Luxembourg"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le pays et sa capitale portent le même nom.",
+      "Esch-sur-Alzette est la deuxième ville du pays.",
+      "La capitale est aussi le siège de nombreuses institutions européennes."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0008",
+    "category": "world",
+    "topic": "chronology",
+    "difficulty": 2,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets ces grandes périodes de l'histoire dans l'ordre chronologique.",
+    "options": [
+      "Préhistoire",
+      "Antiquité",
+      "Moyen Âge",
+      "Temps modernes"
+    ],
+    "answer": [
+      "Préhistoire",
+      "Antiquité",
+      "Moyen Âge",
+      "Temps modernes"
+    ],
+    "explanation": "Préhistoire (avant l'écriture), Antiquité (Grecs, Romains), Moyen Âge (châteaux forts), puis Temps modernes (à partir de 1492 environ).",
+    "tags": [
+      "frise chronologique"
+    ],
+    "skill": "chronology",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "La Préhistoire est avant l'invention de l'écriture.",
+      "L'Antiquité vient avant le Moyen Âge.",
+      "Les Temps modernes sont les plus récents des quatre."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0009",
+    "category": "world",
+    "topic": "science",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel gaz les plantes absorbent-elles pour faire la photosynthèse ?",
+    "options": [
+      "L'oxygène",
+      "Le dioxyde de carbone",
+      "L'azote",
+      "L'hélium"
+    ],
+    "answer": 1,
+    "explanation": "Grâce à la lumière, les plantes transforment le dioxyde de carbone et l'eau en sucres, et rejettent de l'oxygène.",
+    "tags": [
+      "plantes"
+    ],
+    "skill": "science",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Les plantes rejettent de l'oxygène.",
+      "Elles absorbent un autre gaz dans l'air.",
+      "Son symbole chimique est CO₂."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0010",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 3,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Le Rhin traverse l'Allemagne.",
+    "options": [
+      "Il se jette dans la mer Méditerranée.",
+      "Il ne traverse aucun pays.",
+      "Il prend sa source en Suisse, traverse l'Allemagne et se jette dans la mer du Nord."
+    ],
+    "answer": {
+      "value": true,
+      "reason": 2
+    },
+    "explanation": "Le Rhin naît dans les Alpes suisses, longe ou traverse plusieurs pays dont l'Allemagne, puis se jette dans la mer du Nord, aux Pays-Bas.",
+    "tags": [
+      "fleuves"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense aux grands fleuves d'Europe.",
+      "Le Rhin sépare aussi la France et l'Allemagne sur une partie de son cours.",
+      "Il coule vers le nord."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0011",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien de pays composent le Benelux ?",
+    "options": null,
+    "answer": 3,
+    "explanation": "Le Benelux regroupe la Belgique, les Pays-Bas (Nederland) et le Luxembourg : 3 pays.",
+    "tags": [
+      "Luxembourg",
+      "Europe"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Son nom vient des premières lettres de trois noms de pays.",
+      "Be, Ne, Lux…",
+      "Belgique, Pays-Bas et Luxembourg."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0012",
+    "category": "world",
+    "topic": "chronology",
+    "difficulty": 4,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets ces événements dans l'ordre chronologique.",
+    "options": [
+      "Prise de la Bastille (1789)",
+      "Sacre de Napoléon Ier (1804)",
+      "Début de la Première Guerre mondiale (1914)",
+      "Chute du mur de Berlin (1989)"
+    ],
+    "answer": [
+      "Prise de la Bastille (1789)",
+      "Sacre de Napoléon Ier (1804)",
+      "Début de la Première Guerre mondiale (1914)",
+      "Chute du mur de Berlin (1989)"
+    ],
+    "explanation": "Révolution française (1789), Empire de Napoléon (1804), Première Guerre mondiale (1914), puis chute du mur de Berlin (1989).",
+    "tags": [
+      "frise chronologique"
+    ],
+    "skill": "chronology",
+    "stars": 0,
+    "ladder": [
+      "world-0001",
+      "world-0008"
+    ],
+    "hints": [
+      "Compare les siècles : XVIIIe, XIXe, XXe.",
+      "Les deux événements du XXe siècle sont les plus récents.",
+      "La Bastille est avant Napoléon."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0013",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est le plus long fleuve d'Afrique ?",
+    "options": [
+      "Le Congo",
+      "Le Niger",
+      "Le Nil",
+      "Le Zambèze"
+    ],
+    "answer": 2,
+    "explanation": "Le Nil mesure environ 6 650 km. Il traverse l'Égypte avant de se jeter dans la mer Méditerranée.",
+    "tags": [
+      "fleuves"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [
+      "world-0004",
+      "world-0005"
+    ],
+    "hints": [
+      "Il traverse l'Égypte.",
+      "Les anciens Égyptiens vivaient sur ses rives.",
+      "Il se jette dans la Méditerranée."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0014",
+    "category": "world",
+    "topic": "science",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pourquoi y a-t-il des saisons sur Terre ?",
+    "options": [
+      "Parce que l'axe de la Terre est incliné pendant son tour autour du Soleil",
+      "Parce que la Terre s'éloigne beaucoup du Soleil en hiver",
+      "Parce que la Lune cache le Soleil",
+      "Parce que le Soleil change de taille"
+    ],
+    "answer": 0,
+    "explanation": "L'axe de la Terre est incliné : selon la position sur l'orbite, un hémisphère reçoit les rayons du Soleil plus directement, c'est l'été. La distance au Soleil varie peu.",
+    "tags": [
+      "astronomie"
+    ],
+    "skill": "science",
+    "stars": 0,
+    "ladder": [
+      "world-0006",
+      "world-0009"
+    ],
+    "hints": [
+      "Quand c'est l'été en France, c'est l'hiver en Australie.",
+      "Ce n'est pas la distance au Soleil qui change vraiment.",
+      "Pense à l'inclinaison de la Terre."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0015",
+    "category": "world",
+    "topic": "luxembourg",
+    "difficulty": 4,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Le Luxembourg est un grand-duché.",
+    "options": [
+      "Il est dirigé par un empereur.",
+      "Son chef d'État est un grand-duc ou une grande-duchesse.",
+      "Il n'a pas de chef d'État."
+    ],
+    "answer": {
+      "value": true,
+      "reason": 1
+    },
+    "explanation": "Le Luxembourg est le seul grand-duché souverain du monde : son chef d'État porte le titre de grand-duc (ou de grande-duchesse).",
+    "tags": [
+      "Luxembourg"
+    ],
+    "skill": "luxembourg",
+    "stars": 0,
+    "ladder": [
+      "world-0007",
+      "world-0011"
+    ],
+    "hints": [
+      "Le nom officiel du pays contient un titre.",
+      "Grand-duc : un titre entre prince et roi.",
+      "Quel est le titre du chef d'État ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0016",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel pays n'a PAS de frontière avec le Luxembourg ?",
+    "options": [
+      "La Suisse",
+      "La Belgique",
+      "La France",
+      "L'Allemagne"
+    ],
+    "answer": 0,
+    "explanation": "Le Luxembourg est entouré par la Belgique, la France et l'Allemagne. La Suisse n'a pas de frontière avec lui.",
+    "tags": [
+      "Luxembourg"
+    ],
+    "skill": "geography",
+    "stars": 0,
+    "ladder": [
+      "world-0007",
+      "world-0011"
+    ],
+    "hints": [
+      "Combien de voisins le Luxembourg a-t-il ?",
+      "Il est en Europe de l'Ouest, entre trois pays.",
+      "La Suisse est plus au sud-est."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0017",
+    "category": "world",
+    "topic": "chronology",
+    "difficulty": 7,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets ces inventions dans l'ordre chronologique.",
+    "options": [
+      "La boussole (utilisée en Europe dès le XIIe siècle)",
+      "L'imprimerie de Gutenberg (vers 1450)",
+      "Le télescope de Galilée (1609)",
+      "Le téléphone (1876)"
+    ],
+    "answer": [
+      "La boussole (utilisée en Europe dès le XIIe siècle)",
+      "L'imprimerie de Gutenberg (vers 1450)",
+      "Le télescope de Galilée (1609)",
+      "Le téléphone (1876)"
+    ],
+    "explanation": "Boussole (XIIe siècle), imprimerie (vers 1450), télescope (1609), téléphone (1876).",
+    "tags": [
+      "frise chronologique",
+      "inventions"
+    ],
+    "skill": "chronology",
+    "stars": 2,
+    "ladder": [
+      "world-0001",
+      "world-0012"
+    ],
+    "hints": [
+      "Compare les siècles : XIIe, XVe, XVIIe, XIXe.",
+      "Le téléphone est le plus récent.",
+      "La boussole est la plus ancienne."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0018",
+    "category": "world",
+    "topic": "science",
+    "difficulty": 7,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pourquoi voit-on l'éclair avant d'entendre le tonnerre ?",
+    "options": [
+      "Parce que le son va plus vite que la lumière",
+      "Parce que la lumière va beaucoup plus vite que le son",
+      "Parce que l'éclair se produit toujours avant le tonnerre",
+      "Parce que nos yeux sont plus près du ciel que nos oreilles"
+    ],
+    "answer": 1,
+    "explanation": "L'éclair et le tonnerre se produisent en même temps, mais la lumière voyage à environ 300 000 km/s, le son à environ 340 m/s : la lumière arrive d'abord.",
+    "tags": [
+      "physique"
+    ],
+    "skill": "science",
+    "stars": 2,
+    "ladder": [
+      "world-0006",
+      "world-0009"
+    ],
+    "hints": [
+      "L'éclair et le tonnerre naissent au même moment.",
+      "Compare la vitesse de la lumière et celle du son.",
+      "Lequel arrive en premier à tes yeux, à tes oreilles ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0019",
+    "category": "world",
+    "topic": "history_myths",
+    "difficulty": 8,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "La Grande Muraille de Chine est visible à l'œil nu depuis la Lune.",
+    "options": [
+      "Elle est très longue mais très étroite : depuis la Lune, on ne distingue pas ses détails.",
+      "Elle est cachée par les nuages.",
+      "Elle a été détruite."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "La Lune est à environ 384 000 km. À cette distance, on ne distingue aucune construction humaine à l'œil nu, même une muraille de plusieurs milliers de kilomètres de long.",
+    "tags": [
+      "mythe"
+    ],
+    "skill": "history_myths",
+    "stars": 2,
+    "ladder": [
+      "world-0003",
+      "world-0014"
+    ],
+    "hints": [
+      "À quelle distance se trouve la Lune ?",
+      "Une muraille est longue, mais est-elle large ?",
+      "Les astronautes n'ont pas pu la voir à l'œil nu."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0020",
+    "category": "world",
+    "topic": "geography",
+    "difficulty": 9,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "En hiver, quand il est 20 h à Paris (UTC+1), quelle heure est-il à Tokyo (UTC+9) le lendemain ? Réponds avec l'heure entre 0 et 23.",
+    "options": null,
+    "answer": 4,
+    "explanation": "Tokyo a 9 − 1 = 8 heures d'avance sur Paris : 20 h + 8 h = 28 h, soit 4 h le lendemain.",
+    "tags": [
+      "fuseaux horaires"
+    ],
+    "skill": "geography",
+    "stars": 3,
+    "ladder": [
+      "world-0008",
+      "world-0006"
+    ],
+    "hints": [
+      "Calcule la différence entre UTC+9 et UTC+1.",
+      "Tokyo a 8 heures d'avance.",
+      "20 + 8 = 28 : un jour compte 24 heures."
+    ],
+    "image": null
+  }
+]

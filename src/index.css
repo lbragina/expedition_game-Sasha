@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  background: #0e1118;
+  color: #f2f2f7;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg border-4 border-line bg-panel p-4 shadow-pixel;
+  }
+  .btn {
+    @apply flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg border-4 border-black bg-panel2 px-4 py-2 text-base font-bold text-ink shadow-pixel-sm transition active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply bg-grass text-black;
+  }
+  .btn-gold {
+    @apply bg-gold text-black;
+  }
+  .btn-danger {
+    @apply bg-danger text-black;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded border-2 border-black bg-panel2 px-2 py-0.5 text-xs font-bold;
+  }
+  .opt {
+    @apply flex min-h-[52px] w-full items-center gap-3 rounded-lg border-4 border-line bg-panel2 px-3 py-2 text-left text-base transition active:scale-[0.99];
+  }
+  .opt-selected {
+    @apply border-diamond bg-[#17323a];
+  }
+  .opt-right {
+    @apply border-ok bg-[#16361f];
+  }
+  .opt-wrong {
+    @apply border-danger bg-[#3a1b1b];
+  }
+  .safe-top {
+    padding-top: max(env(safe-area-inset-top), 8px);
+  }
+  .safe-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 6px);
+  }
+}
+
+canvas.pixel {
+  image-rendering: pixelated;
+  touch-action: none;
+}

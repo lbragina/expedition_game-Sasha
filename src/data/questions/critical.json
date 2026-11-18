@@ -1,0 +1,788 @@
+[
+  {
+    "id": "critical-0001",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 3,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui est une opinion (et non un fait).",
+    "options": [
+      "Le chocolat contient du sucre.",
+      "Le chocolat noir est le meilleur dessert du monde.",
+      "On fabrique le chocolat à partir de fèves de cacao.",
+      "En France, on mange souvent du chocolat à Pâques."
+    ],
+    "answer": 1,
+    "explanation": "« Le meilleur dessert du monde » dépend des goûts de chacun : c'est une opinion. Les autres phrases peuvent être vérifiées.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un fait peut se vérifier. Une opinion dépend de ce que chacun pense.",
+      "Cherche un mot qui exprime un jugement : « meilleur », « beau », « nul »…",
+      "Peut-on prouver qu'un dessert est « le meilleur du monde » ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0002",
+    "category": "critical",
+    "topic": "advertising",
+    "difficulty": 4,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Une publicité affirme : « 9 dentistes sur 10 recommandent notre dentifrice ! » Cette phrase prouve que ce dentifrice est le meilleur du marché.",
+    "options": [
+      "On ne sait pas combien de dentistes ont été interrogés, ni comment ils ont été choisis.",
+      "Les dentistes ne se trompent jamais.",
+      "Quand un chiffre est grand, c'est toujours une preuve."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "« 9 sur 10 » peut cacher un tout petit groupe (par exemple 10 personnes choisies par la marque). Pour croire un chiffre, il faut savoir qui a été interrogé et comment.",
+    "tags": [
+      "publicité",
+      "sondage"
+    ],
+    "skill": "sources",
+    "stars": 0,
+    "ladder": [
+      "critical-0001"
+    ],
+    "hints": [
+      "Une publicité veut te donner envie d'acheter. Elle choisit ses meilleurs chiffres.",
+      "Pose-toi des questions : combien de dentistes ? Qui les a choisis ?",
+      "Un chiffre sans explication ne prouve rien."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0003",
+    "category": "critical",
+    "topic": "manipulation",
+    "difficulty": 6,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Dans cet article, touche la phrase qui est une généralisation abusive (elle tire une grande conclusion de très peu d'informations).",
+    "options": [
+      "Un journal a interrogé 5 élèves d'une seule classe de 6e.",
+      "Quatre d'entre eux ont dit qu'ils aimaient les jeux vidéo.",
+      "Le titre de l'article annonce : « 80 % des enfants du pays adorent les jeux vidéo ! »",
+      "Le journal a publié ces résultats dans sa rubrique « Sondage »."
+    ],
+    "answer": 2,
+    "explanation": "Cinq élèves d'une seule classe ne représentent pas tous les enfants du pays. Le titre généralise beaucoup trop : l'échantillon est trop petit et pas varié.",
+    "tags": [
+      "sondage",
+      "généralisation"
+    ],
+    "skill": "manipulation",
+    "stars": 1,
+    "ladder": [
+      "critical-0001",
+      "critical-0002"
+    ],
+    "hints": [
+      "Compare le nombre de personnes interrogées avec le nombre de personnes dont on parle dans la conclusion.",
+      "Cherche la phrase qui parle de « tous » ou d'un grand pourcentage du pays.",
+      "5 élèves d'une classe… et le titre parle de tous les enfants du pays !"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0004",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 1,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui est une opinion (et non un fait).",
+    "options": [
+      "La Terre tourne autour du Soleil.",
+      "Le foot est le plus beau des sports.",
+      "L'eau bout à 100 °C au niveau de la mer.",
+      "Le mois d'avril compte 30 jours."
+    ],
+    "answer": 1,
+    "explanation": "« Le plus beau des sports » dépend des goûts de chacun : c'est une opinion. Les autres phrases se vérifient.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_or_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un fait se vérifie. Une opinion dépend de ce qu'on pense.",
+      "Cherche un jugement de valeur : « le plus beau », « nul », « génial »…",
+      "Peut-on prouver qu'un sport est « le plus beau » ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0005",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 2,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui est une opinion.",
+    "options": [
+      "Paris est la capitale de la France.",
+      "Les films d'horreur sont nuls.",
+      "La Loire est un fleuve français.",
+      "Un triangle a trois côtés."
+    ],
+    "answer": 1,
+    "explanation": "« Nuls » est un jugement personnel : certaines personnes adorent les films d'horreur. Les autres phrases sont des faits.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_or_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Quelle phrase exprime ce que pense quelqu'un ?",
+      "Peux-tu vérifier « les films d'horreur sont nuls » dans un livre ?",
+      "Cherche le mot qui juge."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0006",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Laquelle de ces phrases est un fait ?",
+    "options": [
+      "Le lundi est le pire jour.",
+      "Les chiens sont plus gentils que les chats.",
+      "Cette glace est délicieuse.",
+      "Une semaine compte 7 jours."
+    ],
+    "answer": 3,
+    "explanation": "On peut vérifier qu'une semaine compte 7 jours. Les autres phrases expriment des goûts.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_or_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un fait peut être vérifié.",
+      "Peut-on mesurer « le pire jour » ?",
+      "Quelle phrase ne dépend de l'avis de personne ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0007",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 2,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "« Ce jeu vidéo est génial. » est un fait.",
+    "options": [
+      "C'est un avis personnel : une autre personne peut ne pas être d'accord.",
+      "On peut le mesurer avec une règle.",
+      "Tout ce qui est écrit est un fait."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "« Génial » exprime ce qu'on ressent. Un fait se vérifie avec des preuves, pas avec des goûts.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_or_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Peut-on prouver qu'un jeu est « génial » ?",
+      "Deux personnes peuvent-elles avoir un avis différent ?",
+      "Un fait est vrai pour tout le monde."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0008",
+    "category": "critical",
+    "topic": "sources",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pour savoir combien de pays il y a en Europe, quelle source est la plus fiable ?",
+    "options": [
+      "Une encyclopédie ou un site officiel",
+      "Une vidéo d'un inconnu",
+      "Une rumeur entendue à la récréation",
+      "Un message de chaîne reçu sur un téléphone"
+    ],
+    "answer": 0,
+    "explanation": "Une encyclopédie ou un site officiel vérifie ses informations et cite ses sources. Une rumeur ou un message de chaîne ne prouve rien.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "sources",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Qui a vérifié l'information ?",
+      "Une source fiable explique d'où viennent ses chiffres.",
+      "Évite les rumeurs et les messages qu'on se transmet sans preuve."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0009",
+    "category": "critical",
+    "topic": "advertising",
+    "difficulty": 3,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Une publicité dit : « Le meilleur chocolat ! » Cette phrase prouve que ce chocolat est le meilleur.",
+    "options": [
+      "Les publicités disent toujours la vérité.",
+      "Si c'est écrit en gros, c'est vrai.",
+      "Une publicité donne l'avis de la marque : elle veut vendre."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "Une publicité cherche à te donner envie d'acheter. « Le meilleur » est un slogan, pas une preuve.",
+    "tags": [
+      "publicité"
+    ],
+    "skill": "advertising",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Qui a écrit cette phrase ? Que veut-il ?",
+      "Y a-t-il une preuve ou seulement un slogan ?",
+      "Le mot « meilleur » dépend des goûts."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0010",
+    "category": "critical",
+    "topic": "exaggeration",
+    "difficulty": 3,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui exagère.",
+    "options": [
+      "Hier, il a plu pendant deux heures dans la ville.",
+      "Une catastrophe mondiale a frappé la planète entière.",
+      "Quelques rues ont été inondées.",
+      "Les pompiers sont intervenus."
+    ],
+    "answer": 1,
+    "explanation": "Quelques rues inondées ne sont pas une « catastrophe mondiale » : cette phrase exagère beaucoup.",
+    "tags": [
+      "exagération"
+    ],
+    "skill": "exaggeration",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Compare la taille de l'événement avec les mots utilisés.",
+      "Que s'est-il vraiment passé ?",
+      "Quelle phrase utilise des mots beaucoup trop forts ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0011",
+    "category": "critical",
+    "topic": "fact_or_opinion",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans la phrase « Ce film est vraiment ennuyeux », quel mot montre une opinion ?",
+    "options": [
+      "film",
+      "ennuyeux",
+      "Ce",
+      "est"
+    ],
+    "answer": 1,
+    "explanation": "« Ennuyeux » exprime un jugement personnel. Les autres mots décrivent simplement l'objet.",
+    "tags": [
+      "fait ou opinion"
+    ],
+    "skill": "fact_or_opinion",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Cherche le mot qui juge.",
+      "« film » nomme un objet. Peut-on être en désaccord avec ce mot ?",
+      "Quel mot pourrait être remplacé par « passionnant » ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0012",
+    "category": "critical",
+    "topic": "generalization",
+    "difficulty": 3,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui généralise trop vite.",
+    "options": [
+      "Hier, mon voisin a perdu ses clés.",
+      "Les voisins sont tous des distraits.",
+      "Il les a retrouvées sous un coussin.",
+      "Il a ri de sa mésaventure."
+    ],
+    "answer": 1,
+    "explanation": "Un seul voisin a perdu ses clés : on ne peut pas en conclure que tous les voisins sont distraits.",
+    "tags": [
+      "généralisation"
+    ],
+    "skill": "generalization",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Combien de personnes sont concernées par l'histoire ?",
+      "Cherche la phrase qui parle de « tous ».",
+      "Un cas ne prouve pas une règle."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0013",
+    "category": "critical",
+    "topic": "sources",
+    "difficulty": 2,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "On peut vérifier une information en la comparant à plusieurs sources fiables.",
+    "options": [
+      "Une seule source suffit toujours.",
+      "Si plusieurs sources fiables disent la même chose, l'information est plus sûre.",
+      "Un fait n'a jamais besoin d'être vérifié."
+    ],
+    "answer": {
+      "value": true,
+      "reason": 1
+    },
+    "explanation": "Comparer plusieurs sources aide à repérer les erreurs et les fausses informations.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "sources",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Une seule source peut se tromper.",
+      "Que se passe-t-il si deux sources fiables sont d'accord ?",
+      "Vérifier, c'est comparer."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0014",
+    "category": "critical",
+    "topic": "sources",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Un ami te dit : « Tout le monde sait que c'est vrai ! » Que fais-tu d'abord ?",
+    "options": [
+      "Je le crois, car tout le monde le dit",
+      "Je répète l'info à mes amis",
+      "Je lui demande comment il le sait et je cherche une preuve",
+      "Je me moque de lui"
+    ],
+    "answer": 2,
+    "explanation": "« Tout le monde le dit » n'est pas une preuve. On demande la source et on vérifie.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "sources",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Une information répétée par beaucoup de personnes peut quand même être fausse.",
+      "Que peux-tu demander à ton ami ?",
+      "Cherche d'abord une preuve."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0015",
+    "category": "critical",
+    "topic": "correlation",
+    "difficulty": 4,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Dans cet article, touche la phrase qui confond « en même temps » et « à cause de ».",
+    "options": [
+      "En été, les ventes de glaces augmentent.",
+      "Les noyades augmentent aussi en été.",
+      "Donc manger des glaces provoque des noyades.",
+      "Il fait plus chaud et on se baigne davantage."
+    ],
+    "answer": 2,
+    "explanation": "Les glaces et les noyades augmentent en même temps à cause d'une troisième cause : la chaleur. L'une ne provoque pas l'autre.",
+    "tags": [
+      "corrélation"
+    ],
+    "skill": "correlation",
+    "stars": 0,
+    "ladder": [
+      "critical-0001",
+      "critical-0005"
+    ],
+    "hints": [
+      "Deux choses qui arrivent en même temps ne sont pas forcément liées.",
+      "Cherche la phrase qui dit « donc » sans preuve.",
+      "Y a-t-il une autre explication, comme la chaleur ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0016",
+    "category": "critical",
+    "topic": "graphs",
+    "difficulty": 4,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Un graphique en barres montre deux barres de valeurs 98 et 100, mais son axe vertical commence à 97 au lieu de 0. La deuxième barre paraît trois fois plus haute que la première. La deuxième valeur est donc trois fois plus grande.",
+    "options": [
+      "Les graphiques ne sont jamais fiables.",
+      "L'axe ne commence pas à 0 : les barres sont trompeuses, 100 n'est pas le triple de 98.",
+      "98 est plus grand que 100."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 1
+    },
+    "explanation": "En partant de 97, les barres mesurent 1 et 3 : la deuxième paraît trois fois plus haute, alors que les valeurs sont presque égales. Il faut toujours regarder où commence l'axe.",
+    "tags": [
+      "graphiques"
+    ],
+    "skill": "graphs",
+    "stars": 0,
+    "ladder": [
+      "critical-0009",
+      "critical-0004"
+    ],
+    "hints": [
+      "Regarde les valeurs, pas seulement la hauteur des barres.",
+      "Où commence l'axe vertical ?",
+      "98 et 100 sont-ils très différents ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0017",
+    "category": "critical",
+    "topic": "authority",
+    "difficulty": 5,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche l'argument qui s'appuie sur la célébrité plutôt que sur des preuves.",
+    "options": [
+      "Une étude auprès de 2 000 personnes montre que ce sirop calme la toux.",
+      "Un chanteur célèbre affirme que ce sirop est le meilleur.",
+      "Ce sirop est vendu en pharmacie.",
+      "La notice indique la dose pour les enfants."
+    ],
+    "answer": 1,
+    "explanation": "Un chanteur n'est pas un spécialiste de la santé : sa célébrité ne prouve rien. Une étude sérieuse, elle, est un vrai argument.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "authority",
+    "stars": 1,
+    "ladder": [
+      "critical-0009",
+      "critical-0014"
+    ],
+    "hints": [
+      "Qui parle ? Est-il spécialiste du sujet ?",
+      "La célébrité n'est pas une preuve.",
+      "Quelle phrase ne donne aucune preuve, juste un nom connu ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0018",
+    "category": "critical",
+    "topic": "sources",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Un site affirme : « Ce fruit guérit toutes les maladies ! » Quel est le meilleur réflexe ?",
+    "options": [
+      "Partager vite pour prévenir les autres",
+      "Acheter le fruit au cas où",
+      "Chercher si des médecins ou des organismes de santé confirment l'information",
+      "Croire le site car il est joli"
+    ],
+    "answer": 2,
+    "explanation": "« Toutes les maladies » est une promesse irréaliste. Il faut chercher des sources spécialisées (médecins, organismes de santé) avant de croire ou de partager.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "sources",
+    "stars": 0,
+    "ladder": [
+      "critical-0008",
+      "critical-0013"
+    ],
+    "hints": [
+      "Une promesse très forte demande des preuves très fortes.",
+      "Qui sont les spécialistes de la santé ?",
+      "Vérifie avant de partager."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0019",
+    "category": "critical",
+    "topic": "verification",
+    "difficulty": 6,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets ces étapes dans l'ordre pour vérifier une information surprenante vue sur internet.",
+    "options": [
+      "Je repère l'information et je me demande qui l'a publiée.",
+      "Je cherche la même information sur des sites fiables.",
+      "Je compare les sources et je regarde les dates.",
+      "Je décide de la croire ou non, puis de la partager."
+    ],
+    "answer": [
+      "Je repère l'information et je me demande qui l'a publiée.",
+      "Je cherche la même information sur des sites fiables.",
+      "Je compare les sources et je regarde les dates.",
+      "Je décide de la croire ou non, puis de la partager."
+    ],
+    "explanation": "On identifie l'auteur, on cherche d'autres sources, on compare, et seulement ensuite on décide de croire et de partager.",
+    "tags": [
+      "vérification"
+    ],
+    "skill": "verification",
+    "stars": 1,
+    "ladder": [
+      "critical-0008",
+      "critical-0013"
+    ],
+    "hints": [
+      "On ne partage qu'à la fin.",
+      "D'abord : qui parle ?",
+      "Avant de décider, il faut avoir comparé plusieurs sources."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0020",
+    "category": "critical",
+    "topic": "statistics",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Un journal interroge 10 personnes à la sortie d'un magasin de jeux vidéo : 9 aiment les jeux vidéo. Le journal en déduit que 90 % des habitants de la ville aiment les jeux vidéo.",
+    "options": [
+      "Dix personnes suffisent toujours.",
+      "Les personnes interrogées ne représentent pas toute la ville : elles sortent d'un magasin de jeux vidéo.",
+      "9 sur 10 ne fait pas 90 %."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 1
+    },
+    "explanation": "9 sur 10 fait bien 90 %, mais l'échantillon est trop petit et mal choisi : les clients d'un magasin de jeux vidéo aiment sûrement ça plus que les autres.",
+    "tags": [
+      "sondage"
+    ],
+    "skill": "statistics",
+    "stars": 0,
+    "ladder": [
+      "critical-0009",
+      "critical-0012"
+    ],
+    "hints": [
+      "Où a-t-on interrogé les gens ?",
+      "Ces personnes ressemblent-elles à tous les habitants ?",
+      "Un bon sondage choisit des personnes variées."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0021",
+    "category": "critical",
+    "topic": "manipulation",
+    "difficulty": 7,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui présente un faux dilemme (comme s'il n'y avait que deux choix).",
+    "options": [
+      "Notre école organise une kermesse en juin.",
+      "Soit tu viens à la kermesse, soit tu n'aimes pas ton école.",
+      "On y trouvera des jeux et un goûter.",
+      "Les bénéfices serviront à acheter des livres."
+    ],
+    "answer": 1,
+    "explanation": "On peut aimer son école sans venir à la kermesse (il y a d'autres raisons de ne pas venir). Le choix « soit… soit… » est un faux dilemme.",
+    "tags": [
+      "manipulation"
+    ],
+    "skill": "manipulation",
+    "stars": 2,
+    "ladder": [
+      "critical-0015",
+      "critical-0012"
+    ],
+    "hints": [
+      "Cherche une phrase qui n'offre que deux options.",
+      "Existe-t-il d'autres possibilités que les deux proposées ?",
+      "Ne pas venir à la kermesse veut-il dire détester l'école ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0022",
+    "category": "critical",
+    "topic": "causality",
+    "difficulty": 7,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Léa porte ses chaussettes porte-bonheur et gagne son match. Ses chaussettes ont donc causé sa victoire.",
+    "options": [
+      "Deux événements qui se suivent ne sont pas forcément liés par une cause.",
+      "Les chaussettes gagnent les matchs.",
+      "Léa n'a pas gagné."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "Léa a peut-être gagné parce qu'elle s'est entraînée. Un événement qui arrive juste avant un autre n'en est pas forcément la cause.",
+    "tags": [
+      "causalité"
+    ],
+    "skill": "causality",
+    "stars": 2,
+    "ladder": [
+      "critical-0015",
+      "critical-0016"
+    ],
+    "hints": [
+      "Y a-t-il d'autres explications à la victoire de Léa ?",
+      "Pourrait-on le prouver avec une expérience ?",
+      "Après ne veut pas dire à cause de."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0023",
+    "category": "critical",
+    "topic": "statistics",
+    "difficulty": 8,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui présente un chiffre trompeur.",
+    "options": [
+      "Une petite entreprise est passée de 1 à 2 employés.",
+      "Son patron déclare : « Nos effectifs ont augmenté de 100 % ! »",
+      "L'entreprise vend des jouets en bois.",
+      "Elle est installée dans un village."
+    ],
+    "answer": 1,
+    "explanation": "Le calcul est exact (1 → 2 fait +100 %), mais le grand pourcentage cache un très petit nombre : une seule personne embauchée.",
+    "tags": [
+      "pourcentages"
+    ],
+    "skill": "statistics",
+    "stars": 2,
+    "ladder": [
+      "critical-0016",
+      "critical-0020"
+    ],
+    "hints": [
+      "Un pourcentage ne dit pas combien de personnes sont concernées.",
+      "Quel est le nombre réel d'employés en plus ?",
+      "Cherche le chiffre qui impressionne plus qu'il n'informe."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0024",
+    "category": "critical",
+    "topic": "sources",
+    "difficulty": 7,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Trois sites donnent trois chiffres différents pour la hauteur d'une montagne. Que faire ?",
+    "options": [
+      "Choisir le chiffre le plus grand",
+      "Faire la moyenne sans regarder d'où viennent les chiffres",
+      "Prendre le premier site trouvé",
+      "Comparer les sources, regarder leurs dates et privilégier celles qui citent des mesures officielles"
+    ],
+    "answer": 3,
+    "explanation": "Les chiffres changent parfois avec les mesures. Il faut comparer les sources, regarder les dates et choisir celles qui s'appuient sur des mesures officielles.",
+    "tags": [
+      "sources"
+    ],
+    "skill": "sources",
+    "stars": 2,
+    "ladder": [
+      "critical-0018",
+      "critical-0019"
+    ],
+    "hints": [
+      "Pourquoi des sources donnent-elles des chiffres différents ?",
+      "Regarde les dates et qui a mesuré.",
+      "Une mesure officielle est plus sûre qu'un chiffre sans explication."
+    ],
+    "image": null
+  },
+  {
+    "id": "critical-0025",
+    "category": "critical",
+    "topic": "logic_fallacy",
+    "difficulty": 9,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Règle : « Si on est un bon élève, on a de bonnes notes. » Léo a de bonnes notes. Léo est donc forcément un bon élève.",
+    "options": [
+      "Avoir de bonnes notes peut avoir d'autres causes : on ne peut pas inverser la règle.",
+      "Léo est un mauvais élève.",
+      "Les notes ne servent à rien."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "La règle dit « bon élève → bonnes notes », pas « bonnes notes → bon élève ». On peut avoir de bonnes notes pour d'autres raisons (de la chance, un contrôle facile…).",
+    "tags": [
+      "raisonnement"
+    ],
+    "skill": "logic_fallacy",
+    "stars": 3,
+    "ladder": [
+      "critical-0022",
+      "critical-0015"
+    ],
+    "hints": [
+      "La règle ne s'inverse pas toujours.",
+      "Existe-t-il d'autres façons d'avoir de bonnes notes ?",
+      "Compare avec « tous les chats sont des animaux »."
+    ],
+    "image": null
+  }
+]

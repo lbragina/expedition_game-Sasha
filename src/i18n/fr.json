@@ -1,0 +1,233 @@
+{
+  "app": {
+    "title": "L'Expédition",
+    "subtitle": "Explore, réfléchis, construis"
+  },
+  "nav": {
+    "expedition": "Expédition",
+    "map": "Carte",
+    "base": "Ma Base",
+    "pass": "Saison",
+    "parent": "Espace Parent"
+  },
+  "common": {
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "ok": "OK",
+    "later": "Plus tard",
+    "save": "Enregistrer",
+    "copied": "Copié !",
+    "sound_on": "Son activé",
+    "sound_off": "Son coupé"
+  },
+  "categories": {
+    "math": "Mathématiques",
+    "logic": "Logique",
+    "iq": "Défi QI",
+    "critical": "Esprit Critique",
+    "world": "Culture & Monde"
+  },
+  "hud": {
+    "level": "Niv. {{n}}",
+    "streak": "{{count}} jours d'affilée",
+    "xp_next": "{{xp}} / {{next}} XP",
+    "max_level": "Niveau maximum !"
+  },
+  "expedition": {
+    "start_daily": "Lancer l'expédition du jour",
+    "start_bonus": "Expédition bonus",
+    "completed_today": "Expédition terminée ! Reviens demain.",
+    "question_counter": "Étape {{current}} sur {{total}}",
+    "boss_badge": "DÉFI BOSS",
+    "chest_badge": "COFFRE MYSTÈRE",
+    "fog_badge": "ZONE DE BROUILLARD",
+    "ladder_badge": "ÉTAPE D'APPROCHE",
+    "submit": "Valider",
+    "next": "Continuer",
+    "finish": "Terminer l'expédition",
+    "input_placeholder": "Ta réponse...",
+    "confidence_title": "Tu es sûr à combien ?",
+    "confidence_high": "100% sûr !",
+    "confidence_medium": "Plutôt sûr",
+    "confidence_low": "Je tente au hasard",
+    "scratchpad_open": "Brouillon",
+    "scratchpad_clear": "Effacer",
+    "correct_title": "Bien joué !",
+    "wrong_title": "Pas tout à fait...",
+    "courage_bonus": "Bonus de courage : +{{xp}} XP (Combo conservé !)",
+    "fog_created": "Un nuage de brouillard est apparu sur la carte. On le dissipera ensemble !",
+    "fog_cleared": "Le brouillard se dissipe : tu as réussi cette tâche !",
+    "fog_count": "{{count}} nuage(s)",
+    "warmup_badge": "Échauffement · jour {{day}}",
+    "adaptive_badge": "Mode explorateur",
+    "intro_warmup": "Un échauffement tout en douceur : des tâches accessibles et un coffre mystère à la fin. Ici, une erreur n'est jamais une punition.",
+    "intro_adaptive": "Sept étapes à ton niveau. Une erreur te donne un indice : on s'en sert pour progresser.",
+    "today_country": "Destination : {{country}}",
+    "expected": "Réponse attendue",
+    "partial_value_ok": "Ta réponse était bonne, mais pas l'explication.",
+    "partial_reason_ok": "L'explication était bonne, mais pas la réponse.",
+    "conf_overconfident": "Tu étais très sûr : c'est le bon moment pour comprendre d'où vient l'erreur.",
+    "conf_good_intuition": "Tu pensais tenter au hasard, mais ton intuition était bonne !",
+    "mentor_noted": "Avec l'aide du mentor : c'est noté, pas de combo cette fois.",
+    "combo_kept": "Combo conservé : cette tâche ne le fait pas retomber !"
+  },
+  "hints": {
+    "button": "Boussole ({{count}})",
+    "level_1": "Indice",
+    "level_2": "Méthode",
+    "level_3": "Premier pas",
+    "ask_mentor": "Demander au mentor (Maman)",
+    "mentor_pin_prompt": "Entre le code PIN du mentor pour valider l'aide :",
+    "mentor_done": "Aide du mentor validée : discutez-en ensemble, puis réponds."
+  },
+  "answer": {
+    "true": "Vrai",
+    "false": "Faux",
+    "why": "Pourquoi ?",
+    "order_help": "Utilise les flèches pour mettre les cartes dans le bon ordre.",
+    "highlight_help": "Touche la phrase qui correspond."
+  },
+  "combo": {
+    "multiplier": "Combo ×{{count}}",
+    "tricks": [
+      "Ollie !",
+      "Kickflip !",
+      "Heelflip !",
+      "Pop Shove-it !",
+      "360 Flip !",
+      "Impossible !"
+    ]
+  },
+  "summary": {
+    "title": "Expédition terminée",
+    "score": "{{correct}} réussies sur {{total}}",
+    "best_combo": "Meilleur combo ×{{count}}",
+    "level_up": "Nouveau grade : {{rank}} !"
+  },
+  "resources": {
+    "wood": "Bois",
+    "stone": "Pierre",
+    "iron": "Fer",
+    "gold": "Or",
+    "diamond": "Diamant",
+    "compass": "Boussole",
+    "xp": "XP"
+  },
+  "ranks": [
+    "Débutant",
+    "Éclaireur",
+    "Aventurier",
+    "Navigateur",
+    "Stratège",
+    "Maître de la logique",
+    "Grand Explorateur"
+  ],
+  "map": {
+    "title": "Carte du monde",
+    "diary": "Journal du capitaine",
+    "diary_empty": "Pas encore d'entrée. Termine une expédition pour écrire la première page !",
+    "hint_chests": "Cherche bien : des coffres à boussole se cachent près des pays visités.",
+    "fog_title": "Zone de brouillard",
+    "fog_desc": "Une tâche difficile attend. Les prochaines expéditions te donneront des étapes d'approche pour la dissiper.",
+    "unknown_country": "Pays inconnu",
+    "unknown_desc": "Pas encore découvert. Chaque expédition ouvre une nouvelle destination."
+  },
+  "base": {
+    "workshop_locked": "Atelier ??? (Verrouillé)",
+    "workshop_hint": "Termine l'échauffement pour débloquer la première salle !",
+    "hall_of_fame": "Salle des Trophées",
+    "hall_empty": "Tes trophées apparaîtront ici (bientôt).",
+    "inventory": "Inventaire"
+  },
+  "backup": {
+    "title": "Protège ta base !",
+    "desc": "Envoie ta sauvegarde à Maman pour ne jamais perdre tes constructions.",
+    "button": "Sauvegarder (+1 Boussole)",
+    "import": "Charger une sauvegarde (.json)",
+    "thanks_shared": "Sauvegarde envoyée ! +1 Boussole 🧭",
+    "thanks_downloaded": "Fichier enregistré sur l'appareil ! +1 Boussole 🧭",
+    "import_confirm": "Remplacer la progression actuelle par cette sauvegarde ?",
+    "import_ok": "Sauvegarde chargée !",
+    "import_fail": "Ce fichier n'est pas une sauvegarde valide."
+  },
+  "pin": {
+    "wrong": "Code incorrect"
+  },
+  "parent": {
+    "title": "Espace Parent",
+    "enter_pin": "Code PIN (par défaut : 1234)",
+    "stats_title": "Progression par matière",
+    "stats_help": "Colonnes : tâches répondues, taux de réussite, difficulté visée par le jeu (échelle 1 à 10).",
+    "range_week": "7 jours",
+    "range_month": "30 jours",
+    "range_all": "Tout",
+    "col_category": "Matière",
+    "col_tasks": "Tâches",
+    "col_success": "Réussite",
+    "col_level": "Niveau",
+    "calibration": "Très sûr mais faux : {{over}} · Hasard mais juste : {{intuition}} · Aides du mentor : {{mentor}}",
+    "discuss_title": "À discuter ensemble",
+    "no_errors": "Aucune erreur pour l'instant.",
+    "discussed": "On en a discuté",
+    "settings": "Réglages",
+    "generate_prompt": "Copier le prompt Claude pour de nouvelles tâches",
+    "import_questions": "Importer un pack de tâches (.json)",
+    "import_title": "Nouvelles tâches",
+    "bank_size": "Banque actuelle : {{count}} tâches (dont {{custom}} importées).",
+    "import_not_array": "Le fichier doit contenir une liste [ ... ] de tâches.",
+    "import_result": "Import terminé : {{ok}} tâche(s) ajoutée(s), {{bad}} refusée(s).",
+    "import_error": "Fichier illisible :",
+    "warmup_toggle": "Mode Échauffement",
+    "warmup_now_on": "actif en ce moment",
+    "warmup_now_off": "terminé : mode adaptatif",
+    "warmup_auto": "Automatique (recommandé)",
+    "warmup_on": "Forcer l'échauffement",
+    "warmup_off": "Forcer le mode adaptatif",
+    "difficulty_offset": "Ajuster la difficulté",
+    "change_pin": "Changer le code PIN (4 chiffres)",
+    "prompt_no_weak": "- Aucune faiblesse repérée pour l'instant : propose une variété de thèmes.",
+    "prompt_template": "Tu es un auteur de problèmes pour un jeu éducatif destiné à Sasha, 12 ans, élève de 6e dans une école française (programme CM2 à 5e). Le jeu s'appelle « L'Expédition ».\n\nGénère {{count}} nouvelles tâches en français, au format JSON strict : une liste [ ... ] d'objets, sans texte autour.\n\nNiveau actuel du joueur par matière (échelle 1 à 10) :\n{{levels}}\n\nThèmes à renforcer en priorité :\n{{weak}}\n\nRègles :\n- Catégories : math, logic, iq, critical, world. Types : number, choice, boolean_explain, order, highlight.\n- number : answer est un nombre. choice : exactement 4 options, answer = index (0 à 3). boolean_explain : options = 2 ou 3 raisons, answer = {\"value\": true/false, \"reason\": index de la bonne raison}. order : options = 4 cartes DANS LE BON ORDRE (le jeu les mélange), answer = la même liste. highlight : options = les phrases du texte, answer = index de la phrase demandée.\n- Une seule bonne réponse possible, pas d'ambiguïté. Une explication courte et bienveillante.\n- Pour difficulty ≥ 4 : 3 niveaux d'aide dans hints (Indice, Méthode, Premier pas, sans donner la réponse) et ladder = 1 à 2 ids de tâches plus faciles du même thème (ids existants ou de ce lot).\n- Les tâches avec stars 1 (difficulté 5-6), 2 (7-8) ou 3 (9-10) sont des défis plus ambitieux.\n- Ids au format catégorie-numéro à 4 chiffres, sans doublon. Ids déjà utilisés :\n{{ids}}\n- Pas de contenu publicitaire, pas de marques, pas de personnages protégés.\n\nSchéma d'une tâche :\n{{schema}}"
+  },
+  "countries": {
+    "japan": {
+      "name": "Japon",
+      "fact": "Le Japon est un archipel de plus de 6 800 îles. Son point culminant est le mont Fuji (3 776 m).",
+      "log": "Aujourd'hui, j'ai débarqué au Japon. Au pied du mont Fuji, j'ai tenté un kickflip sur une place de Tokyo, puis j'ai bâti une petite tour pour regarder les 6 800 îles de l'archipel."
+    },
+    "egypt": {
+      "name": "Égypte",
+      "fact": "La pyramide de Khéops, à Gizeh, a été construite il y a environ 4 500 ans. Le Nil est le plus long fleuve d'Afrique.",
+      "log": "Me voilà en Égypte ! Entre deux figures de skate sur le sable, j'ai empilé mes pierres comme les bâtisseurs de la pyramide de Khéops, vieille de 4 500 ans."
+    },
+    "brazil": {
+      "name": "Brésil",
+      "fact": "Le Brésil abrite la plus grande part de la forêt amazonienne, qui produit une partie de l'oxygène de notre planète.",
+      "log": "Brésil : la forêt amazonienne est immense ! J'ai glissé sur une rampe de bois au bord du fleuve et j'ai construit une cabane dans les arbres avec le bois récolté."
+    },
+    "iceland": {
+      "name": "Islande",
+      "fact": "L'Islande se trouve sur une faille entre deux plaques de la croûte terrestre : elle compte beaucoup de volcans et de geysers.",
+      "log": "Islande, terre de feu et de glace. Mon skate a tremblé : les volcans ne sont pas loin ! J'ai construit un mur de pierre pour me protéger du vent."
+    },
+    "peru": {
+      "name": "Pérou",
+      "fact": "Le Machu Picchu, cité inca construite vers 1450, se trouve à environ 2 400 m d'altitude dans les Andes.",
+      "log": "Pérou : j'ai grimpé dans les Andes jusqu'au Machu Picchu. Les Incas ont construit avec des pierres parfaitement taillées, j'ai essayé de les imiter pour ma base."
+    },
+    "kenya": {
+      "name": "Kenya",
+      "fact": "Le Kenya est traversé par l'équateur. Chaque année, des millions de gnous migrent entre le Kenya et la Tanzanie.",
+      "log": "Kenya : je roule sur l'équateur, à cheval entre deux hémisphères ! J'ai regardé les gnous traverser la savane et j'ai aménagé un poste d'observation."
+    },
+    "canada": {
+      "name": "Canada",
+      "fact": "Le Canada est le deuxième plus grand pays du monde par sa superficie, avec plus de lacs que n'importe quel autre pays.",
+      "log": "Canada : des lacs à perte de vue ! Mon skate a glissé sur un lac gelé et j'ai bâti un abri en rondins, comme les trappeurs d'autrefois."
+    },
+    "greece": {
+      "name": "Grèce",
+      "fact": "En Grèce, au Ve siècle avant J.-C., Athènes a inventé la démocratie : les citoyens votaient eux-mêmes les lois.",
+      "log": "Grèce : j'ai skaté autour du Parthénon, à Athènes, berceau de la démocratie. J'ai construit une colonne en pierre pour ma base."
+    }
+  }
+}

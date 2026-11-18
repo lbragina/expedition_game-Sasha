@@ -1,0 +1,533 @@
+[
+  {
+    "id": "iq-0001",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 3, 6, 9, 12, … ?",
+    "options": null,
+    "answer": 15,
+    "explanation": "On ajoute 3 à chaque fois : 12 + 3 = 15.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde de combien on passe d'un nombre au suivant.",
+      "De 3 à 6, on ajoute 3. Est-ce toujours pareil ?",
+      "12 + 3 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0002",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 2, 3, 5, 8, 12, … ?",
+    "options": null,
+    "answer": 17,
+    "explanation": "Les écarts sont 1, 2, 3, 4 : ils augmentent de 1 à chaque fois. L'écart suivant est 5, donc 12 + 5 = 17.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [
+      "iq-0001"
+    ],
+    "hints": [
+      "Ici, on n'ajoute pas toujours le même nombre. Regarde les écarts.",
+      "Calcule les écarts : 3 − 2, 5 − 3, 8 − 5, 12 − 8…",
+      "Les écarts sont 1, 2, 3, 4… Quel est le prochain écart ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0003",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 7,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 2, 6, 12, 20, 30, … ?",
+    "options": [
+      "40",
+      "42",
+      "44",
+      "36"
+    ],
+    "answer": 1,
+    "explanation": "Les écarts sont 4, 6, 8, 10 : ils augmentent de 2. L'écart suivant est 12, donc 30 + 12 = 42. (Autre façon : 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42.)",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 2,
+    "ladder": [
+      "iq-0001",
+      "iq-0002"
+    ],
+    "hints": [
+      "Calcule d'abord les écarts entre deux nombres qui se suivent.",
+      "Les écarts sont 4, 6, 8, 10… Ils suivent eux-mêmes une règle.",
+      "Autre piste : 2 = 1×2, 6 = 2×3, 12 = 3×4… Continue !"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0004",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 2, 4, 6, 8, … ?",
+    "options": null,
+    "answer": 10,
+    "explanation": "On ajoute 2 à chaque fois : 8 + 2 = 10.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde de combien on avance.",
+      "De 2 à 4, on ajoute 2.",
+      "8 + 2 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0005",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 10, 20, 30, 40, … ?",
+    "options": null,
+    "answer": 50,
+    "explanation": "On ajoute 10 à chaque fois : 40 + 10 = 50.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde de combien on avance.",
+      "De 10 à 20, on ajoute 10.",
+      "40 + 10 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0006",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 1, 4, 7, 10, … ?",
+    "options": null,
+    "answer": 13,
+    "explanation": "On ajoute 3 à chaque fois : 10 + 3 = 13.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Calcule l'écart entre les deux premiers nombres.",
+      "De 1 à 4, on ajoute 3.",
+      "10 + 3 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0007",
+    "category": "iq",
+    "topic": "odd_one_out",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est l'intrus parmi ces nombres : 2, 4, 7, 8 ?",
+    "options": [
+      "2",
+      "4",
+      "7",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "2, 4 et 8 sont pairs. 7 est impair : c'est l'intrus.",
+    "tags": [],
+    "skill": "odd_one_out",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Cherche ce que les nombres ont en commun.",
+      "Sont-ils pairs ou impairs ?",
+      "Quel nombre ne ressemble pas aux autres ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0008",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 100, 90, 80, 70, … ?",
+    "options": null,
+    "answer": 60,
+    "explanation": "On enlève 10 à chaque fois : 70 − 10 = 60.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Les nombres diminuent.",
+      "De 100 à 90, on enlève 10.",
+      "70 − 10 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0009",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 1, 2, 4, 8, 16, … ?",
+    "options": null,
+    "answer": 32,
+    "explanation": "On double à chaque fois : 16 × 2 = 32.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Ici, on n'ajoute pas toujours le même nombre.",
+      "Regarde le rapport entre un nombre et le suivant.",
+      "16 × 2 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0010",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 5, 10, 9, 18, 17, 34, … ?",
+    "options": null,
+    "answer": 33,
+    "explanation": "La règle alterne : × 2, puis − 1. Après 34, on enlève 1 : 33.",
+    "tags": [],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Cette suite alterne deux opérations.",
+      "5 → 10 (× 2), 10 → 9 (− 1)…",
+      "Après 34, quelle opération revient ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0011",
+    "category": "iq",
+    "topic": "letters",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle lettre suit dans la suite : A, C, E, G, … ?",
+    "options": [
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "answer": 1,
+    "explanation": "On saute une lettre à chaque fois : A, (B), C, (D), E, (F), G, (H), I.",
+    "tags": [],
+    "skill": "letters",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Écris l'alphabet en dessous.",
+      "Combien de lettres avance-t-on à chaque fois ?",
+      "Après G, on saute H."
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0012",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 1, 4, 9, 16, 25, … ?",
+    "options": null,
+    "answer": 36,
+    "explanation": "Ce sont les carrés : 1×1, 2×2, 3×3, 4×4, 5×5. Le suivant est 6 × 6 = 36.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [
+      "iq-0001",
+      "iq-0006"
+    ],
+    "hints": [
+      "Regarde les écarts : 3, 5, 7, 9…",
+      "Ces nombres sont des résultats de multiplications d'un nombre par lui-même.",
+      "1×1, 2×2, 3×3… et ensuite ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0013",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 1, 1, 2, 3, 5, 8, 13, … ?",
+    "options": null,
+    "answer": 21,
+    "explanation": "Chaque nombre est la somme des deux précédents (suite de Fibonacci) : 8 + 13 = 21.",
+    "tags": [
+      "Fibonacci"
+    ],
+    "skill": "sequences",
+    "stars": 1,
+    "ladder": [
+      "iq-0001",
+      "iq-0002"
+    ],
+    "hints": [
+      "Regarde comment 5 est obtenu à partir de 2 et 3.",
+      "Chaque nombre est la somme des deux précédents.",
+      "8 + 13 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0014",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 3, 5, 9, 17, 33, … ?",
+    "options": null,
+    "answer": 65,
+    "explanation": "Les écarts sont 2, 4, 8, 16 : ils doublent. L'écart suivant est 32, donc 33 + 32 = 65.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [
+      "iq-0009",
+      "iq-0010"
+    ],
+    "hints": [
+      "Calcule les écarts entre deux nombres consécutifs.",
+      "Les écarts sont 2, 4, 8, 16…",
+      "Quel est l'écart suivant ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0015",
+    "category": "iq",
+    "topic": "matrix",
+    "difficulty": 6,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans chaque ligne, le troisième nombre est la somme des deux premiers. Ligne 1 : 3, 4, 7. Ligne 2 : 5, 2, 7. Ligne 3 : 6, 8, ?. Quel nombre remplace le « ? »",
+    "options": [
+      "14",
+      "2",
+      "48",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "3 + 4 = 7, 5 + 2 = 7, donc 6 + 8 = 14.",
+    "tags": [
+      "matrice"
+    ],
+    "skill": "matrix",
+    "stars": 1,
+    "ladder": [
+      "iq-0006",
+      "iq-0001"
+    ],
+    "hints": [
+      "Cherche la règle dans les deux premières lignes.",
+      "Le troisième nombre est la somme des deux premiers.",
+      "6 + 8 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0016",
+    "category": "iq",
+    "topic": "odd_one_out",
+    "difficulty": 4,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la suite qui ne suit pas la même règle que les autres.",
+    "options": [
+      "2, 4, 8, 16",
+      "3, 6, 12, 24",
+      "5, 10, 20, 40",
+      "7, 14, 21, 28"
+    ],
+    "answer": 3,
+    "explanation": "Les trois premières suites doublent à chaque fois. La dernière ajoute 7 à chaque fois : c'est l'intrus.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "odd_one_out",
+    "stars": 0,
+    "ladder": [
+      "iq-0001",
+      "iq-0009"
+    ],
+    "hints": [
+      "Cherche la règle de chaque suite.",
+      "Trois suites suivent la règle « × 2 ».",
+      "Laquelle suit une autre règle ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0017",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 4,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets ces nombres dans l'ordre pour former une suite régulière.",
+    "options": [
+      "8",
+      "11",
+      "14",
+      "17"
+    ],
+    "answer": [
+      "8",
+      "11",
+      "14",
+      "17"
+    ],
+    "explanation": "On avance de 3 en 3 : 8, 11, 14, 17.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 0,
+    "ladder": [
+      "iq-0001",
+      "iq-0006"
+    ],
+    "hints": [
+      "Cherche deux nombres dont la différence est petite.",
+      "Quel est le plus petit nombre ? Quel est le plus grand ?",
+      "On avance de 3 à chaque fois."
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0018",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 2, 3, 5, 7, 11, 13, … ?",
+    "options": null,
+    "answer": 17,
+    "explanation": "Ce sont les nombres premiers dans l'ordre : après 13, le suivant est 17 (15 = 3 × 5 n'est pas premier).",
+    "tags": [
+      "nombres premiers"
+    ],
+    "skill": "sequences",
+    "stars": 2,
+    "ladder": [
+      "iq-0013",
+      "iq-0012"
+    ],
+    "hints": [
+      "Les écarts ne suivent aucune règle simple.",
+      "Ces nombres n'ont que deux diviseurs : 1 et eux-mêmes.",
+      "14, 15, 16 : sont-ils premiers ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0019",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 1, 3, 6, 10, 15, 21, … ?",
+    "options": null,
+    "answer": 28,
+    "explanation": "Les écarts sont 2, 3, 4, 5, 6 : l'écart suivant est 7, donc 21 + 7 = 28 (nombres triangulaires).",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 2,
+    "ladder": [
+      "iq-0002",
+      "iq-0013"
+    ],
+    "hints": [
+      "Calcule les écarts entre les nombres.",
+      "Les écarts augmentent de 1 à chaque fois.",
+      "Quel est l'écart suivant ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "iq-0020",
+    "category": "iq",
+    "topic": "sequences",
+    "difficulty": 9,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le nombre suivant dans la suite : 2, 12, 30, 56, 90, … ?",
+    "options": null,
+    "answer": 132,
+    "explanation": "2 = 1×2, 12 = 3×4, 30 = 5×6, 56 = 7×8, 90 = 9×10. Le suivant est 11 × 12 = 132.",
+    "tags": [
+      "suite"
+    ],
+    "skill": "sequences",
+    "stars": 3,
+    "ladder": [
+      "iq-0002",
+      "iq-0003"
+    ],
+    "hints": [
+      "Essaie d'écrire chaque nombre comme un produit de deux nombres proches.",
+      "12 = 3 × 4, 30 = 5 × 6…",
+      "Quels sont les nombres qui se multiplient ? 1 et 2, 3 et 4, 5 et 6…"
+    ],
+    "image": null
+  }
+]

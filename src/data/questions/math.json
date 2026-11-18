@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "math-0001",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Écris les premiers multiples de 4 : 4, 8, 12… Quel est le multiple de 4 qui vient juste après 20 ?",
+    "options": null,
+    "answer": 24,
+    "explanation": "Les multiples de 4 sont : 4, 8, 12, 16, 20, 24… Après 20, on ajoute 4 et on trouve 24.",
+    "tags": [
+      "multiples"
+    ],
+    "skill": "multiples",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un multiple de 4, c'est un nombre de la table de 4.",
+      "Compte de 4 en 4 à partir de 20.",
+      "20 + 4 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0002",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel nombre est à la fois un multiple de 2 et un multiple de 3 ?",
+    "options": [
+      "14",
+      "15",
+      "18",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "18 = 2×9 et 18 = 3×6. Mais 14 et 20 ne sont que dans la table de 2, et 15 seulement dans la table de 3.",
+    "tags": [
+      "multiples"
+    ],
+    "skill": "multiples",
+    "stars": 0,
+    "ladder": [
+      "math-0001"
+    ],
+    "hints": [
+      "Il faut que le nombre soit dans la table de 2 ET dans la table de 3.",
+      "Teste chaque nombre : est-il pair ? Est-il dans la table de 3 ?",
+      "Un nombre est dans la table de 3 si la somme de ses chiffres est dans la table de 3."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0003",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Deux bus passent à l'arrêt : le premier toutes les 4 minutes, le second toutes les 6 minutes. Ils passent ensemble à 8 h 00. Dans combien de minutes passeront-ils de nouveau ensemble pour la première fois ?",
+    "options": null,
+    "answer": 12,
+    "explanation": "Bus 1 : 4, 8, 12… Bus 2 : 6, 12… Le premier nombre commun est 12. C'est le PPCM de 4 et 6.",
+    "tags": [
+      "Kangourou",
+      "PPCM"
+    ],
+    "skill": "ppcm",
+    "stars": 1,
+    "ladder": [
+      "math-0001",
+      "math-0002"
+    ],
+    "hints": [
+      "Cherche un nombre qui est dans la table de 4 et dans la table de 6.",
+      "Écris la liste des premiers multiples de chaque bus, puis cherche le premier nombre commun.",
+      "Bus 1 : 4, 8, 12… Bus 2 : 6, 12… Que remarques-tu ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0004",
+    "category": "math",
+    "topic": "mental",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 7 × 8.",
+    "options": null,
+    "answer": 56,
+    "explanation": "7 × 8 = 56 (table de 7).",
+    "tags": [],
+    "skill": "mental",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Utilise la table de 7.",
+      "7 × 7 = 49, puis ajoute encore 7.",
+      "49 + 7 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0005",
+    "category": "math",
+    "topic": "mental",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 63 ÷ 7.",
+    "options": null,
+    "answer": 9,
+    "explanation": "7 × 9 = 63, donc 63 ÷ 7 = 9.",
+    "tags": [],
+    "skill": "mental",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à la table de 7.",
+      "Cherche le nombre qui, multiplié par 7, donne 63.",
+      "7 × 9 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0006",
+    "category": "math",
+    "topic": "mental",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 345 + 278.",
+    "options": null,
+    "answer": 623,
+    "explanation": "345 + 278 = 345 + 200 + 78 = 545 + 78 = 623.",
+    "tags": [],
+    "skill": "mental",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Additionne d'abord les centaines.",
+      "345 + 200 = 545.",
+      "545 + 78 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0007",
+    "category": "math",
+    "topic": "mental",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 1 000 − 467.",
+    "options": null,
+    "answer": 533,
+    "explanation": "467 + 533 = 1 000, donc 1 000 − 467 = 533.",
+    "tags": [],
+    "skill": "mental",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Cherche ce qu'il faut ajouter à 467 pour arriver à 1 000.",
+      "467 + 3 = 470, puis 470 + 30 = 500…",
+      "Continue jusqu'à 1 000 en comptant ce que tu ajoutes."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0008",
+    "category": "math",
+    "topic": "mental",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 12 × 15.",
+    "options": null,
+    "answer": 180,
+    "explanation": "12 × 15 = 10 × 15 + 2 × 15 = 150 + 30 = 180.",
+    "tags": [],
+    "skill": "mental",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Décompose 12 en 10 + 2.",
+      "10 × 15 = 150.",
+      "2 × 15 = 30, puis additionne."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0009",
+    "category": "math",
+    "topic": "priorities",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 5 + 3 × 4.",
+    "options": null,
+    "answer": 17,
+    "explanation": "La multiplication passe avant l'addition : 3 × 4 = 12, puis 5 + 12 = 17.",
+    "tags": [],
+    "skill": "priorities",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Quelle opération est prioritaire ?",
+      "La multiplication se calcule avant l'addition.",
+      "3 × 4 = 12, puis ajoute 5."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0010",
+    "category": "math",
+    "topic": "priorities",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 2 × (7 + 8) − 10.",
+    "options": null,
+    "answer": 20,
+    "explanation": "Parenthèses d'abord : 7 + 8 = 15 ; puis 2 × 15 = 30 ; enfin 30 − 10 = 20.",
+    "tags": [],
+    "skill": "priorities",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Commence par ce qui est entre parenthèses.",
+      "7 + 8 = 15.",
+      "2 × 15 = 30, puis retire 10."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0011",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Un rectangle est découpé en 8 parts égales. 3 parts sont colorées. Quelle fraction du rectangle est colorée ?",
+    "options": [
+      "3/8",
+      "8/3",
+      "3/5",
+      "5/8"
+    ],
+    "answer": 0,
+    "explanation": "Le dénominateur (8) est le nombre de parts du tout, le numérateur (3) est le nombre de parts colorées.",
+    "tags": [],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le nombre en bas dit en combien de parts on a coupé.",
+      "Le nombre en haut dit combien de parts sont colorées.",
+      "Écris : parts colorées / parts au total."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0012",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quelle est la moitié de 86 ?",
+    "options": null,
+    "answer": 43,
+    "explanation": "La moitié de 86 se calcule avec 86 ÷ 2 = 43.",
+    "tags": [],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "La moitié, c'est diviser par 2.",
+      "La moitié de 80 est 40.",
+      "40 + la moitié de 6, soit 3."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0013",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule le quart de 36 (c'est-à-dire 1/4 de 36).",
+    "options": null,
+    "answer": 9,
+    "explanation": "Le quart de 36 est 36 ÷ 4 = 9.",
+    "tags": [],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un quart, c'est une part sur 4 parts égales.",
+      "On divise 36 par 4.",
+      "4 × 9 = 36."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0014",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle fraction est égale à 1/2 ?",
+    "options": [
+      "2/3",
+      "3/6",
+      "4/10",
+      "5/12"
+    ],
+    "answer": 1,
+    "explanation": "3/6 = 1/2 car 3 est la moitié de 6. Dans les autres fractions, le numérateur n'est pas la moitié du dénominateur.",
+    "tags": [],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "1/2 veut dire « 1 part sur 2 ».",
+      "Cherche la fraction dont le numérateur est la moitié du dénominateur.",
+      "La moitié de 6 est 3."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0015",
+    "category": "math",
+    "topic": "decimals",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 3,5 + 4,25.",
+    "options": null,
+    "answer": 7.75,
+    "explanation": "On aligne les virgules : 3,50 + 4,25 = 7,75.",
+    "tags": [],
+    "skill": "decimals",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Écris 3,5 sous la forme 3,50.",
+      "Additionne d'abord les centièmes, puis les dixièmes.",
+      "3,50 + 4,25 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0016",
+    "category": "math",
+    "topic": "decimals",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 12,5 × 4.",
+    "options": null,
+    "answer": 50,
+    "explanation": "12,5 × 4 = 12 × 4 + 0,5 × 4 = 48 + 2 = 50.",
+    "tags": [],
+    "skill": "decimals",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Décompose 12,5 en 12 + 0,5.",
+      "12 × 4 = 48.",
+      "0,5 × 4 = 2."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0017",
+    "category": "math",
+    "topic": "decimals",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est le plus grand de ces nombres ?",
+    "options": [
+      "0,45",
+      "0,098",
+      "0,9",
+      "0,5"
+    ],
+    "answer": 2,
+    "explanation": "0,9 = 0,90 est plus grand que 0,50, 0,45 et 0,098. On compare d'abord les dixièmes.",
+    "tags": [],
+    "skill": "decimals",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Compare d'abord la première décimale (les dixièmes).",
+      "Écris tous les nombres avec 3 décimales : 0,900 ; 0,450…",
+      "Le plus grand dixième gagne."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0018",
+    "category": "math",
+    "topic": "percent",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien font 10 % de 250 ?",
+    "options": null,
+    "answer": 25,
+    "explanation": "10 % = 1/10, donc 10 % de 250 = 250 ÷ 10 = 25.",
+    "tags": [],
+    "skill": "percent",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "10 %, c'est un dixième.",
+      "On divise par 10.",
+      "250 ÷ 10 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0019",
+    "category": "math",
+    "topic": "percent",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien font 50 % de 90 ?",
+    "options": null,
+    "answer": 45,
+    "explanation": "50 % = la moitié, donc 90 ÷ 2 = 45.",
+    "tags": [],
+    "skill": "percent",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "50 %, c'est la moitié.",
+      "On divise par 2.",
+      "90 ÷ 2 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0020",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel nombre est divisible par 5 ?",
+    "options": [
+      "212",
+      "345",
+      "502",
+      "617"
+    ],
+    "answer": 1,
+    "explanation": "Un nombre est divisible par 5 s'il se termine par 0 ou 5. Seul 345 se termine par 5.",
+    "tags": [],
+    "skill": "divisibility",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde le dernier chiffre.",
+      "Les multiples de 5 se terminent par 0 ou 5.",
+      "Quel nombre finit par 0 ou 5 ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0021",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien y a-t-il de multiples de 3 entre 1 et 20 (20 inclus) ?",
+    "options": null,
+    "answer": 6,
+    "explanation": "3, 6, 9, 12, 15, 18 : il y en a 6.",
+    "tags": [],
+    "skill": "divisibility",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Écris la table de 3 : 3, 6, 9…",
+      "Arrête-toi avant de dépasser 20.",
+      "Compte les nombres que tu as écrits."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0022",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel nombre est divisible par 9 ?",
+    "options": [
+      "123",
+      "345",
+      "456",
+      "234"
+    ],
+    "answer": 3,
+    "explanation": "2 + 3 + 4 = 9 : la somme des chiffres est dans la table de 9, donc 234 est divisible par 9. Les autres sommes valent 6, 12 et 15.",
+    "tags": [],
+    "skill": "divisibility",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un nombre est divisible par 9 si la somme de ses chiffres l'est.",
+      "Additionne les chiffres de chaque nombre.",
+      "Laquelle de ces sommes est dans la table de 9 ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0023",
+    "category": "math",
+    "topic": "divisors",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le plus grand diviseur de 24 qui est plus petit que 24 ?",
+    "options": null,
+    "answer": 12,
+    "explanation": "24 = 2 × 12 : 12 divise 24 et aucun nombre entre 12 et 24 ne le divise.",
+    "tags": [],
+    "skill": "divisors",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un diviseur de 24 est un nombre qui « tombe juste » dans 24.",
+      "Essaie 12, puis les nombres plus grands.",
+      "24 ÷ 12 = 2 : ça tombe juste !"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0024",
+    "category": "math",
+    "topic": "perimeter",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un carré a un côté de 7 cm. Quel est son périmètre, en cm ?",
+    "options": null,
+    "answer": 28,
+    "explanation": "Un carré a 4 côtés égaux : 4 × 7 = 28 cm.",
+    "tags": [],
+    "skill": "perimeter",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le périmètre est la longueur du tour de la figure.",
+      "Un carré a 4 côtés égaux.",
+      "4 × 7 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0025",
+    "category": "math",
+    "topic": "area",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un rectangle mesure 8 cm de long et 3 cm de large. Quelle est son aire, en cm² ?",
+    "options": null,
+    "answer": 24,
+    "explanation": "Aire = longueur × largeur = 8 × 3 = 24 cm².",
+    "tags": [],
+    "skill": "area",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "L'aire mesure la surface à l'intérieur.",
+      "Pour un rectangle : longueur × largeur.",
+      "8 × 3 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0026",
+    "category": "math",
+    "topic": "perimeter",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un rectangle a un périmètre de 30 cm et une longueur de 9 cm. Quelle est sa largeur, en cm ?",
+    "options": null,
+    "answer": 6,
+    "explanation": "Longueur + largeur = 30 ÷ 2 = 15 cm, donc la largeur est 15 − 9 = 6 cm.",
+    "tags": [],
+    "skill": "perimeter",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le périmètre compte deux longueurs et deux largeurs.",
+      "Longueur + largeur = la moitié du périmètre.",
+      "15 − 9 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0027",
+    "category": "math",
+    "topic": "time",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien de minutes y a-t-il dans 2 h 15 ?",
+    "options": null,
+    "answer": 135,
+    "explanation": "2 h = 120 min, donc 2 h 15 = 120 + 15 = 135 minutes.",
+    "tags": [],
+    "skill": "time",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "1 heure = 60 minutes.",
+      "2 heures font combien de minutes ?",
+      "120 + 15 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0028",
+    "category": "math",
+    "topic": "problems",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Léo achète 3 cahiers à 2,50 € l'un et un stylo à 1,20 €. Combien dépense-t-il, en euros ?",
+    "options": null,
+    "answer": 8.7,
+    "explanation": "3 × 2,50 = 7,50 € puis 7,50 + 1,20 = 8,70 €.",
+    "tags": [],
+    "skill": "problems",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Calcule d'abord le prix des 3 cahiers.",
+      "3 × 2,50 = 7,50.",
+      "Ajoute le prix du stylo."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0029",
+    "category": "math",
+    "topic": "geometry",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien de côtés a un hexagone ?",
+    "options": null,
+    "answer": 6,
+    "explanation": "Hexa- vient du grec « six » : un hexagone a 6 côtés.",
+    "tags": [],
+    "skill": "geometry",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le préfixe « hexa » vient du grec.",
+      "Pense à une cellule d'abeille.",
+      "Hexa = six."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0030",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule les 3/5 de 40.",
+    "options": null,
+    "answer": 24,
+    "explanation": "1/5 de 40 = 8, donc 3/5 de 40 = 3 × 8 = 24.",
+    "tags": [
+      "fractions"
+    ],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [
+      "math-0013",
+      "math-0012"
+    ],
+    "hints": [
+      "Commence par trouver 1/5 de 40.",
+      "Pour 1/5, divise 40 par 5.",
+      "1/5 = 8, donc 3/5 = 3 × 8."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0031",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Calcule : 1/2 + 1/4.",
+    "options": [
+      "2/6",
+      "1/6",
+      "3/4",
+      "2/4"
+    ],
+    "answer": 2,
+    "explanation": "1/2 = 2/4, donc 2/4 + 1/4 = 3/4. Attention : on n'additionne pas les dénominateurs !",
+    "tags": [
+      "fractions"
+    ],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [
+      "math-0011",
+      "math-0014"
+    ],
+    "hints": [
+      "Pour additionner, les dénominateurs doivent être les mêmes.",
+      "Transforme 1/2 en quarts.",
+      "1/2 = 2/4, puis 2/4 + 1/4."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0032",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Une recette demande 3/4 de litre de lait. Combien de litres de lait faut-il pour 4 recettes ?",
+    "options": null,
+    "answer": 3,
+    "explanation": "4 × 3/4 = 12/4 = 3 litres.",
+    "tags": [],
+    "skill": "fractions",
+    "stars": 0,
+    "ladder": [
+      "math-0013",
+      "math-0030"
+    ],
+    "hints": [
+      "Pour 4 recettes, on multiplie par 4.",
+      "4 × 3/4 = 12/4.",
+      "12/4 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0033",
+    "category": "math",
+    "topic": "percent",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un jeu coûte 40 €. Il est soldé à −25 %. Quel est son nouveau prix, en euros ?",
+    "options": null,
+    "answer": 30,
+    "explanation": "25 % de 40 = 10 €, donc le nouveau prix est 40 − 10 = 30 €.",
+    "tags": [
+      "pourcentages"
+    ],
+    "skill": "percent",
+    "stars": 0,
+    "ladder": [
+      "math-0018",
+      "math-0019"
+    ],
+    "hints": [
+      "25 %, c'est un quart.",
+      "Calcule le quart de 40.",
+      "Retire cette réduction du prix de départ."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0034",
+    "category": "math",
+    "topic": "percent",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Dans une classe de 25 élèves, 40 % sont des garçons. Combien y a-t-il de filles ?",
+    "options": null,
+    "answer": 15,
+    "explanation": "10 % de 25 = 2,5 ; 40 % = 4 × 2,5 = 10 garçons ; 25 − 10 = 15 filles.",
+    "tags": [
+      "pourcentages"
+    ],
+    "skill": "percent",
+    "stars": 0,
+    "ladder": [
+      "math-0018",
+      "math-0019"
+    ],
+    "hints": [
+      "Cherche d'abord le nombre de garçons.",
+      "40 % = 4 × 10 %.",
+      "Filles = élèves − garçons."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0035",
+    "category": "math",
+    "topic": "pgcd",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule le PGCD de 12 et 18.",
+    "options": null,
+    "answer": 6,
+    "explanation": "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 18 : 1, 2, 3, 6, 9, 18. Le plus grand diviseur commun est 6.",
+    "tags": [
+      "PGCD"
+    ],
+    "skill": "pgcd",
+    "stars": 1,
+    "ladder": [
+      "math-0023"
+    ],
+    "hints": [
+      "PGCD = Plus Grand Commun Diviseur.",
+      "Écris la liste des diviseurs de chaque nombre.",
+      "Quel est le plus grand nombre présent dans les deux listes ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0036",
+    "category": "math",
+    "topic": "ppcm",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le PPCM de 6 et 8 ?",
+    "options": null,
+    "answer": 24,
+    "explanation": "Multiples de 6 : 6, 12, 18, 24… Multiples de 8 : 8, 16, 24… Le plus petit multiple commun est 24.",
+    "tags": [
+      "PPCM"
+    ],
+    "skill": "ppcm",
+    "stars": 0,
+    "ladder": [
+      "math-0001",
+      "math-0002"
+    ],
+    "hints": [
+      "PPCM = Plus Petit Commun Multiple.",
+      "Écris les multiples de 6 puis ceux de 8.",
+      "Quel est le premier nombre présent dans les deux listes ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0037",
+    "category": "math",
+    "topic": "pgcd",
+    "difficulty": 6,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Léa a 48 bonbons et 36 chocolats. Elle veut faire des sachets identiques, sans rien laisser. Quel est le plus grand nombre de sachets possible ?",
+    "options": null,
+    "answer": 12,
+    "explanation": "Le nombre de sachets doit diviser 48 et 36 : on cherche le PGCD de 48 et 36, qui vaut 12 (4 bonbons et 3 chocolats par sachet).",
+    "tags": [
+      "PGCD"
+    ],
+    "skill": "pgcd",
+    "stars": 1,
+    "ladder": [
+      "math-0035",
+      "math-0023"
+    ],
+    "hints": [
+      "Le nombre de sachets doit diviser 48 ET 36.",
+      "On cherche le plus grand diviseur commun : le PGCD.",
+      "48 = 12 × 4 et 36 = 12 × 3."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0038",
+    "category": "math",
+    "topic": "perimeter",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un rectangle mesure 12 cm sur 5 cm. Quel est son périmètre, en cm ?",
+    "options": null,
+    "answer": 34,
+    "explanation": "2 × (12 + 5) = 2 × 17 = 34 cm.",
+    "tags": [],
+    "skill": "perimeter",
+    "stars": 0,
+    "ladder": [
+      "math-0024",
+      "math-0025"
+    ],
+    "hints": [
+      "Le périmètre est le tour complet.",
+      "Il y a 2 longueurs et 2 largeurs.",
+      "12 + 5 = 17, puis double."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0039",
+    "category": "math",
+    "topic": "area",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un triangle a une base de 10 cm et une hauteur de 6 cm. Quelle est son aire, en cm² ?",
+    "options": null,
+    "answer": 30,
+    "explanation": "Aire d'un triangle = base × hauteur ÷ 2 = 10 × 6 ÷ 2 = 30 cm².",
+    "tags": [],
+    "skill": "area",
+    "stars": 1,
+    "ladder": [
+      "math-0025"
+    ],
+    "hints": [
+      "Un triangle est la moitié d'un rectangle.",
+      "Le rectangle de même base et de même hauteur a pour aire 10 × 6.",
+      "Prends la moitié de ce résultat."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0040",
+    "category": "math",
+    "topic": "perimeter",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un jardin rectangulaire mesure 20 m sur 15 m. On l'entoure d'une clôture. Quelle longueur de clôture faut-il, en mètres ?",
+    "options": null,
+    "answer": 70,
+    "explanation": "2 × (20 + 15) = 2 × 35 = 70 m.",
+    "tags": [],
+    "skill": "perimeter",
+    "stars": 0,
+    "ladder": [
+      "math-0038",
+      "math-0024"
+    ],
+    "hints": [
+      "La clôture fait le tour du jardin : c'est le périmètre.",
+      "Additionne la longueur et la largeur.",
+      "Double le résultat."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0041",
+    "category": "math",
+    "topic": "area",
+    "difficulty": 6,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "L'aire d'un carré est de 49 cm². Quel est son périmètre, en cm ?",
+    "options": null,
+    "answer": 28,
+    "explanation": "7 × 7 = 49, donc le côté mesure 7 cm. Le périmètre est 4 × 7 = 28 cm.",
+    "tags": [],
+    "skill": "area",
+    "stars": 1,
+    "ladder": [
+      "math-0024",
+      "math-0025"
+    ],
+    "hints": [
+      "Aire d'un carré = côté × côté.",
+      "Quel nombre multiplié par lui-même donne 49 ?",
+      "Le côté est 7 cm : calcule 4 côtés."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0042",
+    "category": "math",
+    "topic": "priorities",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 3 × (4 + 6) − 2 × 5.",
+    "options": null,
+    "answer": 20,
+    "explanation": "3 × 10 = 30 ; 2 × 5 = 10 ; 30 − 10 = 20.",
+    "tags": [],
+    "skill": "priorities",
+    "stars": 0,
+    "ladder": [
+      "math-0009",
+      "math-0010"
+    ],
+    "hints": [
+      "Commence par la parenthèse.",
+      "Puis calcule les deux multiplications.",
+      "Termine par la soustraction."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0043",
+    "category": "math",
+    "topic": "relatives",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "La température est de −4 °C. Elle monte de 9 °C. Quelle est la nouvelle température, en °C ?",
+    "options": null,
+    "answer": 5,
+    "explanation": "On part de −4. Pour monter jusqu'à 0, il faut 4 °C ; il reste 9 − 4 = 5 °C : on arrive à +5 °C.",
+    "tags": [
+      "nombres relatifs"
+    ],
+    "skill": "relatives",
+    "stars": 0,
+    "ladder": [
+      "math-0007"
+    ],
+    "hints": [
+      "Sur une droite graduée, monter c'est aller vers la droite.",
+      "De −4 à 0, combien de degrés ?",
+      "Combien en reste-t-il après avoir atteint 0 ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0044",
+    "category": "math",
+    "topic": "proportionality",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "3 kg de pommes coûtent 7,50 €. Combien coûtent 5 kg de pommes, en euros ?",
+    "options": null,
+    "answer": 12.5,
+    "explanation": "1 kg coûte 7,50 ÷ 3 = 2,50 €, donc 5 kg coûtent 5 × 2,50 = 12,50 €.",
+    "tags": [
+      "proportionnalité"
+    ],
+    "skill": "proportionality",
+    "stars": 0,
+    "ladder": [
+      "math-0016",
+      "math-0028"
+    ],
+    "hints": [
+      "Cherche d'abord le prix de 1 kg.",
+      "7,50 ÷ 3 = 2,50.",
+      "Multiplie par 5."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0045",
+    "category": "math",
+    "topic": "speed",
+    "difficulty": 6,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Une voiture roule à 90 km/h. Quelle distance parcourt-elle en 40 minutes, en kilomètres ?",
+    "options": null,
+    "answer": 60,
+    "explanation": "En 1 heure : 90 km. En 20 minutes (1/3 d'heure) : 30 km. En 40 minutes : 60 km.",
+    "tags": [
+      "proportionnalité"
+    ],
+    "skill": "speed",
+    "stars": 1,
+    "ladder": [
+      "math-0027",
+      "math-0019"
+    ],
+    "hints": [
+      "40 minutes, c'est les 2/3 d'une heure.",
+      "En 20 minutes, la voiture fait 90 ÷ 3 km.",
+      "En 40 minutes, elle fait le double de 20 minutes."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0046",
+    "category": "math",
+    "topic": "decimals",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 4,2 × 1,5.",
+    "options": null,
+    "answer": 6.3,
+    "explanation": "4,2 × 1,5 = 4,2 + 2,1 = 6,3 (car 1,5 = 1 + 0,5, et 0,5 de 4,2 est 2,1).",
+    "tags": [],
+    "skill": "decimals",
+    "stars": 0,
+    "ladder": [
+      "math-0016",
+      "math-0015"
+    ],
+    "hints": [
+      "Décompose 1,5 en 1 + 0,5.",
+      "4,2 × 1 = 4,2 et 4,2 × 0,5 = la moitié de 4,2.",
+      "Additionne les deux résultats."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0047",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel nombre est divisible à la fois par 2, par 3 et par 5 ?",
+    "options": [
+      "45",
+      "72",
+      "80",
+      "90"
+    ],
+    "answer": 3,
+    "explanation": "90 est pair, 9 + 0 = 9 est dans la table de 3, et il se termine par 0. 45 est impair, 72 ne finit ni par 0 ni par 5, et 8 + 0 = 8 n'est pas dans la table de 3.",
+    "tags": [
+      "divisibilité"
+    ],
+    "skill": "divisibility",
+    "stars": 0,
+    "ladder": [
+      "math-0020",
+      "math-0022"
+    ],
+    "hints": [
+      "Teste chaque critère de divisibilité l'un après l'autre.",
+      "Pair, fini par 0 ou 5, somme des chiffres dans la table de 3.",
+      "Élimine les nombres impairs."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0048",
+    "category": "math",
+    "topic": "primes",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien y a-t-il de nombres premiers entre 10 et 30 ?",
+    "options": null,
+    "answer": 6,
+    "explanation": "11, 13, 17, 19, 23 et 29 : il y en a 6.",
+    "tags": [],
+    "skill": "primes",
+    "stars": 0,
+    "ladder": [
+      "math-0021",
+      "math-0023"
+    ],
+    "hints": [
+      "Un nombre premier a exactement deux diviseurs : 1 et lui-même.",
+      "Teste les nombres impairs de 11 à 29.",
+      "15, 21, 25, 27 ne sont pas premiers. Compte les autres."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0049",
+    "category": "math",
+    "topic": "ppcm",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le plus petit entier supérieur à 1 qui, divisé par 4, par 6 et par 9, laisse toujours un reste de 1 ?",
+    "options": null,
+    "answer": 37,
+    "explanation": "Le PPCM de 4, 6 et 9 est 36. Un nombre qui laisse 1 dans les trois divisions est 36 + 1 = 37.",
+    "tags": [
+      "PPCM",
+      "Kangourou"
+    ],
+    "skill": "ppcm",
+    "stars": 2,
+    "ladder": [
+      "math-0003",
+      "math-0036"
+    ],
+    "hints": [
+      "Un nombre qui laisse un reste de 1 est « un multiple + 1 ».",
+      "Il faut un multiple commun à 4, 6 et 9.",
+      "Le plus petit multiple commun est 36 : ajoute 1."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0050",
+    "category": "math",
+    "topic": "pgcd",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule le PGCD de 84 et 126.",
+    "options": null,
+    "answer": 42,
+    "explanation": "126 − 84 = 42, et 84 = 2 × 42 : le plus grand diviseur commun est 42.",
+    "tags": [
+      "PGCD"
+    ],
+    "skill": "pgcd",
+    "stars": 2,
+    "ladder": [
+      "math-0035",
+      "math-0037"
+    ],
+    "hints": [
+      "Le PGCD divise aussi la différence des deux nombres.",
+      "126 − 84 = ?",
+      "Vérifie que ce nombre divise bien 84 et 126."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0051",
+    "category": "math",
+    "topic": "perimeter",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un rectangle a un périmètre de 36 cm. Sa longueur est le double de sa largeur. Quelle est son aire, en cm² ?",
+    "options": null,
+    "answer": 72,
+    "explanation": "Longueur + largeur = 18 cm. La largeur compte 1 part et la longueur 2 parts : 3 parts = 18 cm, donc 1 part = 6 cm. Largeur 6 cm, longueur 12 cm, aire 6 × 12 = 72 cm².",
+    "tags": [
+      "Kangourou"
+    ],
+    "skill": "perimeter",
+    "stars": 2,
+    "ladder": [
+      "math-0026",
+      "math-0038"
+    ],
+    "hints": [
+      "Commence par la somme longueur + largeur.",
+      "La somme vaut 3 parts égales à la largeur.",
+      "Trouve la largeur, puis la longueur, puis l'aire."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0052",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Léa dépense 1/3 de son argent, puis 1/4 de ce qui lui reste. Il lui reste 18 €. Combien avait-elle au départ, en euros ?",
+    "options": null,
+    "answer": 36,
+    "explanation": "Après avoir dépensé 1/3, il reste 2/3. Elle dépense ensuite 1/4 de 2/3 = 1/6. Il reste 2/3 − 1/6 = 1/2. La moitié de la somme vaut 18 €, donc elle avait 36 €.",
+    "tags": [
+      "fractions",
+      "Kangourou"
+    ],
+    "skill": "fractions",
+    "stars": 2,
+    "ladder": [
+      "math-0032",
+      "math-0030"
+    ],
+    "hints": [
+      "Travaille à l'envers ou en fractions du total.",
+      "Après la première dépense, il reste 2/3 du total.",
+      "Après la seconde, il reste 3/4 de ces 2/3."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0053",
+    "category": "math",
+    "topic": "divisors",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien le nombre 36 possède-t-il de diviseurs ?",
+    "options": null,
+    "answer": 9,
+    "explanation": "1, 2, 3, 4, 6, 9, 12, 18 et 36 : il y a 9 diviseurs.",
+    "tags": [
+      "divisibilité"
+    ],
+    "skill": "divisors",
+    "stars": 2,
+    "ladder": [
+      "math-0023",
+      "math-0048"
+    ],
+    "hints": [
+      "Cherche les diviseurs par paires : 1 × 36, 2 × 18…",
+      "Continue avec 3, 4, 6 jusqu'à rencontrer un nombre déjà trouvé.",
+      "6 × 6 = 36 : 6 compte une seule fois."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0054",
+    "category": "math",
+    "topic": "digits",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Un nombre à deux chiffres, compris entre 30 et 40, est égal à 4 fois la somme de ses chiffres. Quel est ce nombre ?",
+    "options": null,
+    "answer": 36,
+    "explanation": "Le nombre s'écrit 3 suivi d'un chiffre b : 30 + b = 4 × (3 + b), soit 30 + b = 12 + 4b, donc 3b = 18 et b = 6. Le nombre est 36 (3 + 6 = 9 et 4 × 9 = 36).",
+    "tags": [
+      "Kangourou"
+    ],
+    "skill": "digits",
+    "stars": 2,
+    "ladder": [
+      "math-0022",
+      "math-0021"
+    ],
+    "hints": [
+      "Le nombre commence par le chiffre 3.",
+      "Teste les nombres de 30 à 39 un par un.",
+      "Calcule la somme des chiffres et multiplie par 4."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0055",
+    "category": "math",
+    "topic": "fractions",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Marie lit 1/5 de son livre le lundi et 1/4 le mardi. Il lui reste 33 pages à lire. Combien de pages a le livre ?",
+    "options": null,
+    "answer": 60,
+    "explanation": "1/5 + 1/4 = 4/20 + 5/20 = 9/20 du livre sont lus. Il reste 11/20, soit 33 pages. 1/20 correspond à 3 pages, donc le livre a 20 × 3 = 60 pages.",
+    "tags": [
+      "fractions"
+    ],
+    "skill": "fractions",
+    "stars": 2,
+    "ladder": [
+      "math-0030",
+      "math-0032"
+    ],
+    "hints": [
+      "Additionne les fractions lues avec un dénominateur commun (20).",
+      "Calcule la fraction qui reste.",
+      "11/20 du livre = 33 pages : combien de pages pour 1/20 ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0056",
+    "category": "math",
+    "topic": "counting",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien de carrés (de toutes les tailles) voit-on dans un quadrillage de 4 × 4 carreaux ?",
+    "options": null,
+    "answer": 30,
+    "explanation": "16 carrés de 1×1, 9 de 2×2, 4 de 3×3 et 1 de 4×4 : 16 + 9 + 4 + 1 = 30.",
+    "tags": [
+      "Kangourou"
+    ],
+    "skill": "counting",
+    "stars": 2,
+    "ladder": [
+      "math-0025",
+      "math-0039"
+    ],
+    "hints": [
+      "Ne compte pas seulement les petits carrés.",
+      "Compte les carrés de côté 1, puis de côté 2, 3 et 4.",
+      "Il y a 16 petits carrés. Combien de carrés de côté 2 ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0057",
+    "category": "math",
+    "topic": "divisors",
+    "difficulty": 9,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quel est le plus petit entier positif qui possède exactement 6 diviseurs ?",
+    "options": null,
+    "answer": 12,
+    "explanation": "12 a pour diviseurs 1, 2, 3, 4, 6, 12 : exactement 6. Tous les nombres plus petits en ont moins (6 en a 4, 8 en a 4, 10 en a 4).",
+    "tags": [
+      "divisibilité",
+      "Kangourou"
+    ],
+    "skill": "divisors",
+    "stars": 3,
+    "ladder": [
+      "math-0023",
+      "math-0053"
+    ],
+    "hints": [
+      "Compte les diviseurs des nombres un par un.",
+      "Les nombres premiers n'en ont que 2 : cherche plus grand.",
+      "Essaie 12."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0058",
+    "category": "math",
+    "topic": "counting",
+    "difficulty": 9,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Pour numéroter les pages d'un livre de 1 à 120, combien de chiffres faut-il écrire en tout ?",
+    "options": null,
+    "answer": 252,
+    "explanation": "Pages 1 à 9 : 9 chiffres. Pages 10 à 99 : 90 × 2 = 180 chiffres. Pages 100 à 120 : 21 × 3 = 63 chiffres. Total : 9 + 180 + 63 = 252.",
+    "tags": [
+      "Kangourou"
+    ],
+    "skill": "counting",
+    "stars": 3,
+    "ladder": [
+      "math-0021"
+    ],
+    "hints": [
+      "Sépare les pages à 1, 2 et 3 chiffres.",
+      "Combien de pages de 10 à 99 ? Combien de chiffres chacune ?",
+      "Il y a 21 pages de 100 à 120."
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0059",
+    "category": "math",
+    "topic": "sequences",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Calcule : 1 + 2 + 3 + … + 100.",
+    "options": null,
+    "answer": 5050,
+    "explanation": "On associe 1 + 100, 2 + 99, 3 + 98… Il y a 50 paires qui valent chacune 101 : 50 × 101 = 5 050.",
+    "tags": [
+      "astuce de Gauss"
+    ],
+    "skill": "sequences",
+    "stars": 2,
+    "ladder": [
+      "math-0006",
+      "math-0008"
+    ],
+    "hints": [
+      "Ne les additionne pas un par un !",
+      "Associe le premier et le dernier nombre.",
+      "1 + 100 = 101, 2 + 99 = 101… combien de paires ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "math-0060",
+    "category": "math",
+    "topic": "divisibility",
+    "difficulty": 10,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien d'entiers de 1 à 100 sont divisibles par 2 ou par 5 (ou par les deux) ?",
+    "options": null,
+    "answer": 60,
+    "explanation": "50 multiples de 2, plus 20 multiples de 5, moins 10 multiples de 10 (comptés deux fois) : 50 + 20 − 10 = 60.",
+    "tags": [
+      "Kangourou"
+    ],
+    "skill": "divisibility",
+    "stars": 3,
+    "ladder": [
+      "math-0021",
+      "math-0047"
+    ],
+    "hints": [
+      "Compte séparément les multiples de 2 et ceux de 5.",
+      "Certains nombres sont comptés deux fois : lesquels ?",
+      "Ceux qui sont multiples de 10 : retire-les une fois."
+    ],
+    "image": null
+  }
+]

@@ -1,0 +1,701 @@
+[
+  {
+    "id": "logic-0001",
+    "category": "logic",
+    "topic": "knights_liars",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Sur l'île des chevaliers et des menteurs, les chevaliers disent toujours la vérité et les menteurs mentent toujours. Mia est une menteuse. Elle dit : « Noa est un chevalier. » Que peut-on en conclure ?",
+    "options": [
+      "Noa est un chevalier",
+      "Noa est un menteur",
+      "On ne peut pas savoir",
+      "Mia dit la vérité"
+    ],
+    "answer": 1,
+    "explanation": "Mia ment toujours : sa phrase « Noa est un chevalier » est donc fausse. Noa est donc un menteur.",
+    "tags": [
+      "chevaliers et menteurs"
+    ],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Rappelle-toi : une menteuse dit toujours quelque chose de faux.",
+      "Si la phrase de Mia est fausse, que devient « Noa est un chevalier » ?",
+      "Le contraire de « chevalier », c'est « menteur »."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0002",
+    "category": "logic",
+    "topic": "knights_liars",
+    "difficulty": 4,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Un chevalier (qui dit toujours la vérité) peut dire : « Je suis un menteur. »",
+    "options": [
+      "Un chevalier dit toujours la vérité : il ne peut pas affirmer une chose fausse sur lui-même.",
+      "Un chevalier a le droit de mentir une fois par jour.",
+      "La phrase est vraie si les autres habitants sont d'accord."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "Si un chevalier disait « Je suis un menteur », il dirait une chose fausse, ce qui est impossible pour un chevalier. Aucun habitant ne peut dire cette phrase.",
+    "tags": [
+      "chevaliers et menteurs"
+    ],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [
+      "logic-0001"
+    ],
+    "hints": [
+      "Demande-toi : la phrase serait-elle vraie ou fausse dans la bouche d'un chevalier ?",
+      "Un chevalier est vraiment un chevalier. Dire « je suis un menteur » serait donc…",
+      "Essaie : si la phrase est vraie, il serait menteur. Mais alors il ne pourrait pas dire la vérité !"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0003",
+    "category": "logic",
+    "topic": "knights_liars",
+    "difficulty": 6,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Ana dit : « Ben est un menteur. » Ben dit : « Ana et moi sommes de la même sorte. » Remets le raisonnement dans l'ordre, en commençant par l'hypothèse « Ana est une chevalière ».",
+    "options": [
+      "Supposons qu'Ana soit une chevalière : sa phrase est vraie, donc Ben est un menteur.",
+      "Vérifions : la phrase de Ben est fausse (une chevalière et un menteur ne sont pas de la même sorte), ce qui est normal pour un menteur.",
+      "Supposons qu'Ana soit une menteuse : alors Ben est un chevalier et sa phrase devrait être vraie, mais elle est fausse. Contradiction !",
+      "Conclusion : Ana est une chevalière et Ben est un menteur."
+    ],
+    "answer": [
+      "Supposons qu'Ana soit une chevalière : sa phrase est vraie, donc Ben est un menteur.",
+      "Vérifions : la phrase de Ben est fausse (une chevalière et un menteur ne sont pas de la même sorte), ce qui est normal pour un menteur.",
+      "Supposons qu'Ana soit une menteuse : alors Ben est un chevalier et sa phrase devrait être vraie, mais elle est fausse. Contradiction !",
+      "Conclusion : Ana est une chevalière et Ben est un menteur."
+    ],
+    "explanation": "On teste d'abord une hypothèse et on vérifie qu'elle marche. Puis on teste l'autre hypothèse et on trouve une contradiction. Il ne reste qu'une solution : Ana chevalière, Ben menteur.",
+    "tags": [
+      "chevaliers et menteurs",
+      "raisonnement"
+    ],
+    "skill": "deduction",
+    "stars": 1,
+    "ladder": [
+      "logic-0001",
+      "logic-0002"
+    ],
+    "hints": [
+      "Une bonne démonstration commence par une hypothèse, puis la vérifie.",
+      "Après avoir testé « Ana chevalière », on teste l'autre cas. La conclusion arrive toujours en dernier.",
+      "Ordre : hypothèse 1 → vérification → hypothèse 2 (contradiction) → conclusion."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0004",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 1,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Trois amis font une course. Léa arrive avant Tom, et Tom arrive avant Inès. Quelle est la place de Tom ?",
+    "options": null,
+    "answer": 2,
+    "explanation": "Léa est 1re, Tom est 2e et Inès est 3e.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Range les trois enfants du premier au dernier.",
+      "Léa est avant Tom, Tom est avant Inès.",
+      "Tom est au milieu."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0005",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Ana est plus grande que Bob. Bob est plus grand que Cléo. Qui est la plus petite ?",
+    "options": [
+      "Cléo",
+      "Ana",
+      "Bob",
+      "On ne peut pas savoir"
+    ],
+    "answer": 0,
+    "explanation": "Ana > Bob > Cléo : Cléo est la plus petite.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Range-les de la plus grande à la plus petite.",
+      "Ana, puis Bob, puis… ?",
+      "Le dernier de la liste est le plus petit."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0006",
+    "category": "logic",
+    "topic": "counting",
+    "difficulty": 2,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Combien de tenues différentes peut-on faire avec 3 T-shirts et 2 pantalons (un T-shirt et un pantalon à chaque fois) ?",
+    "options": null,
+    "answer": 6,
+    "explanation": "Chaque pantalon peut aller avec les 3 T-shirts : 2 × 3 = 6 tenues.",
+    "tags": [],
+    "skill": "counting",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Prends un pantalon : avec combien de T-shirts peut-il aller ?",
+      "Fais la même chose avec le second pantalon.",
+      "3 + 3 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0007",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans une boîte, il y a des billes rouges et des billes bleues. Toutes les billes rouges sont grosses. Une bille est petite. De quelle couleur est-elle ?",
+    "options": [
+      "Rouge",
+      "Bleue",
+      "Verte",
+      "On ne peut pas savoir"
+    ],
+    "answer": 1,
+    "explanation": "Les billes rouges sont toutes grosses. Cette bille est petite : elle n'est donc pas rouge. Il n'y a que des billes rouges et bleues : elle est bleue.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Une bille petite peut-elle être rouge ?",
+      "Quelles couleurs existent dans la boîte ?",
+      "Si elle n'est pas rouge, elle est…"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0008",
+    "category": "logic",
+    "topic": "weighing",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Une balance est équilibrée avec 1 cube sur un plateau et 3 billes sur l'autre. Combien de cubes équilibrent 12 billes ?",
+    "options": null,
+    "answer": 4,
+    "explanation": "1 cube = 3 billes, donc 12 billes = 12 ÷ 3 = 4 cubes.",
+    "tags": [],
+    "skill": "weighing",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un cube pèse autant que 3 billes.",
+      "Combien de groupes de 3 billes y a-t-il dans 12 billes ?",
+      "12 ÷ 3 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0009",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 3,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Si tous les chats sont des animaux et que Mistigri est un chat, alors Mistigri est un animal.",
+    "options": [
+      "Il faut voir Mistigri pour le savoir.",
+      "On applique la règle générale « tous les chats sont des animaux » à Mistigri.",
+      "Un animal est toujours un chat."
+    ],
+    "answer": {
+      "value": true,
+      "reason": 1
+    },
+    "explanation": "La règle « tous les chats sont des animaux » s'applique à chaque chat, donc à Mistigri.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Mistigri est un cas particulier d'une règle générale.",
+      "Si c'est vrai pour tous les chats, c'est vrai pour lui.",
+      "La règle ne marche pas à l'envers (tous les animaux ne sont pas des chats)."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0010",
+    "category": "logic",
+    "topic": "reasoning",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Trois chats mangent 3 poissons en 3 minutes. Combien de minutes faut-il à 6 chats pour manger 6 poissons ?",
+    "options": null,
+    "answer": 3,
+    "explanation": "Chaque chat mange 1 poisson en 3 minutes. Avec 6 chats et 6 poissons, chacun mange 1 poisson : toujours 3 minutes.",
+    "tags": [],
+    "skill": "reasoning",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Combien de poissons mange un seul chat en 3 minutes ?",
+      "Chaque chat mange 1 poisson en 3 minutes.",
+      "Avec 6 chats et 6 poissons, chacun a un poisson."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0011",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 1,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Tom dit : « J'ai cinq doigts à chaque main. » Léo dit : « Une journée dure 30 heures. » Qui dit quelque chose de faux ?",
+    "options": [
+      "Léo",
+      "Tom",
+      "Les deux",
+      "Aucun"
+    ],
+    "answer": 0,
+    "explanation": "Une journée dure 24 heures : Léo se trompe. Tom dit une chose vraie en général.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Vérifie chaque phrase séparément.",
+      "Combien d'heures y a-t-il dans une journée ?",
+      "24, pas 30."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0012",
+    "category": "logic",
+    "topic": "tables",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Ali, Béa et Cyril ont chacun un animal différent : un chien, un chat, un poisson. Ali n'a ni chien ni poisson. Cyril n'a pas de chien. Qui a le poisson ?",
+    "options": [
+      "Ali",
+      "Béa",
+      "Cyril",
+      "On ne peut pas savoir"
+    ],
+    "answer": 2,
+    "explanation": "Ali n'a ni chien ni poisson : il a le chat. Cyril n'a pas de chien (ni de chat, pris par Ali) : il a le poisson. Béa a donc le chien.",
+    "tags": [],
+    "skill": "tables",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Commence par la personne qui a le plus d'informations.",
+      "Que reste-t-il pour Ali ?",
+      "Quand Ali a son animal, que reste-t-il à Cyril ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0013",
+    "category": "logic",
+    "topic": "ordering",
+    "difficulty": 1,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Range ces animaux du plus léger au plus lourd.",
+    "options": [
+      "Souris",
+      "Chat",
+      "Chien",
+      "Éléphant"
+    ],
+    "answer": [
+      "Souris",
+      "Chat",
+      "Chien",
+      "Éléphant"
+    ],
+    "explanation": "Une souris pèse quelques dizaines de grammes, un chat quelques kilos, un chien jusqu'à plusieurs dizaines de kilos, un éléphant plusieurs tonnes.",
+    "tags": [],
+    "skill": "ordering",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à des ordres de grandeur : grammes, kilos, tonnes.",
+      "L'éléphant est le plus lourd, la souris le plus léger.",
+      "Place maintenant le chat et le chien entre les deux."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0014",
+    "category": "logic",
+    "topic": "contradiction",
+    "difficulty": 3,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Touche la phrase qui contredit les autres.",
+    "options": [
+      "Sara a trois frères.",
+      "Elle est enfant unique.",
+      "Ses frères s'appellent Luc, Max et Noé.",
+      "Elle joue souvent avec eux."
+    ],
+    "answer": 1,
+    "explanation": "Sara ne peut pas avoir trois frères et être enfant unique en même temps.",
+    "tags": [],
+    "skill": "contradiction",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Cherche deux phrases qui ne peuvent pas être vraies ensemble.",
+      "Combien d'enfants a la famille de Sara ?",
+      "Quelle phrase dit qu'elle est seule ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0015",
+    "category": "logic",
+    "topic": "knights_liars",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Sur l'île des chevaliers (qui disent toujours la vérité) et des menteurs (qui mentent toujours), Léo dit : « Mia et moi, nous sommes tous les deux des menteurs. » Que sont Léo et Mia ?",
+    "options": [
+      "Léo est un menteur, Mia est une chevalière",
+      "Léo est un chevalier, Mia est une menteuse",
+      "Ils sont tous les deux chevaliers",
+      "Ils sont tous les deux menteurs"
+    ],
+    "answer": 0,
+    "explanation": "Si Léo était un chevalier, sa phrase serait vraie : il serait menteur, impossible. Donc Léo est un menteur, sa phrase est fausse : il n'est pas vrai que les deux sont menteurs. Mia est donc une chevalière.",
+    "tags": [
+      "chevaliers et menteurs"
+    ],
+    "skill": "knights_liars",
+    "stars": 0,
+    "ladder": [
+      "logic-0001",
+      "logic-0007"
+    ],
+    "hints": [
+      "Teste d'abord : et si Léo disait la vérité ?",
+      "Si Léo est chevalier, sa phrase dit qu'il est un menteur : contradiction.",
+      "Léo ment, donc la phrase est fausse. Que devient Mia ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0016",
+    "category": "logic",
+    "topic": "weighing",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "On a 9 pièces d'apparence identique, dont une est plus légère. Combien de pesées suffisent, au minimum, avec une balance à deux plateaux pour la trouver à coup sûr ?",
+    "options": null,
+    "answer": 2,
+    "explanation": "On pèse 3 pièces contre 3 : on sait dans quel groupe de 3 se trouve la pièce légère. Puis on pèse 1 contre 1 dans ce groupe : 2 pesées suffisent.",
+    "tags": [
+      "pesées"
+    ],
+    "skill": "weighing",
+    "stars": 0,
+    "ladder": [
+      "logic-0008"
+    ],
+    "hints": [
+      "Ne pèse pas les pièces une par une.",
+      "Divise les pièces en trois groupes de 3.",
+      "Après la première pesée, il reste 3 pièces à départager."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0017",
+    "category": "logic",
+    "topic": "deduction",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Si tous les élèves de la classe aiment les maths et que Zoé aime les maths, alors Zoé est dans la classe.",
+    "options": [
+      "On sait que tous les élèves de la classe aiment les maths, mais pas que seuls les élèves de la classe les aiment.",
+      "Zoé est forcément dans la classe.",
+      "Les maths ne plaisent qu'aux élèves."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "La règle ne s'inverse pas : « tous les élèves aiment les maths » n'interdit pas à d'autres personnes d'aimer les maths.",
+    "tags": [],
+    "skill": "deduction",
+    "stars": 1,
+    "ladder": [
+      "logic-0009",
+      "logic-0007"
+    ],
+    "hints": [
+      "Compare avec « tous les chats sont des animaux ».",
+      "Peut-on aimer les maths sans être dans la classe ?",
+      "Une règle vraie dans un sens ne l'est pas toujours dans l'autre."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0018",
+    "category": "logic",
+    "topic": "sudoku",
+    "difficulty": 4,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Mini-sudoku 4 × 4 (chiffres de 1 à 4, chacun une seule fois par ligne, par colonne et par bloc de 2 × 2). Ligne 1 : 1 2 3 4. Ligne 2 : 3 4 1 2. Ligne 3 : 2 1 ? _. Ligne 4 : 4 3 _ _. Quel chiffre remplace le « ? »",
+    "options": null,
+    "answer": 4,
+    "explanation": "Dans la colonne 3, il y a déjà 3 et 1 : il reste 2 ou 4. Dans la ligne 3, il y a déjà 2 et 1 : il reste 3 ou 4. Le seul chiffre possible est 4.",
+    "tags": [],
+    "skill": "sudoku",
+    "stars": 0,
+    "ladder": [
+      "logic-0011"
+    ],
+    "hints": [
+      "Regarde la colonne du « ? ».",
+      "Regarde aussi la ligne du « ? ».",
+      "Quel chiffre convient aux deux ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0019",
+    "category": "logic",
+    "topic": "river_crossing",
+    "difficulty": 6,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Un fermier doit traverser une rivière avec un loup, une chèvre et un chou. La barque ne porte que lui et un seul passager. Seul, le loup mange la chèvre, et la chèvre mange le chou. Remets les quatre premières étapes dans l'ordre.",
+    "options": [
+      "Il emmène la chèvre sur l'autre rive et la laisse.",
+      "Il revient seul, puis emmène le loup.",
+      "Il laisse le loup mais ramène la chèvre.",
+      "Il laisse la chèvre et emmène le chou."
+    ],
+    "answer": [
+      "Il emmène la chèvre sur l'autre rive et la laisse.",
+      "Il revient seul, puis emmène le loup.",
+      "Il laisse le loup mais ramène la chèvre.",
+      "Il laisse la chèvre et emmène le chou."
+    ],
+    "explanation": "On commence par la chèvre (qui est le problème avec les deux autres). Puis le loup traverse ; on ramène la chèvre pour ne pas la laisser avec le loup ; enfin le chou traverse. Il reste à revenir chercher la chèvre.",
+    "tags": [
+      "raisonnement"
+    ],
+    "skill": "river_crossing",
+    "stars": 1,
+    "ladder": [
+      "logic-0013",
+      "logic-0011"
+    ],
+    "hints": [
+      "Qui ne doit jamais rester seul avec qui ?",
+      "Il faut commencer par la chèvre.",
+      "Quand le loup est arrivé, la chèvre ne doit pas rester avec lui."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0020",
+    "category": "logic",
+    "topic": "combinatorics",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Dans un tournoi, 5 équipes jouent chacune une fois contre chacune des autres. Combien de matchs sont joués au total ?",
+    "options": null,
+    "answer": 10,
+    "explanation": "Chaque équipe joue 4 matchs, soit 5 × 4 = 20, mais chaque match est compté deux fois : 20 ÷ 2 = 10 matchs.",
+    "tags": [],
+    "skill": "combinatorics",
+    "stars": 0,
+    "ladder": [
+      "logic-0006"
+    ],
+    "hints": [
+      "Combien de matchs joue une équipe ?",
+      "Chaque match concerne 2 équipes.",
+      "Divise par 2 pour ne pas compter les matchs deux fois."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0021",
+    "category": "logic",
+    "topic": "knights_liars",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Sur l'île des chevaliers et des menteurs, trois habitants parlent. A dit : « Il y a exactement un menteur parmi nous. » B dit : « Il y a exactement deux menteurs parmi nous. » C dit : « Nous sommes tous des menteurs. » Combien y a-t-il de menteurs ?",
+    "options": null,
+    "answer": 2,
+    "explanation": "Les trois phrases s'excluent : au plus une est vraie. Si A disait vrai, il y aurait 1 menteur, mais B et C mentiraient aussi (2 menteurs) : impossible. Si C disait vrai, il serait menteur : impossible. Reste B : il y a 2 menteurs (A et C), ce qui est cohérent.",
+    "tags": [
+      "chevaliers et menteurs"
+    ],
+    "skill": "knights_liars",
+    "stars": 2,
+    "ladder": [
+      "logic-0002",
+      "logic-0015"
+    ],
+    "hints": [
+      "Les trois phrases ne peuvent pas être vraies en même temps.",
+      "Teste chaque habitant : et s'il disait la vérité ?",
+      "Un seul cas ne donne pas de contradiction."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0022",
+    "category": "logic",
+    "topic": "weighing",
+    "difficulty": 7,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "On a 27 pièces d'apparence identique, dont une est plus légère. Combien de pesées suffisent, au minimum, avec une balance à deux plateaux ?",
+    "options": null,
+    "answer": 3,
+    "explanation": "27 → 9 → 3 → 1 : chaque pesée divise le nombre de pièces suspectes par 3. Il faut donc 3 pesées.",
+    "tags": [
+      "pesées"
+    ],
+    "skill": "weighing",
+    "stars": 2,
+    "ladder": [
+      "logic-0016",
+      "logic-0008"
+    ],
+    "hints": [
+      "Chaque pesée peut donner 3 résultats.",
+      "Une pesée divise les pièces en 3 groupes.",
+      "27 → 9 → 3 → 1 : combien d'étapes ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0023",
+    "category": "logic",
+    "topic": "tables",
+    "difficulty": 7,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quatre élèves, Ali, Bao, Cléo et Dina, font chacun un sport différent : foot, judo, danse ou natation. Ali ne fait ni foot ni natation. Bao ne fait ni judo ni natation, et il n'aime pas le foot. Cléo ne fait pas de danse. Dina ne fait ni foot ni danse. Qui fait du foot ?",
+    "options": [
+      "Ali",
+      "Cléo",
+      "Bao",
+      "Dina"
+    ],
+    "answer": 1,
+    "explanation": "Bao n'a ni judo, ni natation, ni foot : il fait de la danse. Ali (ni foot, ni natation, danse prise) fait du judo. Dina (ni foot, ni danse, judo pris) fait de la natation. Il reste le foot pour Cléo.",
+    "tags": [
+      "tableau logique"
+    ],
+    "skill": "tables",
+    "stars": 2,
+    "ladder": [
+      "logic-0012",
+      "logic-0004"
+    ],
+    "hints": [
+      "Fais un tableau avec les 4 élèves et les 4 sports.",
+      "Commence par celui qui a le moins de choix : Bao.",
+      "Barre les sports pris à mesure que tu avances."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0024",
+    "category": "logic",
+    "topic": "invariants",
+    "difficulty": 8,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Sur un tableau, on écrit les nombres de 1 à 10. À chaque étape, on efface deux nombres a et b et on écrit à la place leur somme a + b. On continue jusqu'à ce qu'il ne reste qu'un seul nombre. Quel est ce dernier nombre ?",
+    "options": null,
+    "answer": 55,
+    "explanation": "Remplacer a et b par a + b ne change pas la somme de tous les nombres. La somme de départ est 1 + 2 + … + 10 = 55 : c'est le dernier nombre.",
+    "tags": [
+      "invariant"
+    ],
+    "skill": "invariants",
+    "stars": 2,
+    "ladder": [
+      "logic-0004",
+      "logic-0006"
+    ],
+    "hints": [
+      "Que se passe-t-il pour la somme de tous les nombres après une étape ?",
+      "La somme ne change jamais.",
+      "Calcule 1 + 2 + … + 10."
+    ],
+    "image": null
+  },
+  {
+    "id": "logic-0025",
+    "category": "logic",
+    "topic": "river_crossing",
+    "difficulty": 9,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Quatre amis doivent traverser un pont de nuit avec une seule lampe. Ils mettent respectivement 1, 2, 5 et 10 minutes. Le pont porte au plus 2 personnes à la fois, qui avancent à la vitesse du plus lent. Quel est le temps minimum, en minutes, pour que tous traversent ?",
+    "options": null,
+    "answer": 17,
+    "explanation": "Les deux plus rapides (1 et 2) passent : 2 min. Le 1 revient : 1 min. Les deux plus lents (5 et 10) passent : 10 min. Le 2 revient : 2 min. Les deux derniers (1 et 2) passent : 2 min. Total : 2 + 1 + 10 + 2 + 2 = 17 minutes.",
+    "tags": [
+      "raisonnement"
+    ],
+    "skill": "river_crossing",
+    "stars": 3,
+    "ladder": [
+      "logic-0019",
+      "logic-0016"
+    ],
+    "hints": [
+      "Les plus lents ne doivent pas traverser séparément.",
+      "Fais passer 5 et 10 ensemble.",
+      "Il faut ramener la lampe avec les plus rapides."
+    ],
+    "image": null
+  }
+]
