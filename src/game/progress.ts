@@ -1,8 +1,8 @@
 import { tList } from '../i18n'
 import type { SaveState } from '../types'
 
-/** Seuils d'XP pour chaque grade (ranks dans fr.json). Les niveaux 1–4 s'obtiennent environ en une semaine. */
-export const LEVEL_XP = [0, 600, 2000, 4500, 9000, 16000, 26000]
+/** Seuils d'XP pour chaque grade (ranks dans fr.json). Les niveaux 1–4 s'obtiennent environ en une semaine ; le niveau 10 ouvre la salle 2 de l'Atelier. */
+export const LEVEL_XP = [0, 600, 2000, 4500, 9000, 16000, 26000, 40000, 60000, 85000]
 
 export function levelOf(xp: number): number {
   let level = 0

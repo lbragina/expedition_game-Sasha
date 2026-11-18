@@ -134,7 +134,10 @@
     "Navigateur",
     "Stratège",
     "Maître de la logique",
-    "Grand Explorateur"
+    "Grand Explorateur",
+    "Capitaine",
+    "Maître cartographe",
+    "Légende de l'Expédition"
   ],
   "map": {
     "title": "Carte du monde",
@@ -144,14 +147,70 @@
     "fog_title": "Zone de brouillard",
     "fog_desc": "Une tâche difficile attend. Les prochaines expéditions te donneront des étapes d'approche pour la dissiper.",
     "unknown_country": "Pays inconnu",
-    "unknown_desc": "Pas encore découvert. Chaque expédition ouvre une nouvelle destination."
+    "unknown_desc": "Pas encore découvert. Chaque expédition ouvre une nouvelle destination.",
+    "chest_found": "Coffre trouvé ! +1 Boussole 🧭",
+    "goal_badge": "Pays de ton objectif : celui que tu rêves de découvrir pour de vrai !",
+    "card_log": "Journal du capitaine",
+    "card_visit": "Découvert le {{date}} · {{correct}} réussies sur {{total}}",
+    "card_fact": "Le savais-tu ?"
   },
   "base": {
     "workshop_locked": "Atelier ??? (Verrouillé)",
     "workshop_hint": "Termine l'échauffement pour débloquer la première salle !",
     "hall_of_fame": "Salle des Trophées",
-    "hall_empty": "Tes trophées apparaîtront ici (bientôt).",
-    "inventory": "Inventaire"
+    "hall_empty": "Résous une tâche étoilée (★, ★★ ou ★★★) pour gagner ton premier trophée !",
+    "inventory": "Inventaire",
+    "my_island": "Mon île",
+    "zoom_in": "Zoom avant",
+    "zoom_out": "Zoom arrière",
+    "explorer_note": "Voici ton explorateur ! Dessine-le dans l'Atelier : il apparaît ici, dans le combo et sur la rampe.",
+    "select_hint": "Touche une case pour la choisir, puis confirme ton action.",
+    "cell": "Case {{cell}}",
+    "free_ground": "Terrain libre",
+    "pick_tool": "Choisis un bloc ou une construction dans la boîte ci-dessous.",
+    "place": "Poser : {{name}}",
+    "demolish": "Démolir",
+    "move": "Déplacer",
+    "move_here": "Déplacer ici",
+    "moving": "Touche une case vide pour déplacer : {{name}} (c'est gratuit).",
+    "moving_pick": "Déplacement en cours : choisis d'abord une case vide.",
+    "open_observatory": "Ouvrir l'Observatoire",
+    "open_hall": "Voir les trophées",
+    "confirm_demolish": "Démolir {{name}} ? Tu récupères la moitié des ressources.",
+    "refunded": "Ressources récupérées : {{res}}",
+    "chest_found": "Coffre trouvé ! +1 Boussole 🧭",
+    "err_occupied": "Cette case est déjà occupée.",
+    "err_poor": "Pas assez de ressources pour l'instant.",
+    "err_unique": "Tu as déjà cette construction : déplace-la ou démolis-la.",
+    "err_noart": "Dessine d'abord ton bloc dans l'Atelier (salle 3).",
+    "tab_blocks": "Blocs",
+    "tab_buildings": "Constructions",
+    "built": "Déjà posé",
+    "hall_count": "{{count}} trophée(s) gagné(s) avec des tâches étoilées.",
+    "hall_locked": "Tu as déjà {{count}} trophée(s) ! Construis la Salle des Trophées pour les exposer.",
+    "hall_build_hint": "Résous une tâche étoilée (★) pour gagner ton premier trophée, puis construis la Salle des Trophées.",
+    "items": {
+      "grass": "Herbe",
+      "wood": "Bois",
+      "stone": "Pierre",
+      "iron": "Bloc de fer",
+      "gold": "Bloc d'or",
+      "diamond": "Bloc de diamant",
+      "water": "Eau",
+      "custom": "Mon bloc",
+      "house": "Maison",
+      "tower": "Tour",
+      "ramp": "Rampe",
+      "observatory": "Observatoire",
+      "hall": "Salle des Trophées"
+    },
+    "desc": {
+      "house": "La maison de l'explorateur : ton camp de base.",
+      "tower": "Une tour de guet pour surveiller l'horizon.",
+      "ramp": "Une rampe de skate ! De temps en temps, ton explorateur y fait des tricks.",
+      "observatory": "Une fois par jour, une question d'astronomie. Bonne réponse = 1 diamant.",
+      "hall": "Tous tes trophées (★, ★★, ★★★) sont exposés ici."
+    }
   },
   "backup": {
     "title": "Protège ta base !",
@@ -200,7 +259,14 @@
     "difficulty_offset": "Ajuster la difficulté",
     "change_pin": "Changer le code PIN (4 chiffres)",
     "prompt_no_weak": "- Aucune faiblesse repérée pour l'instant : propose une variété de thèmes.",
-    "prompt_template": "Tu es un auteur de problèmes pour un jeu éducatif destiné à Sasha, 12 ans, élève de 6e dans une école française (programme CM2 à 5e). Le jeu s'appelle « L'Expédition ».\n\nGénère {{count}} nouvelles tâches en français, au format JSON strict : une liste [ ... ] d'objets, sans texte autour.\n\nNiveau actuel du joueur par matière (échelle 1 à 10) :\n{{levels}}\n\nThèmes à renforcer en priorité :\n{{weak}}\n\nRègles :\n- Catégories : math, logic, iq, critical, world. Types : number, choice, boolean_explain, order, highlight.\n- number : answer est un nombre. choice : exactement 4 options, answer = index (0 à 3). boolean_explain : options = 2 ou 3 raisons, answer = {\"value\": true/false, \"reason\": index de la bonne raison}. order : options = 4 cartes DANS LE BON ORDRE (le jeu les mélange), answer = la même liste. highlight : options = les phrases du texte, answer = index de la phrase demandée.\n- Une seule bonne réponse possible, pas d'ambiguïté. Une explication courte et bienveillante.\n- Pour difficulty ≥ 4 : 3 niveaux d'aide dans hints (Indice, Méthode, Premier pas, sans donner la réponse) et ladder = 1 à 2 ids de tâches plus faciles du même thème (ids existants ou de ce lot).\n- Les tâches avec stars 1 (difficulté 5-6), 2 (7-8) ou 3 (9-10) sont des défis plus ambitieux.\n- Ids au format catégorie-numéro à 4 chiffres, sans doublon. Ids déjà utilisés :\n{{ids}}\n- Pas de contenu publicitaire, pas de marques, pas de personnages protégés.\n\nSchéma d'une tâche :\n{{schema}}"
+    "prompt_template": "Tu es un auteur de problèmes pour un jeu éducatif destiné à Sasha, 12 ans, élève de 6e dans une école française (programme CM2 à 5e). Le jeu s'appelle « L'Expédition ».\n\nGénère {{count}} nouvelles tâches en français, au format JSON strict : une liste [ ... ] d'objets, sans texte autour.\n\nNiveau actuel du joueur par matière (échelle 1 à 10) :\n{{levels}}\n\nThèmes à renforcer en priorité :\n{{weak}}\n\nRègles :\n- Catégories : math, logic, iq, critical, world. Types : number, choice, boolean_explain, order, highlight.\n- number : answer est un nombre. choice : exactement 4 options, answer = index (0 à 3). boolean_explain : options = 2 ou 3 raisons, answer = {\"value\": true/false, \"reason\": index de la bonne raison}. order : options = 4 cartes DANS LE BON ORDRE (le jeu les mélange), answer = la même liste. highlight : options = les phrases du texte, answer = index de la phrase demandée.\n- Une seule bonne réponse possible, pas d'ambiguïté. Une explication courte et bienveillante.\n- Pour difficulty ≥ 4 : 3 niveaux d'aide dans hints (Indice, Méthode, Premier pas, sans donner la réponse) et ladder = 1 à 2 ids de tâches plus faciles du même thème (ids existants ou de ce lot).\n- Les tâches avec stars 1 (difficulté 5-6), 2 (7-8) ou 3 (9-10) sont des défis plus ambitieux.\n- Ids au format catégorie-numéro à 4 chiffres, sans doublon. Ids déjà utilisés :\n{{ids}}\n- Pas de contenu publicitaire, pas de marques, pas de personnages protégés.\n\nSchéma d'une tâche :\n{{schema}}",
+    "test_title": "Test de l'Atelier",
+    "test_help": "Pour vérifier les éditeurs sans attendre le niveau 10. Les vraies conditions de Sasha ne changent pas : en désactivant, chaque salle redevient verrouillée tant qu'elle n'est pas méritée.",
+    "test_real_open": "méritée",
+    "test_real_locked": "pas encore méritée",
+    "test_unlock_on": "Ouvrir toutes les salles (test)",
+    "test_unlock_off": "Refermer les salles de test",
+    "test_resources": "Ajouter 10 de chaque ressource (test)"
   },
   "countries": {
     "japan": {
@@ -243,5 +309,206 @@
       "fact": "En Grèce, au Ve siècle avant J.-C., Athènes a inventé la démocratie : les citoyens votaient eux-mêmes les lois.",
       "log": "Grèce : j'ai skaté autour du Parthénon, à Athènes, berceau de la démocratie. J'ai construit une colonne en pierre pour ma base."
     }
+  },
+  "workshop": {
+    "title": "Atelier",
+    "room": "Salle {{n}}",
+    "enter": "Entrer",
+    "warmup_note": "Les salles s'ouvrent une à une : échauffement terminé, niveau 10, puis ton premier défi ★★★.",
+    "room1_name": "Atelier des skins",
+    "room1_desc": "Dessine ton explorateur en pixel art (16×16).",
+    "room1_unlock": "S'ouvre à la fin de l'échauffement (10 expéditions et 85 % de réussite).",
+    "room1_hint": "Dessine ton personnage. Il apparaîtra sur ta base, dans l'animation du combo et sur la rampe de skate.",
+    "room1_celebrate": "L'échauffement est terminé ! Tu peux maintenant dessiner ton propre explorateur.",
+    "room2_name": "Atelier des decks",
+    "room2_desc": "Décore ta planche de skate : elle apparaît dans les combos.",
+    "room2_unlock": "S'ouvre au niveau 10.",
+    "room2_hint": "Colorie ta planche de skate. Elle fera des flips dans l'animation du combo et sur la rampe.",
+    "room2_celebrate": "Niveau 10 atteint ! Tu peux maintenant décorer ta planche de skate.",
+    "room3_name": "Atelier des blocs",
+    "room3_desc": "Invente un bloc unique pour construire ta base.",
+    "room3_unlock": "S'ouvre quand tu résous ta première tâche ★★★.",
+    "room3_hint": "Crée ton bloc unique et donne-lui un nom. Tu pourras ensuite construire avec, dans la boîte à blocs.",
+    "room3_celebrate": "Une tâche ★★★ résolue : bravo ! Invente maintenant ton propre bloc de construction.",
+    "block_name": "Nom du bloc",
+    "block_name_placeholder": "Mon bloc",
+    "celebrate_title": "Nouvelle salle débloquée !",
+    "celebrate_enter": "Entrer dans la salle"
+  },
+  "editor": {
+    "palette": "Palette de couleurs",
+    "tool_pencil": "Crayon",
+    "tool_eraser": "Gomme",
+    "tool_fill": "Remplir",
+    "undo": "Annuler",
+    "clear": "Tout effacer",
+    "clear_confirm": "Effacer tout le dessin ?",
+    "preview": "Aperçu"
+  },
+  "observatory": {
+    "title": "Observatoire",
+    "intro": "Question du jour : une seule tentative. Bonne réponse = 1 diamant 💎",
+    "correct": "Bravo, tu gagnes 1 diamant ! 💎",
+    "wrong": "Pas cette fois, mais tu sais maintenant. Nouvelle question demain !",
+    "done_today": "Tu as déjà observé le ciel aujourd'hui. Reviens demain pour une nouvelle question !",
+    "none": "Pas de question disponible."
+  },
+  "astronomy": {
+    "questions": [
+      {
+        "q": "Quelle planète est la plus proche du Soleil ?",
+        "options": [
+          "Mercure",
+          "Vénus",
+          "Mars",
+          "Jupiter"
+        ],
+        "answer": 0,
+        "explanation": "Mercure tourne autour du Soleil en seulement 88 jours."
+      },
+      {
+        "q": "Combien de planètes compte le système solaire ?",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "Il y en a 8, de Mercure à Neptune. Pluton est classée planète naine depuis 2006."
+      },
+      {
+        "q": "Quelle est la plus grande planète du système solaire ?",
+        "options": [
+          "Saturne",
+          "Jupiter",
+          "Neptune",
+          "La Terre"
+        ],
+        "answer": 1,
+        "explanation": "Jupiter est si grande que toutes les autres planètes tiendraient dedans !"
+      },
+      {
+        "q": "Quelle est l'étoile la plus proche de la Terre ?",
+        "options": [
+          "Sirius",
+          "Proxima du Centaure",
+          "Le Soleil",
+          "L'étoile Polaire"
+        ],
+        "answer": 2,
+        "explanation": "Le Soleil est une étoile, à environ 150 millions de km. Les autres étoiles sont des milliers de fois plus loin."
+      },
+      {
+        "q": "Quelle planète est célèbre pour ses anneaux ?",
+        "options": [
+          "Mars",
+          "Mercure",
+          "Saturne",
+          "Vénus"
+        ],
+        "answer": 2,
+        "explanation": "Les anneaux de Saturne sont faits de glace et de roches."
+      },
+      {
+        "q": "Combien de temps met la Terre pour faire le tour du Soleil ?",
+        "options": [
+          "24 heures",
+          "30 jours",
+          "Environ 365 jours",
+          "10 ans"
+        ],
+        "answer": 2,
+        "explanation": "Un tour complet autour du Soleil, c'est une année : environ 365 jours."
+      },
+      {
+        "q": "Quel astre tourne autour de la Terre ?",
+        "options": [
+          "La Lune",
+          "Mars",
+          "Vénus",
+          "Le Soleil"
+        ],
+        "answer": 0,
+        "explanation": "La Lune est le satellite naturel de la Terre. Elle met environ 27 jours pour en faire le tour."
+      },
+      {
+        "q": "Une année-lumière, c'est…",
+        "options": [
+          "Une durée d'un an",
+          "La distance parcourue par la lumière en un an",
+          "La vitesse de la lumière",
+          "Une étoile très brillante"
+        ],
+        "answer": 1,
+        "explanation": "C'est une distance : environ 9 460 milliards de kilomètres !"
+      },
+      {
+        "q": "Quelle planète est surnommée la planète rouge ?",
+        "options": [
+          "Jupiter",
+          "Vénus",
+          "Mars",
+          "Neptune"
+        ],
+        "answer": 2,
+        "explanation": "Le sol de Mars contient de l'oxyde de fer, c'est-à-dire de la rouille, qui lui donne sa couleur."
+      },
+      {
+        "q": "Qui a été le premier humain à marcher sur la Lune, en 1969 ?",
+        "options": [
+          "Neil Armstrong",
+          "Youri Gagarine",
+          "Thomas Pesquet",
+          "Galilée"
+        ],
+        "answer": 0,
+        "explanation": "Neil Armstrong, pendant la mission Apollo 11. Youri Gagarine fut le premier humain dans l'espace, en 1961."
+      },
+      {
+        "q": "Comment s'appelle la galaxie où se trouve notre système solaire ?",
+        "options": [
+          "Andromède",
+          "La Voie lactée",
+          "Orion",
+          "La Grande Ourse"
+        ],
+        "answer": 1,
+        "explanation": "Notre galaxie, la Voie lactée, contient des centaines de milliards d'étoiles."
+      },
+      {
+        "q": "Pourquoi voit-on des phases de la Lune (croissant, pleine lune…) ?",
+        "options": [
+          "L'ombre de la Terre la cache en partie",
+          "On voit une partie différente de sa face éclairée par le Soleil",
+          "La Lune change de taille",
+          "Des nuages la recouvrent"
+        ],
+        "answer": 1,
+        "explanation": "La Lune est toujours à moitié éclairée. Selon sa position autour de la Terre, on en voit plus ou moins."
+      },
+      {
+        "q": "Quelle planète a un jour plus long que son année ?",
+        "options": [
+          "Vénus",
+          "Mars",
+          "Jupiter",
+          "La Terre"
+        ],
+        "answer": 0,
+        "explanation": "Vénus tourne très lentement sur elle-même : un jour dure environ 243 jours terrestres, plus que son année (225 jours)."
+      },
+      {
+        "q": "Où se trouve Olympus Mons, le plus haut volcan connu du système solaire ?",
+        "options": [
+          "Sur la Lune",
+          "Sur Mars",
+          "Sur Vénus",
+          "Sur Jupiter"
+        ],
+        "answer": 1,
+        "explanation": "Olympus Mons, sur Mars, mesure environ 22 km de haut : presque trois fois l'Everest !"
+      }
+    ]
   }
 }

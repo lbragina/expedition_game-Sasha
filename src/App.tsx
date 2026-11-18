@@ -7,6 +7,7 @@ import MapTab from './components/MapTab'
 import ParentTab from './components/ParentTab'
 import { setSoundEnabled, sfx } from './game/sound'
 import { getState, useGame } from './game/store'
+import { pendingCelebrations } from './game/workshop'
 import WelcomeModal, { shouldShowWelcome } from './components/WelcomeModal'
 import { t } from './i18n'
 
@@ -48,7 +49,12 @@ export default function App() {
               tab === x.id ? 'bg-panel2 text-gold' : 'text-mute'
             }`}
           >
-            <span className="text-xl leading-6">{x.icon}</span>
+            <span className="relative text-xl leading-6">
+              {x.icon}
+              {x.id === 'base' && tab !== 'base' && pendingCelebrations(state).length > 0 && (
+                <span className="absolute -right-1.5 -top-0.5 h-2.5 w-2.5 rounded-full border border-black bg-danger" />
+              )}
+            </span>
             {t(`nav.${x.id}`)}
           </button>
         ))}

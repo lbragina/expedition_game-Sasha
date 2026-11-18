@@ -4,10 +4,12 @@ export interface CountryInfo {
   emoji: string
   lon: number
   lat: number
+  /** pays lié à un objectif de Sasha (carte : badge « ton objectif ») */
+  goal?: boolean
 }
 
 export const COUNTRIES: CountryInfo[] = [
-  { id: 'japan', emoji: '🗻', lon: 138, lat: 36 },
+  { id: 'japan', emoji: '🗻', lon: 138, lat: 36, goal: true },
   { id: 'egypt', emoji: '🔺', lon: 30, lat: 27 },
   { id: 'brazil', emoji: '🌴', lon: -52, lat: -12 },
   { id: 'iceland', emoji: '🌋', lon: -19, lat: 65 },

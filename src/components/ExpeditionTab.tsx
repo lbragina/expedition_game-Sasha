@@ -20,6 +20,7 @@ import { backupDue, markPrompted } from '../utils/backup'
 import AnswerInput from './AnswerInput'
 import PinModal from './PinModal'
 import Scratchpad from './Scratchpad'
+import { SkaterSprite } from './Sprites'
 
 const RES_ICON: Record<string, string> = { wood: '🪵', stone: '🪨', iron: '⛓️', gold: '🥇', diamond: '💎' }
 
@@ -261,7 +262,7 @@ function Feedback({ q, outcome }: { q: Question; outcome: Outcome }) {
 
       {outcome.trick && (
         <div className="animate-trick text-center">
-          <div className="inline-block animate-flip text-4xl">🛹</div>
+          <SkaterSprite size={64} />
           <div className="font-pixel text-2xl font-bold text-gold">{outcome.trick}</div>
           <div className="text-sm font-bold text-gold">{t('combo.multiplier', { count: outcome.multiplier })}</div>
         </div>

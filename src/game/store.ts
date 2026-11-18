@@ -1,5 +1,7 @@
 import { useSyncExternalStore } from 'react'
 import { CATEGORIES, RESOURCE_KEYS, type Category, type SaveState } from '../types'
+import { BUILT_IN_QUESTIONS } from '../data/questions'
+import { defaultBase, defaultWorkshop, sanitizeBase, sanitizeWorkshop } from './baseData'
 import { START_RATING } from './elo'
 import { setSoundEnabled } from './sound'
 
@@ -40,6 +42,8 @@ export function defaultState(): SaveState {
     settings: { sound: true },
     parent: { pin: '1234', warmup: 'auto', offset: 0 },
     customQuestions: [],
+    base: defaultBase(),
+    workshop: defaultWorkshop(),
     createdAt: Date.now(),
   }
 }
@@ -49,7 +53,7 @@ export function normalizeState(raw: unknown): SaveState {
   const base = defaultState()
   if (!raw || typeof raw !== 'object') return base
   const r = raw as Partial<SaveState>
-  return {
+  const out: SaveState = {
     ...base,
     ...r,
     resources: { ...base.resources, ...(r.resources ?? {}) },
@@ -59,8 +63,25 @@ export function normalizeState(raw: unknown): SaveState {
     backup: { ...base.backup, ...(r.backup ?? {}) },
     settings: { ...base.settings, ...(r.settings ?? {}) },
     parent: { ...base.parent, ...(r.parent ?? {}) },
+    base: sanitizeBase(r.base),
+    workshop: sanitizeWorkshop(r.workshop),
     version: 1,
   }
+  // Sauvegarde de l'Étape 1 (sans base) : on retrouve les trophées déjà gagnés dans l'historique.
+  if (!(raw as { base?: unknown }).base) backfillTrophies(out)
+  return out
+}
+
+function backfillTrophies(s: SaveState) {
+  const stars = new Map<string, number>()
+  BUILT_IN_QUESTIONS.forEach((q) => stars.set(q.id, q.stars))
+  s.customQuestions.forEach((q) => stars.set(q.id, q.stars))
+  s.history.forEach((h) => {
+    const n = Math.min(3, stars.get(h.qid) ?? 0)
+    if (!h.correct || h.mentor || n < 1) return
+    const prev = s.base.trophies[h.qid]
+    if (!prev || prev.stars < n) s.base.trophies[h.qid] = { stars: n, category: h.category, date: h.date }
+  })
 }
 
 function load(): SaveState {

@@ -1,17 +1,26 @@
-import { useRef, useState } from 'react'
-import { getMode } from '../game/progress'
+import { useEffect, useRef, useState } from 'react'
+import { rollChests } from '../game/base'
 import { useGame } from '../game/store'
 import { t } from '../i18n'
 import { RESOURCE_KEYS } from '../types'
 import { importBackup } from '../utils/backup'
+import BaseBuilder from './BaseBuilder'
+import { HallCard } from './BaseBuilder'
+import Workshop from './Workshop'
 
 const ICON: Record<string, string> = { wood: '🪵', stone: '🪨', iron: '⛓️', gold: '🥇', diamond: '💎' }
 
 export default function BaseTab({ onBackup }: { onBackup: () => void }) {
   const s = useGame()
-  const mode = getMode(s)
   const fileRef = useRef<HTMLInputElement>(null)
   const [msg, setMsg] = useState<string | null>(null)
+
+  // de temps en temps un petit coffre apparaît sur la base
+  useEffect(() => {
+    rollChests()
+    const id = setInterval(rollChests, 60_000)
+    return () => clearInterval(id)
+  }, [])
 
   return (
     <div className="space-y-3 pt-3">
@@ -34,20 +43,11 @@ export default function BaseTab({ onBackup }: { onBackup: () => void }) {
         </div>
       </div>
 
-      <div className="card space-y-2 opacity-90">
-        <h3 className="font-bold">🔒 {t('base.workshop_locked')}</h3>
-        <p className="text-sm text-mute">{t('base.workshop_hint')}</p>
-        {mode.warmup && (
-          <div className="h-3 overflow-hidden rounded border-2 border-black bg-night">
-            <div className="h-full bg-gold" style={{ width: `${Math.min(100, (s.daysPlayed.length / 7) * 100)}%` }} />
-          </div>
-        )}
-      </div>
+      <BaseBuilder />
 
-      <div className="card space-y-1">
-        <h3 className="font-bold text-gold">🏆 {t('base.hall_of_fame')}</h3>
-        <p className="text-sm text-mute">{t('base.hall_empty')}</p>
-      </div>
+      <Workshop />
+
+      <HallCard />
 
       <div className="card space-y-2">
         <h3 className="font-bold text-diamond">🛡️ {t('backup.title')}</h3>

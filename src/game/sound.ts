@@ -81,6 +81,13 @@ export const sfx = {
   chest() {
     ;[NOTE.E5, NOTE.G5, NOTE.E6].forEach((f, i) => tone(f, i * 0.07, 0.1, 'triangle', 0.08))
   },
+  build() {
+    tone(NOTE.C4, 0, 0.05, 'square', 0.06)
+    tone(NOTE.G5, 0.05, 0.08, 'square', 0.05)
+  },
+  demolish() {
+    tone(NOTE.A4, 0, 0.1, 'sawtooth', 0.05, 120)
+  },
   hint() {
     tone(NOTE.G5, 0, 0.06, 'triangle', 0.06)
     tone(NOTE.C6, 0.07, 0.1, 'triangle', 0.06)

@@ -179,6 +179,13 @@ export function submitAnswer(q: Question, draft: Draft, confidence: Confidence) 
     d.compass += compassGained
     s.compass += compassGained
 
+    // trophée pour chaque tâche étoilée réussie (sans l'aide du mentor)
+    if (correct && stars > 0 && !mentor) {
+      const n = Math.min(3, stars)
+      const prev = d.base.trophies[q.id]
+      if (!prev || prev.stars < n) d.base.trophies[q.id] = { stars: n, category: q.category, date: s.date }
+    }
+
     const given = describeGiven(q, draft)
     d.history.push({
       qid: q.id,

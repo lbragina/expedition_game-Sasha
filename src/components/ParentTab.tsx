@@ -6,6 +6,7 @@ import { getMode } from '../game/progress'
 import { buildPrompt } from '../game/prompt'
 import { normalizeQuestion, questionMap, validateQuestion } from '../game/questions'
 import { update, useGame } from '../game/store'
+import { ROOMS, giveTestResources, roomReallyOpen, setParentUnlock } from '../game/workshop'
 import { t } from '../i18n'
 import { CATEGORIES } from '../types'
 import PinModal from './PinModal'
@@ -211,6 +212,26 @@ function ParentPanel() {
             </button>
           </div>
         </label>
+      </div>
+
+      {/* test de l'Atelier */}
+      <div className="card space-y-2">
+        <h3 className="font-bold text-diamond">🧪 {t('parent.test_title')}</h3>
+        <p className="text-sm text-mute">{t('parent.test_help')}</p>
+        <ul className="space-y-1 text-sm">
+          {ROOMS.map((r) => (
+            <li key={r}>
+              {roomReallyOpen(s, r) ? '✅' : '🔒'} {t('workshop.room', { n: r })} · {t(`workshop.room${r}_name`)}{' '}
+              <span className="text-xs text-mute">({roomReallyOpen(s, r) ? t('parent.test_real_open') : t('parent.test_real_locked')})</span>
+            </li>
+          ))}
+        </ul>
+        <button className={`btn ${s.workshop.parentUnlock ? 'btn-gold' : ''}`} onClick={() => setParentUnlock(!s.workshop.parentUnlock)}>
+          {s.workshop.parentUnlock ? '🔓 ' + t('parent.test_unlock_off') : '🔑 ' + t('parent.test_unlock_on')}
+        </button>
+        <button className="btn" onClick={giveTestResources}>
+          🪵 {t('parent.test_resources')}
+        </button>
       </div>
 
       {/* nouvelles tâches */}

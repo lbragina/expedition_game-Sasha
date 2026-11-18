@@ -127,6 +127,33 @@ export interface Chest {
   found: boolean
 }
 
+export interface Trophy {
+  /** 1 = ★, 2 = ★★, 3 = ★★★ */
+  stars: number
+  category: Category
+  date: string
+}
+
+/** La base 12×12 : une case = '' (terre) | un bloc | une construction. */
+export interface BaseState {
+  cells: string[]
+  observatoryDay: string | null
+  chest: { cell: number } | null
+  chestAt: number
+  mapChestAt: number
+  trophies: Record<string, Trophy>
+}
+
+/** Atelier ??? : dessins 16×16 (une lettre hexadécimale par pixel, « . » = transparent). */
+export interface WorkshopState {
+  parentUnlock: boolean
+  celebrated: number[]
+  skin: string
+  deck: string
+  block: string
+  blockName: string
+}
+
 export interface SaveState {
   version: 1
   xp: number
@@ -149,5 +176,7 @@ export interface SaveState {
   settings: { sound: boolean }
   parent: { pin: string; warmup: 'auto' | 'on' | 'off'; offset: number }
   customQuestions: Question[]
+  base: BaseState
+  workshop: WorkshopState
   createdAt: number
 }
