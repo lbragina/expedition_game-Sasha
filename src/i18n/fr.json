@@ -160,7 +160,11 @@
     "goal_badge": "Pays de ton objectif : celui que tu rêves de découvrir pour de vrai !",
     "card_log": "Journal du capitaine",
     "card_visit": "Découvert le {{date}} · {{correct}} réussies sur {{total}}",
-    "card_fact": "Le savais-tu ?"
+    "card_fact": "Le savais-tu ?",
+    "view_world": "Monde",
+    "view_europe": "Europe",
+    "visited_list": "Pays découverts",
+    "route_almost_done": "Itinéraire presque terminé : plus que {{count}} pays à ouvrir !"
   },
   "base": {
     "workshop_locked": "Atelier ??? (Verrouillé)",
@@ -274,7 +278,11 @@
     "test_real_locked": "pas encore méritée",
     "test_unlock_on": "Ouvrir toutes les salles (test)",
     "test_unlock_off": "Refermer les salles de test",
-    "test_resources": "Ajouter 10 de chaque ressource (test)"
+    "test_resources": "Ajouter 10 de chaque ressource (test)",
+    "pack_title": "Nouveau pack de pays",
+    "pack_alert": "Itinéraire presque terminé ! Il reste {{count}} pays à ouvrir. Il est temps de charger le prochain pack de pays pour Sasha.",
+    "pack_copy": "Copier le cahier des charges pour un nouveau pack (Claude Code)",
+    "pack_copied": "Cahier des charges copié ! Colle-le dans Claude Code."
   },
   "countries": {
     "japan": {
@@ -316,6 +324,66 @@
       "name": "Grèce",
       "fact": "En Grèce, au Ve siècle avant J.-C., Athènes a inventé la démocratie : les citoyens votaient eux-mêmes les lois.",
       "log": "Grèce : j'ai skaté autour du Parthénon, à Athènes, berceau de la démocratie. J'ai construit une colonne en pierre pour ma base."
+    },
+    "luxembourg": {
+      "name": "Luxembourg",
+      "fact": "Le Luxembourg est un Grand-Duché qui compte trois langues officielles : le luxembourgeois, le français et l'allemand. Les casemates du Bock, à Luxembourg-Ville, sont un réseau de galeries creusées dans la roche, long d'environ 17 km.",
+      "log": "Luxembourg : presque chez moi ! J'ai skaté sur le plateau du Bock, exploré les casemates creusées dans la roche, puis construit un château de pierre pour ma base."
+    },
+    "france": {
+      "name": "France",
+      "fact": "La tour Eiffel, à Paris, mesure 330 m de haut. Le Louvre est l'un des plus grands musées du monde. Le mont Blanc, point culminant des Alpes, atteint 4 806 m.",
+      "log": "France : j'ai skaté sur l'esplanade du Trocadéro, face à la tour Eiffel, puis j'ai bâti une tour de fer pour ma base, comme celle de Gustave Eiffel."
+    },
+    "italy": {
+      "name": "Italie",
+      "fact": "L'Italie a la forme d'une botte. À Rome, le Colisée a été construit il y a près de 2 000 ans. En l'an 79, le Vésuve, un volcan près de Naples, a détruit la ville romaine de Pompéi.",
+      "log": "Italie : j'ai skaté autour du Colisée, à Rome, puis j'ai construit une arène de pierre pour ma base."
+    },
+    "norway": {
+      "name": "Norvège",
+      "fact": "La Norvège est découpée par des fjords, de profondes vallées envahies par la mer. Au nord du cercle polaire, le soleil ne se couche pas en été : c'est le soleil de minuit. Il y a plus de 1 000 ans, les Vikings partaient en mer sur leurs drakkars.",
+      "log": "Norvège : j'ai skaté sous le soleil de minuit, navigué dans un fjord, puis construit un drakkar de bois pour ma base."
+    },
+    "switzerland": {
+      "name": "Suisse",
+      "fact": "La Suisse a quatre langues nationales : l'allemand, le français, l'italien et le romanche. Elle est traversée par les Alpes et possède le lac Léman, aussi appelé lac de Genève, qu'elle partage avec la France.",
+      "log": "Suisse : j'ai skaté au bord du lac Léman, puis je suis monté dans les Alpes et j'ai construit un chalet de bois pour ma base."
+    },
+    "spain": {
+      "name": "Espagne",
+      "fact": "La Sagrada Família, une église dessinée par l'architecte Antoni Gaudí, se dresse à Barcelone et est encore en chantier après plus de 140 ans de travaux. Les Pyrénées forment une chaîne de montagnes entre l'Espagne et la France.",
+      "log": "Espagne : j'ai skaté devant la Sagrada Família, à Barcelone, puis j'ai construit une tour de pierre aux formes courbes, inspirée de Gaudí."
+    },
+    "china": {
+      "name": "Chine",
+      "fact": "La Grande Muraille de Chine s'étend sur plus de 21 000 km. La Chine est aussi le pays des grands pandas, qui se nourrissent presque uniquement de bambou.",
+      "log": "Chine : j'ai skaté le long de la Grande Muraille, croisé des pandas dans une forêt de bambous, puis construit un long mur de pierre pour ma base."
+    },
+    "india": {
+      "name": "Inde",
+      "fact": "Le Taj Mahal, un palais de marbre blanc construit à Agra au XVIIe siècle, abrite le tombeau d'une impératrice. L'Inde compte plus de 1,4 milliard d'habitants et touche l'Himalaya, la plus haute chaîne de montagnes du monde.",
+      "log": "Inde : j'ai skaté devant le Taj Mahal, à Agra, puis j'ai construit un petit palais de pierre blanche pour ma base."
+    },
+    "australia": {
+      "name": "Australie",
+      "fact": "L'Australie est à la fois un pays et un continent. La Grande Barrière de corail, au large de sa côte nord-est, est le plus grand récif corallien du monde : elle mesure plus de 2 300 km. Les kangourous et les koalas sont les animaux emblématiques du pays.",
+      "log": "Australie : j'ai skaté près de Sydney, croisé des kangourous, puis creusé un grand bassin d'eau pour imiter la Grande Barrière de corail."
+    },
+    "mexico": {
+      "name": "Mexique",
+      "fact": "À Chichén Itzá, sur la péninsule du Yucatán, le peuple maya a construit une grande pyramide, El Castillo, il y a environ 1 000 ans. La péninsule du Yucatán est bordée par la mer des Caraïbes et le golfe du Mexique.",
+      "log": "Mexique : j'ai skaté près de la pyramide de Chichén Itzá, puis construit une pyramide à degrés avec mes blocs de pierre."
+    },
+    "morocco": {
+      "name": "Maroc",
+      "fact": "Le Maroc est situé au nord-ouest de l'Afrique. Il possède une partie du désert du Sahara et la chaîne de l'Atlas, dont le plus haut sommet, le Toubkal, culmine à 4 167 m. La célèbre ville de Marrakech y attire de nombreux visiteurs.",
+      "log": "Maroc : j'ai skaté entre les dunes du Sahara, traversé le désert à dos de dromadaire, puis construit un fort de pierre au pied de l'Atlas."
+    },
+    "antarctica": {
+      "name": "Antarctique",
+      "fact": "L'Antarctique est le continent le plus froid du monde : on y a mesuré −89 °C. Aucun pays ne le possède : des scientifiques y travaillent dans des stations polaires. Les manchots empereurs y vivent.",
+      "log": "Antarctique : j'ai skaté sur la glace près d'une station polaire, salué les manchots empereurs, puis construit un abri solide contre le blizzard."
     }
   },
   "workshop": {

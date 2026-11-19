@@ -1328,5 +1328,1067 @@
       "Les premiers Jeux olympiques y ont eu lieu."
     ],
     "image": null
+  },
+  {
+    "id": "diary-luxembourg",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Luxembourg, combien de langues officielles compte ce Grand-Duché ?",
+    "options": [
+      "Cinq",
+      "Trois",
+      "Deux",
+      "Quatre"
+    ],
+    "answer": 1,
+    "explanation": "Le Luxembourg a trois langues officielles : le luxembourgeois, le français et l’allemand.",
+    "tags": [
+      "journal de bord",
+      "luxembourg"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Luxembourg sur ta carte du monde.",
+      "Le luxembourgeois, le français et… une langue de plus.",
+      "Il y en a trois."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-luxembourg",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord au Luxembourg, qu’as-tu construit en pierre pour ta base ?",
+    "options": [
+      "Un igloo",
+      "Un phare",
+      "Un château",
+      "Une pyramide"
+    ],
+    "answer": 2,
+    "explanation": "Au Luxembourg, Sasha a skaté près des casemates du Bock, puis construit un château de pierre pour sa base.",
+    "tags": [
+      "journal de bord",
+      "luxembourg"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal du Luxembourg sur la carte.",
+      "Pense à une construction de pierre avec des tours.",
+      "C’est un château."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-luxembourg",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis un Grand-Duché avec trois langues officielles, le luxembourgeois, le français et l’allemand. Quel pays suis-je ?",
+    "options": [
+      "Le Luxembourg",
+      "L’Italie",
+      "La Norvège",
+      "La Suisse"
+    ],
+    "answer": 0,
+    "explanation": "C’est le Luxembourg : ses casemates du Bock sont creusées dans la roche, sur environ 17 km.",
+    "tags": [
+      "énigme",
+      "luxembourg"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à un tout petit pays d’Europe.",
+      "Il est entre la France, la Belgique et l’Allemagne.",
+      "Son nom commence par « Lux »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-france",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en France, quelle est la hauteur de la tour Eiffel, en mètres ?",
+    "answer": 330,
+    "explanation": "La tour Eiffel, à Paris, mesure 330 m de haut.",
+    "tags": [
+      "journal de bord",
+      "france"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de la France sur ta carte du monde.",
+      "C’est un nombre entre 300 et 350.",
+      "La tour Eiffel mesure 330 m."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-france",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en France, avec quel matériau as-tu bâti ta tour, comme celle de Gustave Eiffel ?",
+    "options": [
+      "De l’herbe",
+      "De la pierre",
+      "De l’eau",
+      "Du fer"
+    ],
+    "answer": 3,
+    "explanation": "En France, Sasha a bâti une tour de fer, comme la tour Eiffel de Gustave Eiffel.",
+    "tags": [
+      "journal de bord",
+      "france"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de la France sur la carte.",
+      "La tour Eiffel est faite d’un métal solide.",
+      "C’est du fer."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-france",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : ma capitale abrite la tour Eiffel, haute de 330 m, et le musée du Louvre. Quel pays suis-je ?",
+    "options": [
+      "La France",
+      "La Norvège",
+      "L’Espagne",
+      "L’Italie"
+    ],
+    "answer": 0,
+    "explanation": "C’est la France : Paris, la tour Eiffel, le Louvre… et le mont Blanc (4 806 m) dans les Alpes.",
+    "tags": [
+      "énigme",
+      "france"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à un pays voisin du Luxembourg.",
+      "Sa capitale s’appelle Paris.",
+      "On y parle français."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-italy",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Italie, quelle ville romaine le Vésuve a-t-il détruite en l’an 79 ?",
+    "options": [
+      "Athènes",
+      "Rome",
+      "Carthage",
+      "Pompéi"
+    ],
+    "answer": 3,
+    "explanation": "En l’an 79, le Vésuve a enseveli Pompéi, une ville romaine proche de Naples.",
+    "tags": [
+      "journal de bord",
+      "italy"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Italie sur ta carte du monde.",
+      "Cette ville se trouvait près de Naples.",
+      "Son nom commence par « Pom »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-italy",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Italie, autour de quel monument de Rome as-tu skaté ?",
+    "options": [
+      "Le Taj Mahal",
+      "La tour de Pise",
+      "Le Colisée",
+      "La Sagrada Família"
+    ],
+    "answer": 2,
+    "explanation": "À Rome, Sasha a skaté autour du Colisée, construit il y a près de 2 000 ans.",
+    "tags": [
+      "journal de bord",
+      "italy"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Italie sur la carte.",
+      "C’est une immense arène antique.",
+      "On y voyait des combats de gladiateurs."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-italy",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : mon territoire a la forme d’une botte et, à Rome, se dresse le Colisée. Quel pays suis-je ?",
+    "options": [
+      "L’Espagne",
+      "L’Italie",
+      "La Norvège",
+      "La France"
+    ],
+    "answer": 1,
+    "explanation": "C’est l’Italie, le pays en forme de botte, du Colisée et du Vésuve.",
+    "tags": [
+      "énigme",
+      "italy"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde la forme du pays sur une carte.",
+      "Pense à la pizza !",
+      "Sa capitale est Rome."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-norway",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord en Norvège, comment appelle-t-on ces profondes vallées envahies par la mer ?",
+    "options": [
+      "Des fjords",
+      "Des atolls",
+      "Des geysers",
+      "Des deltas"
+    ],
+    "answer": 0,
+    "explanation": "Les fjords sont de profondes vallées envahies par la mer : la Norvège en est célèbre.",
+    "tags": [
+      "journal de bord",
+      "norway"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de la Norvège sur ta carte du monde.",
+      "Le mot commence par « f » et finit par « s ».",
+      "Ce sont des fjords."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-norway",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Norvège, quel bateau as-tu construit en bois pour ta base ?",
+    "options": [
+      "Un paquebot",
+      "Un drakkar",
+      "Un sous-marin",
+      "Un catamaran"
+    ],
+    "answer": 1,
+    "explanation": "En Norvège, Sasha a construit un drakkar de bois, le bateau des Vikings.",
+    "tags": [
+      "journal de bord",
+      "norway"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de la Norvège sur la carte.",
+      "C’est le bateau des Vikings.",
+      "Son nom commence par « dra »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-norway",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : mes côtes sont découpées par des fjords et, il y a plus de 1 000 ans, mes Vikings partaient sur des drakkars. Quel pays suis-je ?",
+    "options": [
+      "L’Inde",
+      "La Suisse",
+      "Le Maroc",
+      "La Norvège"
+    ],
+    "answer": 3,
+    "explanation": "C’est la Norvège : fjords, soleil de minuit et drakkars vikings.",
+    "tags": [
+      "énigme",
+      "norway"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Europe du Nord.",
+      "Le soleil n’y se couche pas en été, au nord du cercle polaire.",
+      "Son nom commence par « Nor »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-switzerland",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Suisse, combien de langues nationales compte ce pays ?",
+    "answer": 4,
+    "explanation": "La Suisse a quatre langues nationales : l’allemand, le français, l’italien et le romanche.",
+    "tags": [
+      "journal de bord",
+      "switzerland"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de la Suisse sur ta carte du monde.",
+      "Allemand, français, italien… et le romanche.",
+      "Il y en a 4."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-switzerland",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Suisse, au bord de quel lac as-tu skaté ?",
+    "options": [
+      "Le lac Baïkal",
+      "Le lac Titicaca",
+      "Le lac Léman",
+      "Le lac Victoria"
+    ],
+    "answer": 2,
+    "explanation": "Le lac Léman, ou lac de Genève, est partagé entre la Suisse et la France.",
+    "tags": [
+      "journal de bord",
+      "switzerland"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de la Suisse sur la carte.",
+      "Il touche aussi la France.",
+      "Son nom commence par « Lé »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-switzerland",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : j’ai quatre langues nationales (allemand, français, italien, romanche) et le lac Léman borde ma frontière. Quel pays suis-je ?",
+    "options": [
+      "La Norvège",
+      "L’Espagne",
+      "Le Luxembourg",
+      "La Suisse"
+    ],
+    "answer": 3,
+    "explanation": "C’est la Suisse : les Alpes, le lac Léman et quatre langues nationales.",
+    "tags": [
+      "énigme",
+      "switzerland"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à un pays de montagnes en Europe.",
+      "Il n’a pas de mer.",
+      "On y fabrique du chocolat et des montres."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-spain",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Espagne, quel architecte a dessiné la Sagrada Família ?",
+    "options": [
+      "Antoni Gaudí",
+      "Gustave Eiffel",
+      "Michel-Ange",
+      "Léonard de Vinci"
+    ],
+    "answer": 0,
+    "explanation": "La Sagrada Família, à Barcelone, a été dessinée par Antoni Gaudí.",
+    "tags": [
+      "journal de bord",
+      "spain"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Espagne sur ta carte du monde.",
+      "Il était catalan et aimait les formes courbes.",
+      "Son prénom est Antoni."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-spain",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Espagne, dans quelle ville se trouve la Sagrada Família, devant laquelle tu as skaté ?",
+    "options": [
+      "Madrid",
+      "Lisbonne",
+      "Barcelone",
+      "Séville"
+    ],
+    "answer": 2,
+    "explanation": "La Sagrada Família se trouve à Barcelone.",
+    "tags": [
+      "journal de bord",
+      "spain"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Espagne sur la carte.",
+      "C’est une grande ville au bord de la Méditerranée.",
+      "Son nom commence par « Bar »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-spain",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : à Barcelone, l’église de Gaudí, la Sagrada Família, est en chantier depuis plus de 140 ans, et les Pyrénées me séparent de la France. Quel pays suis-je ?",
+    "options": [
+      "Le Maroc",
+      "L’Espagne",
+      "Le Mexique",
+      "L’Italie"
+    ],
+    "answer": 1,
+    "explanation": "C’est l’Espagne : Gaudí, Barcelone et les Pyrénées.",
+    "tags": [
+      "énigme",
+      "spain"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Europe du Sud-Ouest.",
+      "Les Pyrénées sont des montagnes.",
+      "On y parle espagnol."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-china",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord en Chine, quelle est la longueur de la Grande Muraille ?",
+    "options": [
+      "Plus de 210 000 km",
+      "Plus de 210 km",
+      "Plus de 2 100 km",
+      "Plus de 21 000 km"
+    ],
+    "answer": 3,
+    "explanation": "La Grande Muraille de Chine s’étend sur plus de 21 000 km.",
+    "tags": [
+      "journal de bord",
+      "china"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de la Chine sur ta carte du monde.",
+      "C’est des dizaines de milliers de kilomètres.",
+      "Plus de 21 000 km."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-china",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Chine, quel animal as-tu croisé dans une forêt de bambous ?",
+    "options": [
+      "Un kangourou",
+      "Un gnou",
+      "Un panda",
+      "Un lama"
+    ],
+    "answer": 2,
+    "explanation": "En Chine, Sasha a croisé des pandas, qui mangent presque uniquement du bambou.",
+    "tags": [
+      "journal de bord",
+      "china"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de la Chine sur la carte.",
+      "Il est noir et blanc.",
+      "C’est un panda."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-china",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : ma Grande Muraille s’étend sur plus de 21 000 km et mes grands pandas adorent le bambou. Quel pays suis-je ?",
+    "options": [
+      "La Chine",
+      "L’Inde",
+      "Le Mexique",
+      "Le Japon"
+    ],
+    "answer": 0,
+    "explanation": "C’est la Chine : la Grande Muraille et les pandas géants.",
+    "tags": [
+      "énigme",
+      "china"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à un immense pays d’Asie.",
+      "Son emblème est un dragon.",
+      "Sa capitale est Pékin."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-india",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Inde, combien d’habitants compte ce pays ?",
+    "options": [
+      "Plus de 140 millions",
+      "Plus de 1,4 milliard",
+      "Plus de 14 millions",
+      "Plus de 14 milliards"
+    ],
+    "answer": 1,
+    "explanation": "L’Inde compte plus de 1,4 milliard d’habitants.",
+    "tags": [
+      "journal de bord",
+      "india"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Inde sur ta carte du monde.",
+      "C’est un nombre de milliards.",
+      "Plus de 1,4 milliard."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-india",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Inde, devant quel monument d’Agra as-tu skaté ?",
+    "options": [
+      "L’Alhambra",
+      "Angkor Vat",
+      "Le Taj Mahal",
+      "Le Machu Picchu"
+    ],
+    "answer": 2,
+    "explanation": "À Agra, Sasha a skaté devant le Taj Mahal, un palais de marbre blanc.",
+    "tags": [
+      "journal de bord",
+      "india"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Inde sur la carte.",
+      "C’est un palais de marbre blanc.",
+      "Son nom commence par « Taj »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-india",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : mon Taj Mahal est tout en marbre blanc, l’Himalaya me borde et je compte plus de 1,4 milliard d’habitants. Quel pays suis-je ?",
+    "options": [
+      "L’Inde",
+      "Le Maroc",
+      "Le Japon",
+      "L’Australie"
+    ],
+    "answer": 0,
+    "explanation": "C’est l’Inde : le Taj Mahal, l’Himalaya et plus de 1,4 milliard d’habitants.",
+    "tags": [
+      "énigme",
+      "india"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Asie du Sud.",
+      "Le Taj Mahal se trouve à Agra.",
+      "Sa capitale est New Delhi."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-australia",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord en Australie, quelle est la longueur de la Grande Barrière de corail ?",
+    "options": [
+      "Plus de 23 km",
+      "Plus de 2 300 km",
+      "Plus de 230 km",
+      "Plus de 23 000 km"
+    ],
+    "answer": 1,
+    "explanation": "La Grande Barrière de corail mesure plus de 2 300 km : c’est le plus grand récif corallien du monde.",
+    "tags": [
+      "journal de bord",
+      "australia"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Australie sur ta carte du monde.",
+      "C’est des milliers de kilomètres.",
+      "Plus de 2 300 km."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-australia",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Australie, quel animal as-tu croisé près de Sydney ?",
+    "options": [
+      "Un gnou",
+      "Un panda",
+      "Un lama",
+      "Un kangourou"
+    ],
+    "answer": 3,
+    "explanation": "En Australie, Sasha a croisé des kangourous, animaux emblématiques du pays.",
+    "tags": [
+      "journal de bord",
+      "australia"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Australie sur la carte.",
+      "Il saute et a une poche.",
+      "C’est un kangourou."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-australia",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis à la fois un pays et un continent, et ma Grande Barrière de corail est le plus grand récif du monde. Quel pays suis-je ?",
+    "options": [
+      "Le Brésil",
+      "L’Australie",
+      "Le Maroc",
+      "Le Canada"
+    ],
+    "answer": 1,
+    "explanation": "C’est l’Australie : un pays-continent avec ses kangourous, ses koalas et sa Grande Barrière de corail.",
+    "tags": [
+      "énigme",
+      "australia"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’hémisphère sud, tout au bout du monde.",
+      "Les kangourous y vivent.",
+      "Sa ville la plus connue est Sydney."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-mexico",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Mexique, quel peuple a construit la pyramide de Chichén Itzá ?",
+    "options": [
+      "Les Vikings",
+      "Les Romains",
+      "Les Mayas",
+      "Les Incas"
+    ],
+    "answer": 2,
+    "explanation": "Les Mayas ont construit la pyramide El Castillo à Chichén Itzá, il y a environ 1 000 ans.",
+    "tags": [
+      "journal de bord",
+      "mexico"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Mexique sur ta carte du monde.",
+      "Ce peuple vivait en Amérique centrale.",
+      "Son nom commence par « May »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-mexico",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord au Mexique, sur quelle péninsule se trouve Chichén Itzá ?",
+    "options": [
+      "Le Yucatán",
+      "La Floride",
+      "Le Cotentin",
+      "La Crimée"
+    ],
+    "answer": 0,
+    "explanation": "Chichén Itzá se trouve sur la péninsule du Yucatán.",
+    "tags": [
+      "journal de bord",
+      "mexico"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal du Mexique sur la carte.",
+      "Elle est entourée par la mer des Caraïbes et le golfe du Mexique.",
+      "Son nom commence par « Yu »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-mexico",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : chez moi, les Mayas ont bâti la pyramide de Chichén Itzá, sur la péninsule du Yucatán. Quel pays suis-je ?",
+    "options": [
+      "Le Pérou",
+      "Le Brésil",
+      "L’Espagne",
+      "Le Mexique"
+    ],
+    "answer": 3,
+    "explanation": "C’est le Mexique : le pays des pyramides mayas.",
+    "tags": [
+      "énigme",
+      "mexico"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Amérique du Nord, au sud des États-Unis.",
+      "On y parle espagnol.",
+      "Le cactus est un de ses symboles."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-morocco",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Maroc, quelle est l’altitude du Toubkal, plus haut sommet de l’Atlas, en mètres ?",
+    "answer": 4167,
+    "explanation": "Le Toubkal, dans l’Atlas, culmine à 4 167 m.",
+    "tags": [
+      "journal de bord",
+      "morocco"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Maroc sur ta carte du monde.",
+      "C’est un nombre entre 4 000 et 4 500.",
+      "Le Toubkal culmine à 4 167 m."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-morocco",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord au Maroc, sur quel animal as-tu traversé le désert ?",
+    "options": [
+      "Un cheval",
+      "Un dromadaire",
+      "Un lama",
+      "Un éléphant"
+    ],
+    "answer": 1,
+    "explanation": "Au Maroc, Sasha a traversé le désert à dos de dromadaire.",
+    "tags": [
+      "journal de bord",
+      "morocco"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal du Maroc sur la carte.",
+      "Il a une bosse et résiste à la soif.",
+      "Son nom commence par « dro »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-morocco",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis au nord-ouest de l’Afrique, avec une partie du Sahara, la chaîne de l’Atlas et la ville de Marrakech. Quel pays suis-je ?",
+    "options": [
+      "L’Inde",
+      "Le Kenya",
+      "Le Mexique",
+      "Le Maroc"
+    ],
+    "answer": 3,
+    "explanation": "C’est le Maroc : le Sahara, l’Atlas et Marrakech.",
+    "tags": [
+      "énigme",
+      "morocco"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Afrique du Nord, face à l’Espagne.",
+      "Le Toubkal est son plus haut sommet.",
+      "Sa ville rouge s’appelle Marrakech."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-antarctica",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord en Antarctique, quelle température record a-t-on mesurée sur ce continent ?",
+    "options": [
+      "−9 °C",
+      "−189 °C",
+      "−89 °C",
+      "−29 °C"
+    ],
+    "answer": 2,
+    "explanation": "On a mesuré −89 °C en Antarctique : c’est le continent le plus froid du monde.",
+    "tags": [
+      "journal de bord",
+      "antarctica"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Antarctique sur ta carte du monde.",
+      "C’est beaucoup plus froid que le congélateur !",
+      "Environ −89 °C."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-antarctica",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Antarctique, quels animaux as-tu salués sur la glace ?",
+    "options": [
+      "Des manchots empereurs",
+      "Des kangourous",
+      "Des gnous",
+      "Des pandas"
+    ],
+    "answer": 0,
+    "explanation": "En Antarctique, Sasha a salué des manchots empereurs.",
+    "tags": [
+      "journal de bord",
+      "antarctica"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Antarctique sur la carte.",
+      "Ils ne volent pas mais nagent très bien.",
+      "Ce sont des manchots."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-antarctica",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis le continent le plus froid du monde, on y a mesuré −89 °C, personne n’y habite en permanence et des scientifiques y travaillent. Quel endroit suis-je ?",
+    "options": [
+      "Le Canada",
+      "L’Australie",
+      "L’Antarctique",
+      "L’Islande"
+    ],
+    "answer": 2,
+    "explanation": "C’est l’Antarctique, le continent de glace et de manchots, au pôle Sud.",
+    "tags": [
+      "énigme",
+      "antarctica"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense au pôle Sud.",
+      "Il n’appartient à aucun pays.",
+      "Les manchots empereurs y vivent."
+    ],
+    "image": null
   }
 ]

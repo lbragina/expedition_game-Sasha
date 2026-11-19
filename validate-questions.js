@@ -99,6 +99,21 @@ function validate() {
     if (!okStars) { console.error(`❌ [${q.id}] Неверное число звёзд (${q.stars}) для сложности ${q.difficulty}`); errors++; }
   });
 
+  // Каждая страна из COUNTRIES должна иметь riddle-/diary-/diary2- вопросы (игра подхватывает их по префиксу)
+  const countriesSrc = fs.readFileSync(path.join(__dirname, 'src', 'data', 'countries.ts'), 'utf-8');
+  const countryIds = [...countriesSrc.matchAll(/\{\s*id:\s*'([a-z_]+)'/g)].map(m => m[1]);
+  countryIds.forEach(cid => {
+    ['riddle', 'diary', 'diary2'].forEach(prefix => {
+      if (!byId.has(`${prefix}-${cid}`)) { console.error(`❌ Для страны ${cid} нет вопроса ${prefix}-${cid}`); errors++; }
+    });
+  });
+  const choices = allQuestions.filter(q => /^(riddle|diary2?)-/.test(q.id) && q.type === 'choice');
+  const pos = [0, 1, 2, 3].map(i => choices.filter(q => q.answer === i).length);
+  console.log(`Страны: ${countryIds.length} · правильные ответы в вопросах стран по индексам 0–3: ${pos.join(' / ')}`);
+  if (choices.length >= 8 && Math.max(...pos) > Math.ceil(choices.length / 4) + Math.ceil(choices.length / 8)) {
+    console.error('❌ Правильные ответы в вопросах стран распределены неравномерно — перемешайте варианты'); errors++;
+  }
+
   // Пропорции банка (предупреждения, если банк полный — 150 задач)
   const count = (fn) => allQuestions.filter(fn).length;
   const cats = ['math', 'logic', 'iq', 'critical', 'world'];

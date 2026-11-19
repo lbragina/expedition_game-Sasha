@@ -3,6 +3,8 @@ import { markDiscussed } from '../game/actions'
 import { describeCorrect } from '../game/answers'
 import { targetDifficulty } from '../game/elo'
 import { getMode } from '../game/progress'
+import { countriesLeft, packNeeded } from '../game/countries'
+import { buildPackPrompt } from '../game/packPrompt'
 import { buildPrompt } from '../game/prompt'
 import { normalizeQuestion, questionMap, validateQuestion } from '../game/questions'
 import { update, useGame } from '../game/store'
@@ -41,6 +43,23 @@ function ParentPanel() {
   const items = s.history.filter((h) => h.at >= since)
 
   const errors = [...s.history].reverse().filter((h) => !h.correct).slice(0, 40)
+
+  const [packCopied, setPackCopied] = useState(false)
+  const copyPack = async () => {
+    const text = buildPackPrompt()
+    try {
+      await navigator.clipboard.writeText(text)
+    } catch {
+      const ta = document.createElement('textarea')
+      ta.value = text
+      document.body.appendChild(ta)
+      ta.select()
+      document.execCommand('copy')
+      ta.remove()
+    }
+    setPackCopied(true)
+    setTimeout(() => setPackCopied(false), 2500)
+  }
 
   const copy = async () => {
     try {
@@ -83,6 +102,16 @@ function ParentPanel() {
   return (
     <div className="space-y-3 pt-3">
       <h2 className="font-pixel text-xl font-bold text-gold">👩‍🏫 {t('parent.title')}</h2>
+
+      {packNeeded(s) && (
+        <div className="card space-y-2 !border-gold">
+          <h3 className="font-bold text-gold">🧭 {t('parent.pack_title')}</h3>
+          <p className="text-sm">{t('parent.pack_alert', { count: countriesLeft(s) })}</p>
+          <button className="btn btn-gold" onClick={copyPack}>
+            {packCopied ? '✔ ' + t('parent.pack_copied') : '📋 ' + t('parent.pack_copy')}
+          </button>
+        </div>
+      )}
 
       {/* statistiques */}
       <div className="card space-y-2">

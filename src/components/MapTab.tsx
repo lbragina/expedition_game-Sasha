@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { COUNTRIES } from '../data/countries'
 import { findChest } from '../game/actions'
+import { countriesLeft, packNeeded } from '../game/countries'
 import { rollChests } from '../game/base'
 import { sfx } from '../game/sound'
 import { useGame } from '../game/store'
@@ -15,12 +16,21 @@ const LAND = [
   '163,69 175,54 190,53 212,59 223,78 231,79 220,105 213,116 200,125 192,108 189,86 172,86 163,76', // Afrique
   '293,112 310,102 322,101 333,117 326,128 310,122 295,124', // Australie
   '107,12 150,7 160,20 135,30 125,20', // Groenland
+  '184,36 188,26 196,20 206,18 210,26 200,32 192,36', // Scandinavie
+  '0,170 360,170 360,180 0,180', // Antarctique
 ]
+
+type View = 'world' | 'europe'
+const VIEWBOX: Record<View, string> = { world: '0 0 360 180', europe: '150 12 80 40' }
+/** Échelle des marqueurs : en vue Europe la carte est zoomée ×4,5, les pastilles doivent rester petites. */
+const SCALE: Record<View, number> = { world: 1, europe: 0.26 }
 
 export default function MapTab() {
   const s = useGame()
   const [selected, setSelected] = useState<string | null>(null)
   const [toast, setToast] = useState<string | null>(null)
+  const [view, setView] = useState<View>('world')
+  const k = SCALE[view]
 
   // de temps en temps un petit coffre apparaît près d'un pays visité
   useEffect(() => {
@@ -43,7 +53,16 @@ export default function MapTab() {
       <h2 className="font-pixel text-xl font-bold text-gold">🗺️ {t('map.title')}</h2>
 
       <div className="card !p-2">
-        <svg viewBox="0 0 360 180" className="w-full" shapeRendering="crispEdges">
+        <div className="mb-1 flex items-center justify-between gap-2">
+          <div className="grid flex-1 grid-cols-2 gap-1">
+            {(['world', 'europe'] as View[]).map((v) => (
+              <button key={v} className={`btn !min-h-[36px] text-xs ${view === v ? 'btn-gold' : ''}`} onClick={() => setView(v)}>
+                {v === 'world' ? '🌍 ' + t('map.view_world') : '🔍 ' + t('map.view_europe')}
+              </button>
+            ))}
+          </div>
+        </div>
+        <svg viewBox={VIEWBOX[view]} className="w-full" shapeRendering="crispEdges">
           <rect width="360" height="180" fill="#0b1d33" />
           {Array.from({ length: 11 }, (_, i) => (
             <line key={`v${i}`} x1={i * 36} y1="0" x2={i * 36} y2="180" stroke="#16304f" strokeWidth="0.5" />
@@ -60,17 +79,17 @@ export default function MapTab() {
             const visited = s.visited.includes(c.id)
             return (
               <g key={c.id} onClick={() => setSelected(c.id === selected ? null : c.id)} className="cursor-pointer">
-                <circle cx={x} cy={y} r="13" fill="transparent" />
+                <circle cx={x} cy={y} r={10 * k} fill="transparent" />
                 <circle
                   cx={x}
                   cy={y}
-                  r="9"
+                  r={7 * k}
                   fill={visited ? '#f5c518' : '#33415c'}
                   opacity={visited ? 0.25 : 0.5}
                   stroke={selected === c.id ? '#4de2e0' : 'none'}
-                  strokeWidth="1.5"
+                  strokeWidth={1.5 * k}
                 />
-                <text x={x} y={y + 4} fontSize="12" textAnchor="middle" opacity={visited ? 1 : 0.35}>
+                <text x={x} y={y + 3.2 * k} fontSize={10 * k} textAnchor="middle" opacity={visited ? 1 : 0.35}>
                   {visited ? c.emoji : '❔'}
                 </text>
               </g>
@@ -84,7 +103,7 @@ export default function MapTab() {
             return (
               <g
                 key={i}
-                transform={`translate(${x + c.x - 6} ${y + c.y - 6}) scale(0.75)`}
+                transform={`translate(${x + c.x * k - 6 * k} ${y + c.y * k - 6 * k}) scale(${0.75 * k})`}
                 opacity="0.9"
                 className="cursor-pointer"
                 onClick={() => {
@@ -113,6 +132,24 @@ export default function MapTab() {
           })}
         </svg>
         <p className="mt-1 text-center text-[11px] text-mute">{t('map.hint_chests')}</p>
+        {packNeeded(s) && (
+          <p className="mt-1 rounded-lg border-2 border-gold/70 bg-night p-1.5 text-center text-xs font-bold text-gold">
+            🧭 {t('map.route_almost_done', { count: countriesLeft(s) })}
+          </p>
+        )}
+        {s.visited.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1" aria-label={t('map.visited_list')}>
+            {COUNTRIES.filter((c) => s.visited.includes(c.id)).map((c) => (
+              <button
+                key={c.id}
+                className={`chip !px-2 !py-1 ${selected === c.id ? '!border-diamond text-diamond' : ''}`}
+                onClick={() => setSelected(c.id === selected ? null : c.id)}
+              >
+                {c.emoji} {tObj<{ name: string }>(`countries.${c.id}`)?.name}
+              </button>
+            ))}
+          </div>
+        )}
         {toast && <p className="animate-trick rounded-lg border-2 border-gold bg-night p-2 text-center text-sm font-bold text-gold">{toast}</p>}
       </div>
 

@@ -7,6 +7,7 @@ import MapTab from './components/MapTab'
 import ParentTab from './components/ParentTab'
 import { setSoundEnabled, sfx } from './game/sound'
 import { getState, useGame } from './game/store'
+import { countriesLeft, packNeeded } from './game/countries'
 import { pendingCelebrations } from './game/workshop'
 import WelcomeModal, { shouldShowWelcome } from './components/WelcomeModal'
 import { t } from './i18n'
@@ -51,6 +52,11 @@ export default function App() {
           >
             <span className="relative text-xl leading-6">
               {x.icon}
+              {x.id === 'map' && tab !== 'map' && packNeeded(state) && (
+                <span className="absolute -right-2 -top-1 min-w-[16px] rounded-full border border-black bg-gold px-1 text-center text-[10px] font-bold leading-4 text-black">
+                  {countriesLeft(state)}
+                </span>
+              )}
               {x.id === 'base' && tab !== 'base' && pendingCelebrations(state).length > 0 && (
                 <span className="absolute -right-1.5 -top-0.5 h-2.5 w-2.5 rounded-full border border-black bg-danger" />
               )}

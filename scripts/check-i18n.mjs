@@ -56,5 +56,15 @@ dyn.forEach((k) => {
     missing++
   }
 })
+// chaque pays de COUNTRIES doit avoir son texte dans fr.json → countries.<id> (name, fact, log)
+const ctry = readFileSync(join(root, 'data', 'countries.ts'), 'utf8')
+for (const m of ctry.matchAll(/\{\s*id:\s*'([a-z_]+)'/g)) {
+  for (const f of ['name', 'fact', 'log']) {
+    if (!exists(`countries.${m[1]}.${f}`)) {
+      console.error(`❌ pays « ${m[1]} » : fr.json → countries.${m[1]}.${f} manquant`)
+      missing++
+    }
+  }
+}
 console.log(missing ? `\n${missing} clé(s) manquante(s)` : '✅ Toutes les clés de texte existent dans fr.json')
 process.exit(missing ? 1 : 0)
