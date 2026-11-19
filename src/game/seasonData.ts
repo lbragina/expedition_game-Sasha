@@ -21,12 +21,29 @@ export const CHALLENGES: ChallengeDef[] = [
   { id: 'combo', target: 1, icon: '🛹' },
 ]
 
+/** Cadeaux de départ (la maman peut tous les modifier dans l'Espace Parent). Préfixe « Surprise: » = cadeau secret. */
+export const DEFAULT_SEASON_PRIZES: Record<string, string> = {
+  '5': 'Мама читает тебе на ночь целую неделю',
+  '10': 'Идем в кино',
+  '15': 'Surprise: Завтрак в кафе вместо утра в школе',
+  '20': 'Едем на скалодром!',
+  '25': 'Grand Buffet',
+  '30': 'Surprise: Выходные за границей!',
+}
+
+/** Cadeau secret ? (texte commençant par « Surprise: », sans tenir compte de la casse). `text` = texte sans le préfixe. */
+export function parseSecret(raw: string): { secret: boolean; text: string } {
+  const m = /^\s*surprise\s*:\s*/i.exec(raw)
+  return m ? { secret: true, text: raw.slice(m[0].length).trim() } : { secret: false, text: raw.trim() }
+}
+
 export function defaultSeason(): SeasonState {
-  return { id: 1, points: 0, granted: 0, claimed: [], rewards: {}, week: '', progress: {}, done: [] }
+  return { id: 1, points: 0, granted: 0, claimed: [], rewards: { ...DEFAULT_SEASON_PRIZES }, week: '', progress: {}, done: [] }
 }
 
 export function sanitizeSeason(raw: unknown): SeasonState {
   const s = defaultSeason()
+  s.rewards = {}
   if (!raw || typeof raw !== 'object') return s
   const r = raw as Partial<SeasonState>
   if (Number.isInteger(r.id) && (r.id as number) >= 1) s.id = r.id as number
@@ -38,6 +55,8 @@ export function sanitizeSeason(raw: unknown): SeasonState {
       if (REWARD_TIERS.includes(Number(k)) && typeof v === 'string') s.rewards[k] = v.slice(0, 80)
     }
   }
+  // Paliers jamais remplis (clé absente) → cadeau par défaut. Un champ vidé exprès par la maman ('') reste vide.
+  for (const [k, v] of Object.entries(DEFAULT_SEASON_PRIZES)) if (!(k in s.rewards)) s.rewards[k] = v
   if (typeof r.week === 'string') s.week = r.week
   if (r.progress && typeof r.progress === 'object') {
     for (const c of CHALLENGES) {

@@ -268,6 +268,7 @@ function ParentPanel() {
         <p className="text-xs text-mute">
           {t('parent.season_status', { id: s.season.id, tier: tierOf(s.season.points), points: s.season.points })}
         </p>
+        <p className="text-xs text-mute">{t('parent.season_secret_hint')}</p>
         {REWARD_TIERS.map((n) => (
           <label key={n} className="block text-sm">
             {t('parent.season_reward_label', { tier: n })} {s.season.claimed.includes(n) && <span className="text-ok">✅</span>}

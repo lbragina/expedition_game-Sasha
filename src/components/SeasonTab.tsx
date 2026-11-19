@@ -7,6 +7,7 @@ import {
   TIERS,
   TIER_POINTS,
   daysToMonday,
+  parseSecret,
   tierGift,
   tierOf,
 } from '../game/seasonData'
@@ -80,7 +81,10 @@ export default function SeasonTab() {
           const reached = n <= tier
           const prize = REWARD_TIERS.includes(n)
           const claimed = se.claimed.includes(n)
-          const text = se.rewards[String(n)]?.trim()
+          const raw = se.rewards[String(n)]?.trim() ?? ''
+          const sec = parseSecret(raw)
+          const hidden = sec.secret && tier < n
+          const text = sec.text
           return (
             <div
               key={n}
@@ -98,7 +102,10 @@ export default function SeasonTab() {
               <div className="min-w-0 flex-1 text-sm">
                 {prize ? (
                   <>
-                    <div className="font-bold text-gold">🎁 {text || t('season.reward_default')}</div>
+                    <div className="font-bold text-gold">
+                      🎁 {hidden ? t('season.mystery') : text || t('season.reward_default')}
+                    </div>
+                    {hidden && <div className="text-[11px] text-mute">{t('season.mystery_hint')}</div>}
                     <div className="text-[11px] text-mute">{giftLabel(n)}</div>
                   </>
                 ) : (

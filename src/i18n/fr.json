@@ -289,6 +289,7 @@
     "season_title": "Saison : cadeaux de maman",
     "season_help": "Écris le vrai cadeau de chaque palier clé. Sasha le voit sur la piste de la Saison et, quand il l'a reçu, le marque « reçu » avec ton code PIN.",
     "season_reward_label": "Palier {{tier}}",
+    "season_secret_hint": "Astuce : écris « Surprise: » au début d'un cadeau pour le cacher à Sasha jusqu'à ce qu'il atteigne le palier.",
     "season_reward_placeholder": "Ex. : une sortie au cinéma",
     "season_status": "Saison {{id}} : palier {{tier}} sur 30 ({{points}} points).",
     "season_test": "+250 points de saison (test)",
@@ -616,6 +617,8 @@
     "track_title": "La piste des paliers",
     "track_help": "Chaque palier donne un petit cadeau dans le jeu. Les paliers 5, 10, 15, 20, 25 et 30 ont un vrai cadeau choisi par maman.",
     "reward_default": "Surprise de maman",
+    "mystery": "Récompense mystère",
+    "mystery_hint": "Débloque ce palier pour découvrir !",
     "claim": "Je l'ai reçu !",
     "claimed": "Reçu",
     "pin_prompt": "Un parent confirme : le cadeau a bien été remis ? (code PIN)"
