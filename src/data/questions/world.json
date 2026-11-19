@@ -632,5 +632,227 @@
       "20 + 8 = 28 : un jour compte 24 heures."
     ],
     "image": null
+  },
+  {
+    "id": "diary-japan",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord sur le Japon, combien d’îles environ composent l’archipel japonais ?",
+    "answer": 6800,
+    "explanation": "Le Japon est un archipel de plus de 6 800 îles, dominé par le mont Fuji (3 776 m).",
+    "tags": [
+      "journal de bord",
+      "japon"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Japon sur ta carte du monde !",
+      "C’est un nombre rond de centaines, entre 6 000 et 7 000.",
+      "Le journal indique plus de 6 800 îles."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-egypt",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Égypte, il y a environ combien d’années la pyramide de Khéops a-t-elle été construite ?",
+    "answer": 4500,
+    "explanation": "La pyramide de Khéops, à Gizeh, a été construite il y a environ 4 500 ans.",
+    "tags": [
+      "journal de bord",
+      "egypte"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Vérifie les notes de ton expédition en Égypte sur la carte.",
+      "C’est un nombre entre 4 000 et 5 000 ans.",
+      "Elle est vieille d’environ 4 500 ans."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-brazil",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord au Brésil, quel rôle essentiel joue l’immense forêt amazonienne pour notre planète ?",
+    "options": [
+      "Elle produit une partie de l’oxygène de la planète",
+      "Elle refroidit les océans grâce à ses glaciers",
+      "Elle abrite la plus haute montagne du monde",
+      "Elle alimente tous les déserts en eau douce"
+    ],
+    "answer": 0,
+    "explanation": "Le Brésil abrite la plus grande part de la forêt amazonienne, qui produit une partie de l’oxygène de notre planète.",
+    "tags": [
+      "journal de bord",
+      "bresil"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Brésil sur ta carte du monde.",
+      "Les arbres de cette forêt sont essentiels pour l’air que nous respirons.",
+      "Elle produit une partie de l’oxygène de notre planète."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-iceland",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Islande, pourquoi cette île compte-t-elle autant de volcans et de geysers ?",
+    "options": [
+      "Parce qu’elle se trouve sur une faille entre deux plaques de la croûte terrestre",
+      "Parce qu’elle est située juste sur l’équateur",
+      "Parce qu’elle est entourée de déserts très chauds",
+      "Parce que le soleil ne s’y couche jamais"
+    ],
+    "answer": 0,
+    "explanation": "L’Islande est posée sur une faille entre deux plaques terrestres, ce qui explique ses nombreux volcans et geysers.",
+    "tags": [
+      "journal de bord",
+      "islande"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Consulte le journal de l’Islande (« terre de feu et de glace »).",
+      "Cela concerne la structure profonde du sol sous l’île.",
+      "Elle se trouve sur une faille entre deux plaques de la croûte terrestre."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-peru",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Pérou, à quelle altitude environ (en mètres) se trouve le Machu Picchu dans les Andes ?",
+    "answer": 2400,
+    "explanation": "Le Machu Picchu, cité inca construite vers 1450, se trouve à environ 2 400 m d’altitude.",
+    "tags": [
+      "journal de bord",
+      "perou"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Pérou sur ta carte du monde.",
+      "C’est une altitude entre 2 000 m et 3 000 m.",
+      "La cité se trouve à environ 2 400 m d’altitude."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-kenya",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord au Kenya, quelle ligne imaginaire traverse ce pays, le plaçant entre deux hémisphères ?",
+    "options": [
+      "L’équateur",
+      "Le cercle polaire arctique",
+      "Le méridien de Greenwich",
+      "Le tropique du Capricorne"
+    ],
+    "answer": 0,
+    "explanation": "Le Kenya est traversé par l’équateur, à cheval entre les hémisphères nord et sud.",
+    "tags": [
+      "journal de bord",
+      "kenya"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ce que le capitaine raconte sur sa position au Kenya.",
+      "Cette ligne sépare l’hémisphère nord et l’hémisphère sud.",
+      "C’est l’équateur."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-canada",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Canada, quelle particularité géographique rend ce pays unique au monde ?",
+    "options": [
+      "Il possède plus de lacs que n’importe quel autre pays",
+      "C’est le plus petit pays du continent américain",
+      "Il ne possède aucune forêt",
+      "Il est traversé par l’équateur"
+    ],
+    "answer": 0,
+    "explanation": "Deuxième plus grand pays du monde, le Canada compte plus de lacs que n’importe quel autre pays.",
+    "tags": [
+      "journal de bord",
+      "canada"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Canada sur ta carte du monde.",
+      "Le capitaine y a même glissé en skate sur l’un d’eux quand il était gelé !",
+      "Il possède plus de lacs que n’importe quel autre pays."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary-greece",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord en Grèce, quelle grande idée politique a été inventée à Athènes au Ve siècle av. J.-C. ?",
+    "options": [
+      "La démocratie (les citoyens votaient eux-mêmes les lois)",
+      "La monarchie absolue",
+      "L’imprimerie moderne",
+      "La boussole magnétique"
+    ],
+    "answer": 0,
+    "explanation": "Au Ve siècle av. J.-C., Athènes a inventé la démocratie : les citoyens votaient eux-mêmes les lois.",
+    "tags": [
+      "journal de bord",
+      "grece"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de la Grèce sur ta carte du monde.",
+      "C’est un système où les citoyens décident et votent les lois.",
+      "C’est la démocratie."
+    ],
+    "image": null
   }
 ]
