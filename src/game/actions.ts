@@ -27,8 +27,7 @@ export function resourceFor(difficulty: number): ResourceKey {
 
 export function expeditionAvailable(state: SaveState): 'main' | 'bonus' | null {
   if (!state.today.main) return 'main'
-  if (!state.today.bonus) return 'bonus'
-  return null
+  return 'bonus'
 }
 
 export function startExpedition() {
