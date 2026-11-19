@@ -23,9 +23,13 @@ function pick(pool: Question[], used: Set<string>, target: number, cap: number, 
   return candidates.reduce((best, q) => (score(q, target, cap, state) < score(best, target, cap, state) ? q : best))
 }
 
+/** Énigmes de pays et questions du journal : elles n'arrivent que par injection ciblée, jamais au hasard. */
+const isSpecial = (id: string) => /^(diary2?|riddle)-/.test(id)
+
 export function buildSlots(state: SaveState): Slot[] {
-  const questions = allQuestions(state)
-  const byId = new Map(questions.map((q) => [q.id, q]))
+  const everything = allQuestions(state)
+  const byId = new Map(everything.map((q) => [q.id, q]))
+  const questions = everything.filter((q) => !isSpecial(q.id))
   const mode = getMode(state)
   const shift = difficultyShift(state)
   const used = new Set<string>(Object.keys(state.fog)) // les tâches dans le brouillard reviennent via leur propre mécanisme
@@ -63,15 +67,27 @@ export function buildSlots(state: SaveState): Slot[] {
     placed.push({ slot: inj, index: idx })
   }
 
-  // --- 2b. Questions du journal de bord des pays déjà visités ---------------
+  // --- 2b. Slot « Culture » : énigme ratée à rejouer, sinon questions du journal des pays ouverts ---
   const worldIdx = REGULAR.findIndex((c, i) => c === 'world' && !replaced.has(i))
-  if (worldIdx >= 0 && state.visited?.length) {
-    const dueDiaryId = state.visited
-      .map((cid) => `diary-${cid}`)
-      .find((qid) => byId.has(qid) && !used.has(qid) && !(state.seen[qid]?.right > 0))
-    if (dueDiaryId) {
-      used.add(dueDiaryId)
-      regular[worldIdx] = { qid: dueDiaryId, kind: 'normal' }
+  if (worldIdx >= 0) {
+    const solved = (qid: string) => (state.seen[qid]?.right ?? 0) > 0
+    const riddleBack = Object.keys(state.seen).find(
+      (qid) =>
+        qid.startsWith('riddle-') &&
+        !state.visited?.includes(qid.slice(7)) &&
+        byId.has(qid) &&
+        !used.has(qid) &&
+        state.seen[qid].wrong > 0 &&
+        !solved(qid),
+    )
+    // 2) journal : d'abord diary-<pays>, puis diary2-<pays>, jusqu'à la bonne réponse
+    const diaryDue = (state.visited ?? [])
+      .flatMap((cid) => [`diary-${cid}`, `diary2-${cid}`])
+      .find((qid) => byId.has(qid) && !used.has(qid) && !solved(qid))
+    const due = riddleBack ?? diaryDue
+    if (due) {
+      used.add(due)
+      regular[worldIdx] = { qid: due, kind: 'normal' }
       replaced.add(worldIdx)
     }
   }

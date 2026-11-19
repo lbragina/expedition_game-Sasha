@@ -690,12 +690,12 @@
     "lang": "fr",
     "prompt": "Selon ton journal de bord au Brésil, quel rôle essentiel joue l’immense forêt amazonienne pour notre planète ?",
     "options": [
-      "Elle produit une partie de l’oxygène de la planète",
-      "Elle refroidit les océans grâce à ses glaciers",
       "Elle abrite la plus haute montagne du monde",
-      "Elle alimente tous les déserts en eau douce"
+      "Elle produit une partie de l’oxygène de la planète",
+      "Elle alimente tous les déserts en eau douce",
+      "Elle refroidit les océans grâce à ses glaciers"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Le Brésil abrite la plus grande part de la forêt amazonienne, qui produit une partie de l’oxygène de notre planète.",
     "tags": [
       "journal de bord",
@@ -720,12 +720,12 @@
     "lang": "fr",
     "prompt": "Dans ton journal de bord en Islande, pourquoi cette île compte-t-elle autant de volcans et de geysers ?",
     "options": [
-      "Parce qu’elle se trouve sur une faille entre deux plaques de la croûte terrestre",
       "Parce qu’elle est située juste sur l’équateur",
       "Parce qu’elle est entourée de déserts très chauds",
-      "Parce que le soleil ne s’y couche jamais"
+      "Parce que le soleil ne s’y couche jamais",
+      "Parce qu’elle se trouve sur une faille entre deux plaques de la croûte terrestre"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "L’Islande est posée sur une faille entre deux plaques terrestres, ce qui explique ses nombreux volcans et geysers.",
     "tags": [
       "journal de bord",
@@ -774,12 +774,12 @@
     "lang": "fr",
     "prompt": "Selon ton journal de bord au Kenya, quelle ligne imaginaire traverse ce pays, le plaçant entre deux hémisphères ?",
     "options": [
-      "L’équateur",
-      "Le cercle polaire arctique",
       "Le méridien de Greenwich",
+      "Le cercle polaire arctique",
+      "L’équateur",
       "Le tropique du Capricorne"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Le Kenya est traversé par l’équateur, à cheval entre les hémisphères nord et sud.",
     "tags": [
       "journal de bord",
@@ -804,12 +804,12 @@
     "lang": "fr",
     "prompt": "D’après ton journal de bord au Canada, quelle particularité géographique rend ce pays unique au monde ?",
     "options": [
-      "Il possède plus de lacs que n’importe quel autre pays",
       "C’est le plus petit pays du continent américain",
+      "Il possède plus de lacs que n’importe quel autre pays",
       "Il ne possède aucune forêt",
       "Il est traversé par l’équateur"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Deuxième plus grand pays du monde, le Canada compte plus de lacs que n’importe quel autre pays.",
     "tags": [
       "journal de bord",
@@ -834,12 +834,12 @@
     "lang": "fr",
     "prompt": "Selon ton journal de bord en Grèce, quelle grande idée politique a été inventée à Athènes au Ve siècle av. J.-C. ?",
     "options": [
-      "La démocratie (les citoyens votaient eux-mêmes les lois)",
       "La monarchie absolue",
-      "L’imprimerie moderne",
-      "La boussole magnétique"
+      "La boussole magnétique",
+      "La démocratie (les citoyens votaient eux-mêmes les lois)",
+      "L’imprimerie moderne"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Au Ve siècle av. J.-C., Athènes a inventé la démocratie : les citoyens votaient eux-mêmes les lois.",
     "tags": [
       "journal de bord",
@@ -852,6 +852,480 @@
       "Relis la fiche de la Grèce sur ta carte du monde.",
       "C’est un système où les citoyens décident et votent les lois.",
       "C’est la démocratie."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-japan",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Toujours dans ton journal de bord sur le Japon : quelle est la hauteur du mont Fuji, en mètres ?",
+    "answer": 3776,
+    "explanation": "Le mont Fuji, point culminant du Japon, mesure 3 776 m.",
+    "tags": [
+      "journal de bord",
+      "japan"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Japon sur ta carte du monde.",
+      "C’est un nombre entre 3 000 et 4 000.",
+      "Le journal indique 3 776 m."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-egypt",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord en Égypte, quel est le plus long fleuve d’Afrique ?",
+    "options": [
+      "Le Nil",
+      "Le Zambèze",
+      "Le Congo",
+      "Le Niger"
+    ],
+    "answer": 0,
+    "explanation": "Le Nil est le plus long fleuve d’Afrique : c’est lui qui a fait vivre l’Égypte des pharaons.",
+    "tags": [
+      "journal de bord",
+      "egypt"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche de l’Égypte sur ta carte du monde.",
+      "Les pharaons vivaient sur ses rives.",
+      "Son nom commence par un N."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-brazil",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord au Brésil, qu’as-tu construit avec le bois récolté ?",
+    "options": [
+      "Un phare",
+      "Un pont de pierre",
+      "Un igloo",
+      "Une cabane dans les arbres"
+    ],
+    "answer": 3,
+    "explanation": "Au Brésil, Sasha a glissé sur une rampe de bois et construit une cabane dans les arbres avec le bois récolté.",
+    "tags": [
+      "journal de bord",
+      "brazil"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal du Brésil sur la carte.",
+      "Pense à la forêt amazonienne : on y construit en hauteur.",
+      "C’est un abri perché dans les arbres."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-iceland",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "En Islande, avec quoi as-tu construit un mur pour te protéger du vent, d’après ton journal de bord ?",
+    "options": [
+      "Des pierres",
+      "Des briques rouges",
+      "Des blocs de glace",
+      "Des branches de bouleau"
+    ],
+    "answer": 0,
+    "explanation": "En Islande, Sasha a construit un mur de pierre pour se protéger du vent.",
+    "tags": [
+      "journal de bord",
+      "iceland"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de l’Islande sur la carte.",
+      "Pense au matériau le plus solide de l’inventaire.",
+      "C’est un mur de pierre."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-peru",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Pérou, quel peuple a construit le Machu Picchu vers 1450 ?",
+    "options": [
+      "Les Incas",
+      "Les Égyptiens",
+      "Les Romains",
+      "Les Vikings"
+    ],
+    "answer": 0,
+    "explanation": "Le Machu Picchu est une cité inca construite vers 1450 dans les Andes.",
+    "tags": [
+      "journal de bord",
+      "peru"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Pérou sur ta carte du monde.",
+      "Ce peuple vivait dans les Andes.",
+      "Son nom commence par « In »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-kenya",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Selon ton journal de bord au Kenya, quels animaux migrent chaque année par millions entre le Kenya et la Tanzanie ?",
+    "options": [
+      "Les éléphants",
+      "Les lions",
+      "Les girafes",
+      "Les gnous"
+    ],
+    "answer": 3,
+    "explanation": "Chaque année, des millions de gnous migrent entre le Kenya et la Tanzanie.",
+    "tags": [
+      "journal de bord",
+      "kenya"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Kenya sur ta carte du monde.",
+      "Ce ne sont pas des prédateurs, et ils vivent en immenses troupeaux.",
+      "Leur nom commence par « gn »."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-canada",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "D’après ton journal de bord au Canada, quel rang occupe ce pays dans le monde par sa superficie ?",
+    "options": [
+      "Le dixième",
+      "Le premier",
+      "Le deuxième",
+      "Le cinquième"
+    ],
+    "answer": 2,
+    "explanation": "Le Canada est le deuxième plus grand pays du monde par sa superficie, juste après la Russie.",
+    "tags": [
+      "journal de bord",
+      "canada"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis la fiche du Canada sur ta carte du monde.",
+      "Il est très grand, mais pas le tout premier.",
+      "Il est juste derrière le numéro 1."
+    ],
+    "image": null
+  },
+  {
+    "id": "diary2-greece",
+    "category": "world",
+    "topic": "journal",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton journal de bord en Grèce, autour de quel monument d’Athènes as-tu skaté ?",
+    "options": [
+      "Le Parthénon",
+      "La Sagrada Familia",
+      "Le Colisée",
+      "Le Machu Picchu"
+    ],
+    "answer": 0,
+    "explanation": "En Grèce, Sasha a skaté autour du Parthénon, à Athènes, berceau de la démocratie.",
+    "tags": [
+      "journal de bord",
+      "greece"
+    ],
+    "skill": "reading_recall",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Relis ton journal de la Grèce sur la carte.",
+      "Ce temple domine Athènes.",
+      "Son nom commence par « Par »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-japan",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis un pays bâti sur un archipel de plus de 6 800 îles. Quel pays suis-je ?",
+    "options": [
+      "Le Kenya",
+      "Le Brésil",
+      "Le Pérou",
+      "Le Japon"
+    ],
+    "answer": 3,
+    "explanation": "C’est le Japon : un archipel de plus de 6 800 îles, dominé par le mont Fuji.",
+    "tags": [
+      "énigme",
+      "japan"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à un pays d’Asie.",
+      "Son archipel compte des milliers d’îles.",
+      "Son plus haut sommet est le mont Fuji."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-egypt",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis traversé par le plus long fleuve d’Afrique, le Nil, et mes pharaons ont fait bâtir de géantes pyramides. Quel pays suis-je ?",
+    "options": [
+      "Le Kenya",
+      "L’Égypte",
+      "Le Canada",
+      "L’Islande"
+    ],
+    "answer": 1,
+    "explanation": "C’est l’Égypte, le pays du Nil et de la pyramide de Khéops.",
+    "tags": [
+      "énigme",
+      "egypt"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense aux pharaons.",
+      "Un grand fleuve coule dans ce pays désertique.",
+      "La pyramide de Khéops est à Gizeh."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-brazil",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : j’abrite la plus grande part de la forêt amazonienne. Quel pays suis-je ?",
+    "options": [
+      "Le Japon",
+      "Le Brésil",
+      "L’Islande",
+      "La Grèce"
+    ],
+    "answer": 1,
+    "explanation": "C’est le Brésil : la forêt amazonienne produit une partie de l’oxygène de la planète.",
+    "tags": [
+      "énigme",
+      "brazil"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Amérique du Sud.",
+      "On y parle portugais.",
+      "Le fleuve Amazone y coule."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-iceland",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis posé sur une faille entre deux plaques de la croûte terrestre, avec beaucoup de volcans et de geysers. Quel pays suis-je ?",
+    "options": [
+      "Le Canada",
+      "L’Égypte",
+      "L’Islande",
+      "Le Kenya"
+    ],
+    "answer": 2,
+    "explanation": "C’est l’Islande, l’île de feu et de glace.",
+    "tags": [
+      "énigme",
+      "iceland"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à une île très au nord.",
+      "Les geysers y jaillissent du sol.",
+      "Son nom contient le mot « glace »."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-peru",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : dans mes montagnes, les Andes, les Incas ont bâti vers 1450 la cité du Machu Picchu. Quel pays suis-je ?",
+    "options": [
+      "Le Pérou",
+      "Le Canada",
+      "Le Kenya",
+      "La Grèce"
+    ],
+    "answer": 0,
+    "explanation": "C’est le Pérou : le Machu Picchu se trouve à environ 2 400 m d’altitude.",
+    "tags": [
+      "énigme",
+      "peru"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Amérique du Sud.",
+      "Les lamas vivent dans ses montagnes.",
+      "Les Incas y ont construit leur cité."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-kenya",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : l’équateur me traverse et, chaque année, des millions de gnous migrent chez moi. Quel pays suis-je ?",
+    "options": [
+      "L’Islande",
+      "Le Kenya",
+      "Le Canada",
+      "La Grèce"
+    ],
+    "answer": 1,
+    "explanation": "C’est le Kenya, traversé par l’équateur, avec ses immenses savanes.",
+    "tags": [
+      "énigme",
+      "kenya"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Afrique de l’Est.",
+      "Une ligne imaginaire sépare la Terre en deux hémisphères.",
+      "Les gnous traversent la savane."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-canada",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : je suis le deuxième plus grand pays du monde par ma superficie, avec plus de lacs que tous les autres pays. Quel pays suis-je ?",
+    "options": [
+      "Le Pérou",
+      "Le Japon",
+      "L’Égypte",
+      "Le Canada"
+    ],
+    "answer": 3,
+    "explanation": "C’est le Canada : le deuxième plus grand pays du monde, avec plus de lacs que n’importe quel autre.",
+    "tags": [
+      "énigme",
+      "canada"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Amérique du Nord.",
+      "Son emblème est une feuille d’érable.",
+      "On y parle français et anglais."
+    ],
+    "image": null
+  },
+  {
+    "id": "riddle-greece",
+    "category": "world",
+    "topic": "enigme",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Énigme : au Ve siècle avant J.-C., ma capitale Athènes a inventé la démocratie. Quel pays suis-je ?",
+    "options": [
+      "Le Brésil",
+      "Le Kenya",
+      "La Grèce",
+      "L’Islande"
+    ],
+    "answer": 2,
+    "explanation": "C’est la Grèce : à Athènes, les citoyens votaient eux-mêmes les lois.",
+    "tags": [
+      "énigme",
+      "greece"
+    ],
+    "skill": "riddle",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à l’Europe du Sud, au bord de la mer Méditerranée.",
+      "Le Parthénon se trouve dans sa capitale.",
+      "Les premiers Jeux olympiques y ont eu lieu."
     ],
     "image": null
   }

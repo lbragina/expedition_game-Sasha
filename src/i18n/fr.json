@@ -83,7 +83,8 @@
     "conf_overconfident": "Tu étais très sûr : c'est le bon moment pour comprendre d'où vient l'erreur.",
     "conf_good_intuition": "Tu pensais tenter au hasard, mais ton intuition était bonne !",
     "mentor_noted": "Avec l'aide du mentor : c'est noté, pas de combo cette fois.",
-    "combo_kept": "Combo conservé : cette tâche ne le fait pas retomber !"
+    "combo_kept": "Combo conservé : cette tâche ne le fait pas retomber !",
+    "main_done": "Expédition du jour terminée ! Tu peux continuer avec des expéditions bonus."
   },
   "hints": {
     "button": "Boussole ({{count}})",
@@ -116,7 +117,14 @@
     "title": "Expédition terminée",
     "score": "{{correct}} réussies sur {{total}}",
     "best_combo": "Meilleur combo ×{{count}}",
-    "level_up": "Nouveau grade : {{rank}} !"
+    "level_up": "Nouveau grade : {{rank}} !",
+    "mystery_destination": "Destination mystère",
+    "country_opened": "Nouveau pays découvert : {{country}} !",
+    "riddle_title": "Énigme de la prochaine destination",
+    "riddle_intro": "Un nouveau pays est tout proche ! Devine lequel :",
+    "riddle_seen": "Tu as déjà répondu à cette énigme. Termine une expédition de plus et le pays s'ouvrira !",
+    "riddle_right": "Bien vu ! Termine une expédition de plus et ce pays s'ouvrira sur ta carte.",
+    "riddle_wrong": "Pas tout à fait… mais ce n'est pas grave : l'énigme reviendra dans ta prochaine expédition. Le pays s'ouvrira bientôt !"
   },
   "resources": {
     "wood": "Bois",

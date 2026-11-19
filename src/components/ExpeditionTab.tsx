@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { countryById } from '../data/countries'
 import {
+  answerRiddle,
   closeSummary,
   expeditionAvailable,
   mentorHelp,
@@ -67,20 +68,17 @@ function Home() {
         ))}
       </div>
 
-      {avail ? (
-        <button
-          className={`btn text-lg ${avail === 'main' ? 'btn-primary' : 'btn-gold'}`}
-          onClick={() => {
-            sfx.unlock()
-            sfx.click()
-            startExpedition()
-          }}
-        >
-          {avail === 'main' ? '🧭 ' + t('expedition.start_daily') : '⭐ ' + t('expedition.start_bonus')}
-        </button>
-      ) : (
-        <div className="card text-center font-bold text-ok">✅ {t('expedition.completed_today')}</div>
-      )}
+      <button
+        className={`btn text-lg ${avail === 'main' ? 'btn-primary' : 'btn-gold'}`}
+        onClick={() => {
+          sfx.unlock()
+          sfx.click()
+          startExpedition()
+        }}
+      >
+        {avail === 'main' ? '🧭 ' + t('expedition.start_daily') : '⭐ ' + t('expedition.start_bonus')}
+      </button>
+      {avail === 'bonus' && <p className="text-center text-sm font-bold text-ok">✅ {t('expedition.main_done')}</p>}
     </div>
   )
 }
@@ -314,6 +312,10 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
   const country = tObj<{ name: string; log: string }>(`countries.${session.countryId}`)
   const level = levelOf(state.xp)
   const leveledUp = level > session.levelBefore
+  // expédition « énigme » (impaire) : le pays n'est pas encore ouvert, on le fait deviner
+  const riddle = questionMap(state).get(`riddle-${session.countryId}`)
+  const mystery = !(session.opensCountry ?? true) && !state.visited.includes(session.countryId) && !!riddle
+  const justOpened = (session.opensCountry ?? true) && state.visited.includes(session.countryId)
 
   useEffect(() => {
     if (leveledUp) sfx.levelUp()
@@ -325,8 +327,13 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
     <div className="space-y-3 pt-3">
       <h2 className="text-center font-pixel text-2xl font-bold text-gold">🏁 {t('summary.title')}</h2>
       <div className="card space-y-2 text-center">
-        <div className="text-5xl">{info?.emoji}</div>
-        <div className="font-bold">{t('expedition.today_country', { country: country?.name ?? '' })}</div>
+        <div className="text-5xl">{mystery ? '❔' : info?.emoji}</div>
+        <div className="font-bold">
+          {mystery ? t('summary.mystery_destination') : t('expedition.today_country', { country: country?.name ?? '' })}
+        </div>
+        {justOpened && (
+          <p className="animate-trick font-pixel font-bold text-gold">🎉 {t('summary.country_opened', { country: country?.name ?? '' })}</p>
+        )}
         <div className="text-lg font-bold">
           {t('summary.score', { correct: session.correct, total: session.slots.length })}
         </div>
@@ -348,10 +355,14 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
         {state.streak.count > 1 && <p className="text-sm">🔥 {t('hud.streak', { count: state.streak.count })}</p>}
       </div>
 
-      <div className="card space-y-1">
-        <h3 className="font-bold text-diamond">📖 {t('map.diary')}</h3>
-        <p className="text-sm italic">« {country?.log} »</p>
-      </div>
+      {mystery && riddle ? (
+        <RiddleCard q={riddle} />
+      ) : (
+        <div className="card space-y-1">
+          <h3 className="font-bold text-diamond">📖 {t('map.diary')}</h3>
+          <p className="text-sm italic">« {country?.log} »</p>
+        </div>
+      )}
 
       <button
         className="btn btn-primary"
@@ -366,6 +377,54 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
       >
         {t('expedition.next')}
       </button>
+    </div>
+  )
+}
+
+/** Énigme sur le prochain pays : bonne ou mauvaise réponse, l'aventure continue (si raté, elle reviendra). */
+function RiddleCard({ q }: { q: Question }) {
+  const state = useGame()
+  const [picked, setPicked] = useState<number | null>(null)
+  const seen = state.seen[q.id]
+  const options = q.options ?? []
+  const answered = picked !== null
+  const ok = answered && picked === q.answer
+
+  const pick = (i: number) => {
+    if (answered) return
+    sfx.unlock()
+    const right = i === q.answer
+    right ? sfx.correct() : sfx.wrong()
+    setPicked(i)
+    answerRiddle(q.id, right)
+  }
+
+  return (
+    <div className="card space-y-2 !border-diamond">
+      <h3 className="font-bold text-diamond">🧩 {t('summary.riddle_title')}</h3>
+      <p className="text-sm text-mute">{t('summary.riddle_intro')}</p>
+      <p className="font-semibold">{q.prompt}</p>
+      {!answered && seen ? (
+        <p className="text-sm text-mute">{t('summary.riddle_seen')}</p>
+      ) : (
+        <div className="space-y-2">
+          {options.map((o, i) => (
+            <button
+              key={i}
+              disabled={answered}
+              onClick={() => pick(i)}
+              className={`opt ${answered ? (i === q.answer && ok ? 'opt-right' : i === picked ? 'opt-wrong' : 'opacity-60') : ''}`}
+            >
+              {o}
+            </button>
+          ))}
+        </div>
+      )}
+      {answered && (
+        <p className={`rounded-lg border-2 p-2 text-sm ${ok ? 'border-ok' : 'border-gold'}`}>
+          {ok ? '✔ ' + t('summary.riddle_right') : '🔁 ' + t('summary.riddle_wrong')}
+        </p>
+      )}
     </div>
   )
 }

@@ -82,6 +82,8 @@ export interface Session {
   hintsShown: number
   mentor: boolean
   countryId: string
+  /** true = à la fin de cette expédition, le pays s'ouvre sur la carte (expéditions paires) */
+  opensCountry?: boolean
   levelBefore: number
   warmup: boolean
   finished: boolean

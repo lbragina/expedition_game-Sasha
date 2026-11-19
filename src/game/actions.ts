@@ -25,15 +25,15 @@ export function resourceFor(difficulty: number): ResourceKey {
   return 'diamond'
 }
 
-export function expeditionAvailable(state: SaveState): 'main' | 'bonus' | null {
-  if (!state.today.main) return 'main'
-  return 'bonus'
+/** Une expédition principale par jour, puis autant d'expéditions bonus que Sasha veut (plus de blocage jusqu'à demain). */
+export function expeditionAvailable(state: SaveState): 'main' | 'bonus' {
+  return state.today.main ? 'bonus' : 'main'
 }
 
 export function startExpedition() {
   update((d) => {
     const kind = expeditionAvailable(d)
-    if (!kind || d.session) return
+    if (d.session) return
     const mode = getMode(d)
     const unvisited = COUNTRIES.filter((c) => !d.visited.includes(c.id))
     const country = unvisited.length ? unvisited[0] : COUNTRIES[d.expeditionsDone % COUNTRIES.length]
@@ -54,6 +54,8 @@ export function startExpedition() {
       hintsShown: 0,
       mentor: false,
       countryId: country.id,
+      // « 2 expéditions = 1 pays » : le pays s'ouvre à la fin de chaque expédition paire
+      opensCountry: (d.expeditionsDone + 1) % 2 === 0,
       levelBefore: levelOf(d.xp),
       warmup: mode.warmup,
       finished: false,
@@ -259,8 +261,9 @@ function finishSession(d: SaveState) {
     }
   }
 
-  // nouvelle destination + coffre caché sur la carte
-  if (!d.visited.includes(s.countryId)) {
+  // nouvelle destination (une expédition sur deux) + coffre caché sur la carte
+  const alreadyVisited = d.visited.includes(s.countryId)
+  if (!alreadyVisited && (s.opensCountry ?? true)) {
     d.visited.push(s.countryId)
     d.chests.push({
       countryId: s.countryId,
@@ -269,7 +272,21 @@ function finishSession(d: SaveState) {
       found: false,
     })
   }
-  d.log.push({ date: s.date, countryId: s.countryId, correct: s.correct, total: s.slots.length, kind: s.kind })
+  // le journal du capitaine s'écrit quand le pays est ouvert (ou revisité) — pas pendant l'expédition « énigme »
+  if (d.visited.includes(s.countryId)) {
+    d.log.push({ date: s.date, countryId: s.countryId, correct: s.correct, total: s.slots.length, kind: s.kind })
+  }
+}
+
+/** Énigme du récapitulatif (expédition impaire) : on note seulement le résultat, sans XP ni effet sur le niveau. */
+export function answerRiddle(qid: string, correct: boolean) {
+  update((d) => {
+    const seen = d.seen[qid] ?? { right: 0, wrong: 0, last: 0 }
+    if (correct) seen.right += 1
+    else seen.wrong += 1
+    seen.last = Date.now()
+    d.seen[qid] = seen
+  })
 }
 
 export function nextStep() {
