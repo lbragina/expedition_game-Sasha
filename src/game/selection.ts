@@ -63,6 +63,19 @@ export function buildSlots(state: SaveState): Slot[] {
     placed.push({ slot: inj, index: idx })
   }
 
+  // --- 2b. Questions du journal de bord des pays déjà visités ---------------
+  const worldIdx = REGULAR.findIndex((c, i) => c === 'world' && !replaced.has(i))
+  if (worldIdx >= 0 && state.visited?.length) {
+    const dueDiaryId = state.visited
+      .map((cid) => `diary-${cid}`)
+      .find((qid) => byId.has(qid) && !used.has(qid) && !(state.seen[qid]?.right > 0))
+    if (dueDiaryId) {
+      used.add(dueDiaryId)
+      regular[worldIdx] = { qid: dueDiaryId, kind: 'normal' }
+      replaced.add(worldIdx)
+    }
+  }
+
   REGULAR.forEach((cat, i) => {
     if (replaced.has(i)) return
     const pool = questions.filter((q) => q.category === cat)
