@@ -2390,5 +2390,675 @@
       "Les manchots empereurs y vivent."
     ],
     "image": null
+  },
+  {
+    "id": "world-0021",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "En 52 avant J.-C., à Alésia, un chef gaulois affronte les armées de Jules César. Qui est-il ?",
+    "options": [
+      "Clovis",
+      "Vercingétorix",
+      "Charlemagne",
+      "Astérix"
+    ],
+    "answer": 1,
+    "explanation": "Vercingétorix a réuni les peuples gaulois contre Jules César. Il est vaincu à Alésia en 52 av. J.-C. : la Gaule devient romaine. (Astérix, lui, est un personnage de bande dessinée !)",
+    "tags": [
+      "Gaulois",
+      "Antiquité",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "C'est un chef gaulois, pas un roi franc.",
+      "Clovis et Charlemagne vivent bien plus tard.",
+      "Son nom est long et finit par « -rix »."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0022",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Après la conquête romaine, les Gaulois adoptent peu à peu le latin, les routes, les villes avec thermes et amphithéâtres. Comment appelle-t-on ce phénomène ?",
+    "options": [
+      "La féodalité",
+      "La colonisation",
+      "La romanisation",
+      "La Renaissance"
+    ],
+    "answer": 2,
+    "explanation": "La romanisation : les Gaulois adoptent le mode de vie romain (langue latine, routes, villes, monuments). Le français vient d'ailleurs du latin !",
+    "tags": [
+      "Gaulois",
+      "Rome",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [
+      "world-0021"
+    ],
+    "hints": [
+      "Le mot est construit à partir de « Romain ».",
+      "La féodalité et la Renaissance arrivent beaucoup plus tard.",
+      "Le latin des Romains est l'ancêtre du français."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0023",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 3,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Frise du temps : remets ces quatre événements dans l'ordre, du plus ancien au plus récent.",
+    "options": [
+      "Vercingétorix est vaincu à Alésia (52 av. J.-C.)",
+      "Clovis se fait baptiser (vers 496)",
+      "Charlemagne est couronné empereur (an 800)",
+      "Les révolutionnaires prennent la Bastille (1789)"
+    ],
+    "answer": [
+      "Vercingétorix est vaincu à Alésia (52 av. J.-C.)",
+      "Clovis se fait baptiser (vers 496)",
+      "Charlemagne est couronné empereur (an 800)",
+      "Les révolutionnaires prennent la Bastille (1789)"
+    ],
+    "explanation": "Antiquité (les Gaulois), puis le début du Moyen Âge avec Clovis et Charlemagne, et enfin la Révolution française en 1789.",
+    "tags": [
+      "frise chronologique",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Quel événement a lieu avant Jésus-Christ ?",
+      "Clovis (Ve siècle) vit avant Charlemagne (VIIIe-IXe siècle).",
+      "La Bastille, c'est la Révolution : la plus récente de ces quatre dates."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0024",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Au Moyen Âge, quelle est la grosse tour centrale d'un château fort, où le seigneur se réfugie en dernier recours ?",
+    "options": [
+      "Le beffroi",
+      "Le clocher",
+      "La herse",
+      "Le donjon"
+    ],
+    "answer": 3,
+    "explanation": "Le donjon est la tour principale du château fort : c'est le dernier refuge en cas d'attaque. La herse, elle, est une grille qui ferme l'entrée.",
+    "tags": [
+      "château fort",
+      "Moyen Âge",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Dans Minecraft, on parle aussi de « donjon » pour un endroit bien gardé.",
+      "La herse est une grille, pas une tour.",
+      "Beffroi et clocher sont dans les villes et les églises."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0025",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Le 14 juillet 1789, des Parisiens attaquent une prison-forteresse, symbole du pouvoir du roi. Laquelle ?",
+    "options": [
+      "La Bastille",
+      "Le château de Versailles",
+      "Notre-Dame de Paris",
+      "La tour Eiffel"
+    ],
+    "answer": 0,
+    "explanation": "La prise de la Bastille, le 14 juillet 1789, est le symbole du début de la Révolution française. La tour Eiffel n'existait pas encore : elle a été construite en 1889.",
+    "tags": [
+      "1789",
+      "Révolution",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [
+      "world-0023"
+    ],
+    "hints": [
+      "Le mot que tu cherches commence par « Bas- ».",
+      "La tour Eiffel date de 1889, un siècle plus tard.",
+      "C'était une prison dans la ville de Paris."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0026",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Le 14 juillet est la fête nationale française parce que c'est le jour du couronnement de Louis XVI.",
+    "options": [
+      "Elle rappelle la bataille d'Alésia contre les Romains.",
+      "Elle marque la fin de la Première Guerre mondiale.",
+      "Cette date rappelle la prise de la Bastille en 1789 (et la fête de la Fédération de 1790)."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "Le 14 juillet est la fête nationale depuis 1880. Elle célèbre la prise de la Bastille (1789), symbole de la Révolution, et la fête de la Fédération (1790).",
+    "tags": [
+      "1789",
+      "14 juillet",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 1,
+    "ladder": [
+      "world-0025"
+    ],
+    "hints": [
+      "Rappelle-toi ce qui s'est passé à Paris le 14 juillet 1789.",
+      "Alésia, c'est en 52 av. J.-C. ; la fin de la guerre 14-18, c'est en novembre 1918.",
+      "Révolution, Bastille…"
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0027",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 5,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets dans l'ordre ces grands événements de l'histoire récente de l'Europe.",
+    "options": [
+      "La Révolution française (1789)",
+      "La Première Guerre mondiale (1914-1918)",
+      "La Seconde Guerre mondiale (1939-1945)",
+      "Le traité de Rome, début de la construction européenne (1957)"
+    ],
+    "answer": [
+      "La Révolution française (1789)",
+      "La Première Guerre mondiale (1914-1918)",
+      "La Seconde Guerre mondiale (1939-1945)",
+      "Le traité de Rome, début de la construction européenne (1957)"
+    ],
+    "explanation": "Après deux guerres mondiales très meurtrières, des pays européens décident de s'unir pour garantir la paix : c'est le traité de Rome en 1957.",
+    "tags": [
+      "guerres mondiales",
+      "Europe",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 1,
+    "ladder": [
+      "world-0023"
+    ],
+    "hints": [
+      "Quatre dates : 1789, 1914, 1939, 1957.",
+      "La construction européenne vient après les guerres, pour éviter qu'elles se reproduisent.",
+      "La Première Guerre mondiale précède la Seconde."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0028",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 6,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "En 1957, six pays fondent la Communauté économique européenne, ancêtre de l'Union européenne. Le Luxembourg en fait partie ! Lequel de ces pays n'en faisait PAS partie ?",
+    "options": [
+      "L'Italie",
+      "La Belgique",
+      "L'Espagne",
+      "Les Pays-Bas"
+    ],
+    "answer": 2,
+    "explanation": "Les six pays fondateurs (1957) : la France, l'Allemagne de l'Ouest, l'Italie, la Belgique, les Pays-Bas et le Luxembourg. L'Espagne n'a rejoint l'Europe qu'en 1986.",
+    "tags": [
+      "Europe",
+      "Luxembourg",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 1,
+    "ladder": [
+      "world-0027"
+    ],
+    "hints": [
+      "Les voisins du Luxembourg et du Benelux sont fondateurs.",
+      "L'Italie, la Belgique et les Pays-Bas étaient bien là.",
+      "Un seul de ces pays a rejoint l'Europe bien plus tard, en 1986."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0029",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Ton lycée porte le nom de Vauban, maréchal de Louis XIV. Quel était son grand talent ?",
+    "options": [
+      "Il peignait les portraits de la cour de Versailles",
+      "Il explorait les mers à la recherche de nouveaux continents",
+      "Il dirigeait le chœur de la chapelle royale",
+      "Il était ingénieur militaire : il construisait et améliorait des forteresses"
+    ],
+    "answer": 3,
+    "explanation": "Vauban (1633-1707) a fortifié des dizaines de villes. En 1684, il dirige le siège de la forteresse de Luxembourg pour Louis XIV, puis il la renforce : les casemates du Bock en gardent la trace.",
+    "tags": [
+      "Vauban",
+      "Luxembourg",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [
+      "world-0024"
+    ],
+    "hints": [
+      "Vauban a fait construire des murs, des bastions, des citadelles.",
+      "Pense aux forteresses de Luxembourg, un cadeau de l'Histoire.",
+      "Ce n'est pas un peintre, ni un navigateur, ni un musicien."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0030",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "En Égypte antique, un grand fleuve fertilisait les champs grâce à ses crues. Lequel ?",
+    "options": [
+      "Le Nil",
+      "Le Rhin",
+      "La Seine",
+      "Le Danube"
+    ],
+    "answer": 0,
+    "explanation": "Chaque année, les crues du Nil déposaient un limon fertile sur les champs. « L'Égypte est un don du Nil », disait-on dans l'Antiquité.",
+    "tags": [
+      "Égypte",
+      "Antiquité",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Ce fleuve traverse l'Égypte du sud au nord.",
+      "Le Rhin, la Seine et le Danube sont en Europe.",
+      "Son nom a trois lettres."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0031",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "En Grèce antique, la ville d'Athènes invente la démocratie. Que signifie ce mot ?",
+    "options": [
+      "Le pouvoir d'un seul roi",
+      "Le pouvoir du peuple",
+      "Le pouvoir des armées",
+      "Le pouvoir des dieux"
+    ],
+    "answer": 1,
+    "explanation": "Démocratie vient du grec « dêmos » (le peuple) et « kratos » (le pouvoir). À Athènes, les citoyens votaient les lois.",
+    "tags": [
+      "Grèce",
+      "Antiquité",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [
+      "world-0030"
+    ],
+    "hints": [
+      "Le mot est grec : « demos » veut dire le peuple.",
+      "Ce n'est pas le pouvoir d'une seule personne : ça, c'est la monarchie.",
+      "Le pouvoir revient aux citoyens."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0032",
+    "category": "world",
+    "topic": "hg_histoire",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quelle civilisation antique est née entre deux fleuves, le Tigre et l'Euphrate, et a inventé l'écriture cunéiforme sur des tablettes d'argile ?",
+    "options": [
+      "L'Égypte",
+      "La Grèce",
+      "La Mésopotamie",
+      "Rome"
+    ],
+    "answer": 2,
+    "explanation": "En Mésopotamie (« le pays entre les fleuves »), les scribes écrivaient en cunéiforme avec un roseau taillé sur de l'argile fraîche. Les Égyptiens, eux, utilisaient les hiéroglyphes.",
+    "tags": [
+      "Mésopotamie",
+      "Antiquité",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_histoire",
+    "stars": 0,
+    "ladder": [
+      "world-0030"
+    ],
+    "hints": [
+      "Le nom grec veut dire « entre les fleuves ».",
+      "Le Nil est le fleuve de l'Égypte, pas le Tigre.",
+      "Cunéiforme : des petits traits en forme de coins."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0033",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quel est le plus long fleuve de France, qui se jette dans l'océan Atlantique ?",
+    "options": [
+      "La Seine",
+      "Le Rhône",
+      "La Moselle",
+      "La Loire"
+    ],
+    "answer": 3,
+    "explanation": "La Loire mesure environ 1 000 km. La Seine se jette dans la Manche, le Rhône dans la mer Méditerranée et la Moselle dans le Rhin.",
+    "tags": [
+      "fleuves de France",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Un seul de ces fleuves se jette dans l'Atlantique.",
+      "La Seine passe par Paris et finit dans la Manche.",
+      "Il traverse les châteaux célèbres de la vallée de ce fleuve."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0034",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Le Mont Blanc culmine à environ 4 800 m : c'est le plus haut sommet d'Europe occidentale. Dans quel massif se trouve-t-il ?",
+    "options": [
+      "Les Alpes",
+      "Les Pyrénées",
+      "Le Jura",
+      "Le Massif central"
+    ],
+    "answer": 0,
+    "explanation": "Le Mont Blanc (4 806 m) est dans les Alpes, à la frontière entre la France et l'Italie. Les Pyrénées séparent la France de l'Espagne.",
+    "tags": [
+      "massifs de France",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "C'est la plus haute chaîne d'Europe de l'Ouest.",
+      "Les Pyrénées sont à la frontière espagnole.",
+      "Les stations de ski de Chamonix sont à son pied."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0035",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 5,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Range ces massifs français du plus haut au moins haut (selon leur sommet principal).",
+    "options": [
+      "Les Alpes",
+      "Les Pyrénées",
+      "Le Massif central",
+      "Les Vosges"
+    ],
+    "answer": [
+      "Les Alpes",
+      "Les Pyrénées",
+      "Le Massif central",
+      "Les Vosges"
+    ],
+    "explanation": "Alpes : Mont Blanc (4 806 m). Pyrénées : plus de 3 000 m. Massif central : puy de Sancy (1 886 m). Vosges : Grand Ballon (1 424 m).",
+    "tags": [
+      "massifs de France",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 1,
+    "ladder": [
+      "world-0034"
+    ],
+    "hints": [
+      "Les Alpes sont les plus hautes d'Europe de l'Ouest.",
+      "Les Pyrénées dépassent 3 000 m. Le Massif central est bien plus bas.",
+      "Les Vosges sont les plus petites de ces quatre."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0036",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Une métropole est une très grande ville qui concentre beaucoup d'habitants, d'emplois et de services. Comment appelle-t-on le nombre d'habitants par kilomètre carré ?",
+    "options": [
+      "Le taux de natalité",
+      "La densité de population",
+      "La superficie",
+      "Le produit intérieur brut"
+    ],
+    "answer": 1,
+    "explanation": "La densité de population = nombre d'habitants ÷ superficie (en km²). Les métropoles ont des densités très élevées.",
+    "tags": [
+      "Habiter le monde",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [
+      "world-0034"
+    ],
+    "hints": [
+      "On divise les habitants par la surface.",
+      "La superficie, c'est la taille du territoire seulement.",
+      "Pense à un mot qui parle de « densité » : beaucoup de monde dans peu de place."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0037",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Quand il est midi à Luxembourg, il fait nuit à l'autre bout du monde. Pourquoi existe-t-il des fuseaux horaires ?",
+    "options": [
+      "Parce que chaque pays choisit librement l'heure qu'il préfère",
+      "Parce que la Lune tourne autour de la Terre",
+      "Parce que la Terre tourne sur elle-même : il fait jour d'un côté pendant qu'il fait nuit de l'autre",
+      "Parce que le Soleil tourne autour de la Terre en 12 heures"
+    ],
+    "answer": 2,
+    "explanation": "La Terre fait un tour sur elle-même en 24 heures : le Soleil éclaire toujours une moitié de la planète. On a donc découpé le globe en 24 fuseaux horaires.",
+    "tags": [
+      "fuseaux horaires",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Quand c'est le jour chez nous, c'est la nuit en Asie.",
+      "La Terre tourne sur elle-même en 24 heures.",
+      "Ce n'est pas la Lune, ni le choix des pays."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0038",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 5,
+    "type": "number",
+    "lang": "fr",
+    "prompt": "Il est midi (12 h) à Luxembourg. À Tokyo, il y a 8 heures d'avance sur le Luxembourg. Quelle heure est-il à Tokyo ? (écris l'heure sur 24 h, par exemple 17)",
+    "options": null,
+    "answer": 20,
+    "explanation": "12 h + 8 h = 20 h. À Tokyo, il est déjà 20 h, c'est-à-dire le soir.",
+    "tags": [
+      "fuseaux horaires",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [
+      "world-0037"
+    ],
+    "hints": [
+      "Tokyo est à l'est : le Soleil s'y lève plus tôt, donc il y est plus tard dans la journée.",
+      "Il faut ajouter 8 heures à 12 h.",
+      "12 + 8 = ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0039",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "À Marseille, les étés sont chauds et secs, et les hivers doux. Quel est ce climat ?",
+    "options": [
+      "Le climat polaire",
+      "Le climat équatorial",
+      "Le climat de montagne",
+      "Le climat méditerranéen"
+    ],
+    "answer": 3,
+    "explanation": "Le climat méditerranéen a des étés chauds et secs et des hivers doux. Le climat polaire est glacial toute l'année, l'équatorial est chaud et humide toute l'année.",
+    "tags": [
+      "climats",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [
+      "world-0033"
+    ],
+    "hints": [
+      "Marseille est au bord d'une mer célèbre du sud de l'Europe.",
+      "Le climat polaire est très froid : pas à Marseille !",
+      "Le climat porte le nom de la mer."
+    ],
+    "image": null
+  },
+  {
+    "id": "world-0040",
+    "category": "world",
+    "topic": "hg_geo",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "À Schengen et à Remich, la Moselle forme la frontière entre le Luxembourg et un pays voisin. Lequel ?",
+    "options": [
+      "L'Allemagne",
+      "La Belgique",
+      "Les Pays-Bas",
+      "La Suisse"
+    ],
+    "answer": 0,
+    "explanation": "La Moselle sépare le Luxembourg de l'Allemagne. C'est à Schengen, sur la Moselle, qu'a été signé en 1985 l'accord qui permet de circuler sans contrôle aux frontières en Europe.",
+    "tags": [
+      "Luxembourg",
+      "Schengen",
+      "Histoire-Géographie",
+      "Pont CM→6e"
+    ],
+    "skill": "hg_geo",
+    "stars": 0,
+    "ladder": [
+      "world-0033"
+    ],
+    "hints": [
+      "Le Luxembourg a trois voisins : la Belgique, la France et un autre.",
+      "La Belgique est à l'ouest, la Moselle est à l'est du Luxembourg.",
+      "Les Pays-Bas et la Suisse ne touchent pas le Luxembourg."
+    ],
+    "image": null
   }
 ]

@@ -5,7 +5,7 @@ import { allQuestions } from './questions'
 
 const SCHEMA = `{
   "id": "math-0142",
-  "category": "math | logic | iq | critical | world",
+  "category": "math | logic | iq | critical | world | science",
   "topic": "divisibility",
   "difficulty": 4,
   "type": "number | choice | boolean_explain | order | highlight",

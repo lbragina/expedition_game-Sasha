@@ -3,6 +3,7 @@ import { CATEGORIES, RESOURCE_KEYS, type Category, type SaveState } from '../typ
 import { BUILT_IN_QUESTIONS } from '../data/questions'
 import { defaultBase, defaultWorkshop, sanitizeBase, sanitizeWorkshop } from './baseData'
 import { START_RATING } from './elo'
+import { defaultSeason, ensureWeek, sanitizeSeason } from './seasonData'
 import { setSoundEnabled } from './sound'
 
 const KEY = 'expedition-save-v1'
@@ -40,10 +41,11 @@ export function defaultState(): SaveState {
     session: null,
     backup: { lastCount: 0, promptedCount: -1, lastAt: null },
     settings: { sound: true },
-    parent: { pin: '1234', warmup: 'auto', offset: 0 },
+    parent: { pin: '1234', warmup: 'auto', offset: 0, bridge: true },
     customQuestions: [],
     base: defaultBase(),
     workshop: defaultWorkshop(),
+    season: defaultSeason(),
     createdAt: Date.now(),
   }
 }
@@ -65,6 +67,7 @@ export function normalizeState(raw: unknown): SaveState {
     parent: { ...base.parent, ...(r.parent ?? {}) },
     base: sanitizeBase(r.base),
     workshop: sanitizeWorkshop(r.workshop),
+    season: sanitizeSeason(r.season),
     version: 1,
   }
   // Sauvegarde de l'Étape 1 (sans base) : on retrouve les trophées déjà gagnés dans l'historique.
@@ -98,6 +101,7 @@ function load(): SaveState {
 function rollDay(s: SaveState): SaveState {
   const today = todayStr()
   if (s.today.date !== today) s.today = { date: today, main: false, bonus: false }
+  ensureWeek(s.season, today)
   return s
 }
 

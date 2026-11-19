@@ -13,6 +13,7 @@ import { describeGiven, evaluate } from './answers'
 import { updateRating } from './elo'
 import { getMode, levelOf } from './progress'
 import { buildSlots } from './selection'
+import { isoWeek, seasonOnAnswer, seasonOnFinish } from './seasonData'
 import { getState, todayStr, update } from './store'
 
 const STAR_MULT = [1, 3, 5, 10]
@@ -85,15 +86,6 @@ function dayDiff(a: string, b: string): number {
   const da = new Date(a + 'T12:00:00').getTime()
   const db = new Date(b + 'T12:00:00').getTime()
   return Math.round((db - da) / 86400000)
-}
-
-function isoWeek(date: string): string {
-  const d = new Date(date + 'T12:00:00')
-  const day = (d.getDay() + 6) % 7
-  d.setDate(d.getDate() - day + 3)
-  const first = new Date(d.getFullYear(), 0, 4)
-  const week = 1 + Math.round(((d.getTime() - first.getTime()) / 86400000 - 3 + ((first.getDay() + 6) % 7)) / 7)
-  return `${d.getFullYear()}-W${week}`
 }
 
 export function submitAnswer(q: Question, draft: Draft, confidence: Confidence) {
@@ -208,6 +200,8 @@ export function submitAnswer(q: Question, draft: Draft, confidence: Confidence) 
     seen.last = Date.now()
     d.seen[q.id] = seen
 
+    seasonOnAnswer(d, q, { correct, mentor, hints: s.hintsShown, streak: s.streak, multiplier })
+
     const outcome: Outcome = {
       qid: q.id,
       kind: slot.kind,
@@ -263,7 +257,9 @@ function finishSession(d: SaveState) {
 
   // nouvelle destination (une expédition sur deux) + coffre caché sur la carte
   const alreadyVisited = d.visited.includes(s.countryId)
-  if (!alreadyVisited && (s.opensCountry ?? true)) {
+  const countryOpened = !alreadyVisited && (s.opensCountry ?? true)
+  seasonOnFinish(d, s, countryOpened)
+  if (countryOpened) {
     d.visited.push(s.countryId)
     d.chests.push({
       countryId: s.countryId,

@@ -39,7 +39,8 @@
     "logic": "Logique",
     "iq": "Défi QI",
     "critical": "Esprit Critique",
-    "world": "Culture & Monde"
+    "world": "Culture & Monde",
+    "science": "Sciences"
   },
   "hud": {
     "level": "Niv. {{n}}",
@@ -124,7 +125,9 @@
     "riddle_intro": "Un nouveau pays est tout proche ! Devine lequel :",
     "riddle_seen": "Tu as déjà répondu à cette énigme. Termine une expédition de plus et le pays s'ouvrira !",
     "riddle_right": "Bien vu ! Termine une expédition de plus et ce pays s'ouvrira sur ta carte.",
-    "riddle_wrong": "Pas tout à fait… mais ce n'est pas grave : l'énigme reviendra dans ta prochaine expédition. Le pays s'ouvrira bientôt !"
+    "riddle_wrong": "Pas tout à fait… mais ce n'est pas grave : l'énigme reviendra dans ta prochaine expédition. Le pays s'ouvrira bientôt !",
+    "season_points": "+{{points}} points de saison",
+    "season_tier": "Palier {{tier}} de la Saison atteint !"
   },
   "resources": {
     "wood": "Bois",
@@ -271,7 +274,7 @@
     "difficulty_offset": "Ajuster la difficulté",
     "change_pin": "Changer le code PIN (4 chiffres)",
     "prompt_no_weak": "- Aucune faiblesse repérée pour l'instant : propose une variété de thèmes.",
-    "prompt_template": "Tu es un auteur de problèmes pour un jeu éducatif destiné à Sasha, 12 ans, élève de 6e dans une école française (programme CM2 à 5e). Le jeu s'appelle « L'Expédition ».\n\nGénère {{count}} nouvelles tâches en français, au format JSON strict : une liste [ ... ] d'objets, sans texte autour.\n\nNiveau actuel du joueur par matière (échelle 1 à 10) :\n{{levels}}\n\nThèmes à renforcer en priorité :\n{{weak}}\n\nRègles :\n- Catégories : math, logic, iq, critical, world. Types : number, choice, boolean_explain, order, highlight.\n- number : answer est un nombre. choice : exactement 4 options, answer = index (0 à 3). boolean_explain : options = 2 ou 3 raisons, answer = {\"value\": true/false, \"reason\": index de la bonne raison}. order : options = 4 cartes DANS LE BON ORDRE (le jeu les mélange), answer = la même liste. highlight : options = les phrases du texte, answer = index de la phrase demandée.\n- Une seule bonne réponse possible, pas d'ambiguïté. Une explication courte et bienveillante.\n- Pour difficulty ≥ 4 : 3 niveaux d'aide dans hints (Indice, Méthode, Premier pas, sans donner la réponse) et ladder = 1 à 2 ids de tâches plus faciles du même thème (ids existants ou de ce lot).\n- Les tâches avec stars 1 (difficulté 5-6), 2 (7-8) ou 3 (9-10) sont des défis plus ambitieux.\n- Ids au format catégorie-numéro à 4 chiffres, sans doublon. Ids déjà utilisés :\n{{ids}}\n- Pas de contenu publicitaire, pas de marques, pas de personnages protégés.\n\nSchéma d'une tâche :\n{{schema}}",
+    "prompt_template": "Tu es un auteur de problèmes pour un jeu éducatif destiné à Sasha, 12 ans, élève de 6e dans une école française (programme CM2 à 5e). Le jeu s'appelle « L'Expédition ».\n\nGénère {{count}} nouvelles tâches en français, au format JSON strict : une liste [ ... ] d'objets, sans texte autour.\n\nNiveau actuel du joueur par matière (échelle 1 à 10) :\n{{levels}}\n\nThèmes à renforcer en priorité :\n{{weak}}\n\nRègles :\n- Catégories : math, logic, iq, critical, world, science. Types : number, choice, boolean_explain, order, highlight.\n- number : answer est un nombre. choice : exactement 4 options, answer = index (0 à 3). boolean_explain : options = 2 ou 3 raisons, answer = {\"value\": true/false, \"reason\": index de la bonne raison}. order : options = 4 cartes DANS LE BON ORDRE (le jeu les mélange), answer = la même liste. highlight : options = les phrases du texte, answer = index de la phrase demandée.\n- Une seule bonne réponse possible, pas d'ambiguïté. Une explication courte et bienveillante.\n- Pour difficulty ≥ 4 : 3 niveaux d'aide dans hints (Indice, Méthode, Premier pas, sans donner la réponse) et ladder = 1 à 2 ids de tâches plus faciles du même thème (ids existants ou de ce lot).\n- Les tâches avec stars 1 (difficulté 5-6), 2 (7-8) ou 3 (9-10) sont des défis plus ambitieux.\n- Ids au format catégorie-numéro à 4 chiffres, sans doublon. Ids déjà utilisés :\n{{ids}}\n- Pas de contenu publicitaire, pas de marques, pas de personnages protégés.\n\nSchéma d'une tâche :\n{{schema}}",
     "test_title": "Test de l'Atelier",
     "test_help": "Pour vérifier les éditeurs sans attendre le niveau 10. Les vraies conditions de Sasha ne changent pas : en désactivant, chaque salle redevient verrouillée tant qu'elle n'est pas méritée.",
     "test_real_open": "méritée",
@@ -282,7 +285,17 @@
     "pack_title": "Nouveau pack de pays",
     "pack_alert": "Itinéraire presque terminé ! Il reste {{count}} pays à ouvrir. Il est temps de charger le prochain pack de pays pour Sasha.",
     "pack_copy": "Copier le cahier des charges pour un nouveau pack (Claude Code)",
-    "pack_copied": "Cahier des charges copié ! Colle-le dans Claude Code."
+    "pack_copied": "Cahier des charges copié ! Colle-le dans Claude Code.",
+    "season_title": "Saison : cadeaux de maman",
+    "season_help": "Écris le vrai cadeau de chaque palier clé. Sasha le voit sur la piste de la Saison et, quand il l'a reçu, le marque « reçu » avec ton code PIN.",
+    "season_reward_label": "Palier {{tier}}",
+    "season_reward_placeholder": "Ex. : une sortie au cinéma",
+    "season_status": "Saison {{id}} : palier {{tier}} sur 30 ({{points}} points).",
+    "season_test": "+250 points de saison (test)",
+    "season_new": "Démarrer une nouvelle saison",
+    "season_new_confirm": "Démarrer une nouvelle saison ? Les points, les paliers et les défis repartent de zéro (les cadeaux écrits sont conservés).",
+    "bridge_toggle": "Pont CM1-CM2 → 6e (Sciences et Histoire-Géo)",
+    "bridge_help": "Activé : la 2e tâche de maths de chaque expédition est remplacée par une tâche de Sciences (2 fois sur 3) ou d'Histoire-Géo (1 fois sur 3)."
   },
   "countries": {
     "japan": {
@@ -586,5 +599,25 @@
         "explanation": "Olympus Mons, sur Mars, mesure environ 22 km de haut : presque trois fois l'Everest !"
       }
     ]
+  },
+  "season": {
+    "title": "Saison {{n}}",
+    "tier": "Palier {{tier}} sur {{total}}",
+    "points": "{{points}} points",
+    "next": "Encore {{left}} points pour le palier {{tier}}.",
+    "complete": "Saison terminée : tu as atteint le palier 30 ! Bravo, capitaine !",
+    "how": "Gagne des points avec chaque bonne réponse (plus avec les combos, les Sciences, l'Histoire-Géo et les journaux de pays), à la fin d'une expédition et en ouvrant un nouveau pays.",
+    "challenges_title": "Défis de la semaine",
+    "ch_science": "Résoudre {{target}} tâches de Sciences sans indice",
+    "ch_country": "Ouvrir un nouveau pays",
+    "ch_combo": "Faire un combo ×4 dans une expédition",
+    "ch_bonus": "+{{points}} points de saison",
+    "challenges_reset": "Nouveaux défis lundi (dans {{days}} j).",
+    "track_title": "La piste des paliers",
+    "track_help": "Chaque palier donne un petit cadeau dans le jeu. Les paliers 5, 10, 15, 20, 25 et 30 ont un vrai cadeau choisi par maman.",
+    "reward_default": "Surprise de maman",
+    "claim": "Je l'ai reçu !",
+    "claimed": "Reçu",
+    "pin_prompt": "Un parent confirme : le cadeau a bien été remis ? (code PIN)"
   }
 }

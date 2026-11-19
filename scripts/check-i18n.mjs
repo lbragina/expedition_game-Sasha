@@ -32,7 +32,7 @@ for (const f of files) {
 }
 // clés dynamiques connues
 const dyn = [
-  ...['math', 'logic', 'iq', 'critical', 'world'].map((c) => `categories.${c}`),
+  ...['math', 'logic', 'iq', 'critical', 'world', 'science'].map((c) => `categories.${c}`),
   ...['week', 'month', 'all'].map((r) => `parent.range_${r}`),
   ...['wood', 'stone', 'iron', 'gold', 'diamond'].map((r) => `resources.${r}`),
   ...['1', '2', '3'].map((n) => `hints.level_${n}`),
@@ -49,6 +49,8 @@ const dyn = [
   'nav.map',
   'nav.base',
   'nav.parent',
+  'nav.pass',
+  ...['science', 'country', 'combo'].map((c) => `season.ch_${c}`),
 ]
 dyn.forEach((k) => {
   if (!exists(k)) {

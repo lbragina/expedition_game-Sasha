@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const QUESTIONS_DIR = path.join(__dirname, 'src', 'data', 'questions');
-const CATEGORIES = ['math', 'logic', 'iq', 'critical', 'world'];
+const CATEGORIES = ['math', 'logic', 'iq', 'critical', 'world', 'science'];
 const TYPES = ['number', 'choice', 'boolean_explain', 'order', 'highlight'];
 
 function validate() {
@@ -116,7 +116,7 @@ function validate() {
 
   // Пропорции банка (предупреждения, если банк полный — 150 задач)
   const count = (fn) => allQuestions.filter(fn).length;
-  const cats = ['math', 'logic', 'iq', 'critical', 'world'];
+  const cats = ['math', 'logic', 'iq', 'critical', 'world', 'science'];
   console.log('\nПо категориям: ' + cats.map(c => `${c} ${count(q => q.category === c)}`).join(' · '));
   console.log(`По сложности: лёгкие 1–3: ${count(q => q.difficulty <= 3)} · средние 4–6: ${count(q => q.difficulty >= 4 && q.difficulty <= 6)} · сложные 7–10: ${count(q => q.difficulty >= 7)}`);
   const types = ['number', 'choice', 'boolean_explain', 'order', 'highlight'];

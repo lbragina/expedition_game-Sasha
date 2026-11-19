@@ -4,7 +4,24 @@ import { difficultyShift, getMode } from './progress'
 import { allQuestions } from './questions'
 
 // Ordre d'une expédition : 2 Maths → Logique → QI → Esprit critique → Culture → Boss (ou Coffre)
-const REGULAR: Category[] = ['math', 'math', 'logic', 'iq', 'critical', 'world']
+const BASE_REGULAR: Category[] = ['math', 'math', 'logic', 'iq', 'critical', 'world']
+/** Place de la « tâche Pont » (la 2e tâche de maths quand le Pont CM→6e est actif). */
+const BRIDGE_IDX = 1
+
+/**
+ * Pont CM1-CM2 → 6e : la 2e tâche de maths devient une tâche Sciences (2 expéditions sur 3)
+ * ou Histoire-Géo (1 sur 3). Le parent peut le couper dans son espace (parent.bridge).
+ */
+function regularFor(state: SaveState): { cats: Category[]; hgBridge: boolean } {
+  const cats = [...BASE_REGULAR]
+  if (state.parent.bridge === false) return { cats, hgBridge: false }
+  const hg = state.expeditionsDone % 3 === 2
+  cats[BRIDGE_IDX] = hg ? 'world' : 'science'
+  return { cats, hgBridge: hg }
+}
+
+/** Tâches « Histoire-Géo » du Pont (catégorie world, topics hg_*). */
+const isHistGeo = (q: Question) => q.category === 'world' && q.topic.startsWith('hg_')
 
 function score(q: Question, target: number, cap: number, state: SaveState): number {
   const seen = state.seen[q.id]
@@ -31,6 +48,7 @@ export function buildSlots(state: SaveState): Slot[] {
   const byId = new Map(everything.map((q) => [q.id, q]))
   const questions = everything.filter((q) => !isSpecial(q.id))
   const mode = getMode(state)
+  const { cats: REGULAR, hgBridge } = regularFor(state)
   const shift = difficultyShift(state)
   const used = new Set<string>(Object.keys(state.fog)) // les tâches dans le brouillard reviennent via leur propre mécanisme
 
@@ -68,7 +86,7 @@ export function buildSlots(state: SaveState): Slot[] {
   }
 
   // --- 2b. Slot « Culture » : énigme ratée à rejouer, sinon questions du journal des pays ouverts ---
-  const worldIdx = REGULAR.findIndex((c, i) => c === 'world' && !replaced.has(i))
+  const worldIdx = REGULAR.lastIndexOf('world') >= 0 && !replaced.has(REGULAR.lastIndexOf('world')) ? REGULAR.lastIndexOf('world') : -1
   if (worldIdx >= 0) {
     const solved = (qid: string) => (state.seen[qid]?.right ?? 0) > 0
     const riddleBack = Object.keys(state.seen).find(
@@ -94,7 +112,7 @@ export function buildSlots(state: SaveState): Slot[] {
 
   REGULAR.forEach((cat, i) => {
     if (replaced.has(i)) return
-    const pool = questions.filter((q) => q.category === cat)
+    const pool = questions.filter((q) => (hgBridge && i === BRIDGE_IDX ? isHistGeo(q) : q.category === cat))
     let target: number
     let cap: number
     if (mode.warmup) {

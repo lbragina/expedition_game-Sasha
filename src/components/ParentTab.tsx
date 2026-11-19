@@ -8,6 +8,8 @@ import { buildPackPrompt } from '../game/packPrompt'
 import { buildPrompt } from '../game/prompt'
 import { normalizeQuestion, questionMap, validateQuestion } from '../game/questions'
 import { update, useGame } from '../game/store'
+import { giveSeasonPoints, newSeason, setReward } from '../game/season'
+import { REWARD_TIERS, tierOf } from '../game/seasonData'
 import { ROOMS, giveTestResources, roomReallyOpen, setParentUnlock } from '../game/workshop'
 import { t } from '../i18n'
 import { CATEGORIES } from '../types'
@@ -201,6 +203,22 @@ function ParentPanel() {
             <option value="off">{t('parent.warmup_off')}</option>
           </select>
         </label>
+        <label className="flex items-start gap-2 text-sm">
+          <input
+            type="checkbox"
+            className="mt-1"
+            checked={s.parent.bridge !== false}
+            onChange={(e) =>
+              update((d) => {
+                d.parent.bridge = e.target.checked
+              })
+            }
+          />
+          <span>
+            {t('parent.bridge_toggle')}
+            <span className="block text-xs text-mute">{t('parent.bridge_help')}</span>
+          </span>
+        </label>
         <label className="block text-sm">
           {t('parent.difficulty_offset')} : <b>{s.parent.offset > 0 ? `+${s.parent.offset}` : s.parent.offset}</b>
           <input
@@ -241,6 +259,38 @@ function ParentPanel() {
             </button>
           </div>
         </label>
+      </div>
+
+      {/* Saison : cadeaux choisis par le parent */}
+      <div className="card space-y-2">
+        <h3 className="font-bold text-diamond">🏅 {t('parent.season_title')}</h3>
+        <p className="text-sm text-mute">{t('parent.season_help')}</p>
+        <p className="text-xs text-mute">
+          {t('parent.season_status', { id: s.season.id, tier: tierOf(s.season.points), points: s.season.points })}
+        </p>
+        {REWARD_TIERS.map((n) => (
+          <label key={n} className="block text-sm">
+            {t('parent.season_reward_label', { tier: n })} {s.season.claimed.includes(n) && <span className="text-ok">✅</span>}
+            <input
+              value={s.season.rewards[String(n)] ?? ''}
+              maxLength={80}
+              onChange={(e) => setReward(n, e.target.value)}
+              placeholder={t('parent.season_reward_placeholder')}
+              className="mt-1 w-full rounded-lg border-4 border-line bg-night p-2"
+            />
+          </label>
+        ))}
+        <button className="btn" onClick={() => giveSeasonPoints()}>
+          🧪 {t('parent.season_test')}
+        </button>
+        <button
+          className="btn"
+          onClick={() => {
+            if (window.confirm(t('parent.season_new_confirm'))) newSeason()
+          }}
+        >
+          🔄 {t('parent.season_new')}
+        </button>
       </div>
 
       {/* test de l'Atelier */}

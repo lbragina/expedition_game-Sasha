@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "science-0001",
+    "category": "science",
+    "topic": "sci_classification",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Notes de terrain : tu observes un héron au bord d'un étang. Il possède un squelette avec une colonne vertébrale. Dans quel grand groupe d'animaux le range-t-on ?",
+    "options": [
+      "Les vertébrés",
+      "Les invertébrés",
+      "Les végétaux",
+      "Les champignons"
+    ],
+    "answer": 0,
+    "explanation": "Les vertébrés ont une colonne vertébrale (poissons, amphibiens, reptiles, oiseaux, mammifères). Les invertébrés, comme l'escargot ou l'araignée, n'en ont pas.",
+    "tags": [
+      "classification",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_classification",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde le mot : « vertèbre », comme dans le dos.",
+      "Le héron est un oiseau. Un oiseau a-t-il un squelette avec une colonne ?",
+      "Les animaux qui ont une colonne vertébrale s'appellent des vertébrés."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0002",
+    "category": "science",
+    "topic": "sci_classification",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans l'océan, tu croises une baleine. Elle respire avec des poumons et allaite son petit. Dans quel groupe de vertébrés la range-t-on ?",
+    "options": [
+      "Les poissons",
+      "Les mammifères",
+      "Les reptiles",
+      "Les amphibiens"
+    ],
+    "answer": 1,
+    "explanation": "Allaiter ses petits est la marque des mammifères. Même si la baleine vit dans l'eau, ce n'est pas un poisson : elle respire avec des poumons.",
+    "tags": [
+      "classification",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_classification",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense à qui boit du lait à la naissance.",
+      "Les poissons respirent avec des branchies, pas avec des poumons.",
+      "Le chien, le chat et l'humain sont aussi de ce groupe."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0003",
+    "category": "science",
+    "topic": "sci_classification",
+    "difficulty": 4,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Le dauphin est un poisson.",
+    "options": [
+      "Il n'a pas de colonne vertébrale, donc ce n'est pas un vertébré.",
+      "Il vit dans l'eau et nage, donc c'est forcément un poisson.",
+      "Il respire avec des poumons, naît vivant et allaite son petit : c'est un mammifère."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "Le dauphin vit dans l'eau, mais il respire de l'air avec des poumons et allaite ses petits : c'est un mammifère, pas un poisson.",
+    "tags": [
+      "classification",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_classification",
+    "stars": 0,
+    "ladder": [
+      "science-0001",
+      "science-0002"
+    ],
+    "hints": [
+      "Vivre dans l'eau ne suffit pas pour être un poisson.",
+      "Compare avec la baleine : comment respire-t-elle ? comment nourrit-elle son petit ?",
+      "Un poisson a des branchies. Le dauphin vient respirer à la surface avec son évent."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0004",
+    "category": "science",
+    "topic": "sci_classification",
+    "difficulty": 6,
+    "type": "highlight",
+    "lang": "fr",
+    "prompt": "Journal de l'explorateur : touche la phrase qui contient une erreur scientifique.",
+    "options": [
+      "La chauve-souris est un mammifère, même si elle vole.",
+      "Le crocodile est un reptile : sa peau est couverte d'écailles.",
+      "La salamandre est un reptile : elle a une peau sèche et écailleuse.",
+      "Le manchot est un oiseau, même s'il ne vole pas."
+    ],
+    "answer": 2,
+    "explanation": "La salamandre est un amphibien : sa peau est nue et humide, et elle commence sa vie dans l'eau. Les reptiles (crocodile, lézard, serpent) ont des écailles.",
+    "tags": [
+      "classification",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_classification",
+    "stars": 1,
+    "ladder": [
+      "science-0002",
+      "science-0003"
+    ],
+    "hints": [
+      "Une seule phrase est fausse : vérifie le groupe de chaque animal.",
+      "Les amphibiens (grenouille, salamandre) ont la peau nue et humide, sans écailles.",
+      "Regarde la peau de la salamandre : écailles ou peau humide ?"
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0005",
+    "category": "science",
+    "topic": "sci_cellule",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Tu veux observer des cellules, bien trop petites pour être vues à l'œil nu. De quel instrument as-tu besoin ?",
+    "options": [
+      "Un télescope",
+      "Un thermomètre",
+      "Une boussole",
+      "Un microscope"
+    ],
+    "answer": 3,
+    "explanation": "Le microscope grossit les objets minuscules, comme les cellules. Le télescope, lui, sert à observer le ciel.",
+    "tags": [
+      "cellule",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_cellule",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Les cellules sont minuscules : il faut un instrument qui grossit beaucoup.",
+      "Le télescope sert pour les étoiles, pas pour les petits objets.",
+      "On l'utilise dans tous les laboratoires de SVT."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0006",
+    "category": "science",
+    "topic": "sci_cellule",
+    "difficulty": 5,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Du plus petit au plus grand : remets dans l'ordre les niveaux d'organisation d'un être vivant.",
+    "options": [
+      "Une cellule",
+      "Un tissu (des cellules semblables)",
+      "Un organe (par exemple le cœur)",
+      "Un être vivant entier (organisme)"
+    ],
+    "answer": [
+      "Une cellule",
+      "Un tissu (des cellules semblables)",
+      "Un organe (par exemple le cœur)",
+      "Un être vivant entier (organisme)"
+    ],
+    "explanation": "Les cellules forment des tissus, les tissus forment des organes, et les organes forment l'organisme tout entier.",
+    "tags": [
+      "cellule",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_cellule",
+    "stars": 1,
+    "ladder": [
+      "science-0005"
+    ],
+    "hints": [
+      "Commence par la brique de base du vivant.",
+      "Un organe est fait de plusieurs tissus ; un organisme est fait de plusieurs organes.",
+      "Cellule → tissu → ? → organisme."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0007",
+    "category": "science",
+    "topic": "sci_cellule",
+    "difficulty": 6,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Au microscope, tu repères dans une cellule une petite zone qui contient l'ADN et commande son fonctionnement. Comment s'appelle-t-elle ?",
+    "options": [
+      "Le noyau",
+      "La membrane",
+      "Le cytoplasme",
+      "La paroi"
+    ],
+    "answer": 0,
+    "explanation": "Le noyau contient l'ADN, le « plan de construction » de l'être vivant. La membrane entoure la cellule et le cytoplasme remplit l'intérieur.",
+    "tags": [
+      "cellule",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_cellule",
+    "stars": 1,
+    "ladder": [
+      "science-0005",
+      "science-0006"
+    ],
+    "hints": [
+      "C'est le « chef d'orchestre » de la cellule.",
+      "La membrane est l'enveloppe, le cytoplasme est la « gelée » à l'intérieur. Reste une autre partie.",
+      "Son nom ressemble à celui du centre d'un fruit à noyau."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0008",
+    "category": "science",
+    "topic": "sci_cellule",
+    "difficulty": 7,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Une cellule de feuille d'élodée et une cellule de la joue d'un humain ont exactement la même structure.",
+    "options": [
+      "Les cellules animales n'ont pas de noyau, contrairement aux cellules végétales.",
+      "Seule la cellule humaine est entourée d'une membrane.",
+      "La cellule végétale possède en plus une paroi rigide et des chloroplastes verts, absents de la cellule animale."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "Toutes les cellules ont un noyau et une membrane. Mais la cellule végétale a aussi une paroi (elle protège et donne sa forme) et des chloroplastes, où se fait la photosynthèse.",
+    "tags": [
+      "cellule",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_cellule",
+    "stars": 2,
+    "ladder": [
+      "science-0006",
+      "science-0007"
+    ],
+    "hints": [
+      "Compare les deux cellules : qu'est-ce que la feuille a en plus, que la joue n'a pas ?",
+      "Pense à la couleur verte de la feuille : quel élément de la cellule la donne ?",
+      "Chloroplastes et paroi : ils n'existent que chez les végétaux."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0009",
+    "category": "science",
+    "topic": "sci_plantes",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans ton potager Minecraft, une plante verte pousse. De quoi a-t-elle besoin pour fabriquer sa propre matière ?",
+    "options": [
+      "D'obscurité, de sable et de dioxygène",
+      "De viande et de graines à manger",
+      "De lumière, d'eau, de sels minéraux et de dioxyde de carbone (CO₂)",
+      "De chaleur seulement, sans eau ni lumière"
+    ],
+    "answer": 2,
+    "explanation": "Une plante verte est autonome : grâce à la lumière, elle transforme l'eau et les sels minéraux puisés dans le sol, et le CO₂ de l'air, en matière organique.",
+    "tags": [
+      "photosynthèse",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_plantes",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "La plante ne mange pas d'animaux : elle fabrique elle-même sa matière.",
+      "Pense à ce qu'elle absorbe par ses racines et par ses feuilles.",
+      "Sans lumière, une plante verte s'affaiblit : la lumière est indispensable."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0010",
+    "category": "science",
+    "topic": "sci_plantes",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pendant la photosynthèse, la plante rejette un gaz que nous respirons. Lequel ?",
+    "options": [
+      "Le dioxyde de carbone (CO₂)",
+      "L'azote",
+      "L'hydrogène",
+      "Le dioxygène (O₂)"
+    ],
+    "answer": 3,
+    "explanation": "Pendant la photosynthèse, la plante absorbe du CO₂ et rejette du dioxygène (O₂) : c'est le gaz dont nous avons besoin pour respirer.",
+    "tags": [
+      "photosynthèse",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_plantes",
+    "stars": 0,
+    "ladder": [
+      "science-0009"
+    ],
+    "hints": [
+      "C'est le gaz que nos poumons utilisent pour vivre.",
+      "Le CO₂, c'est ce que la plante absorbe, pas ce qu'elle rejette.",
+      "Son nom commence par « di » et contient « oxygène »."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0011",
+    "category": "science",
+    "topic": "sci_plantes",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Une plante verte enfermée plusieurs jours dans une armoire, dans le noir complet, continue de fabriquer sa matière organique.",
+    "options": [
+      "Elle utilise le dioxygène de l'armoire à la place de la lumière.",
+      "Les plantes n'ont pas besoin de lumière si on les arrose.",
+      "Sans lumière, la photosynthèse s'arrête : la plante ne peut plus fabriquer ses sucres."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "La photosynthèse a besoin de lumière. Dans le noir, la plante puise dans ses réserves, puis elle s'affaiblit et jaunit.",
+    "tags": [
+      "photosynthèse",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_plantes",
+    "stars": 1,
+    "ladder": [
+      "science-0009",
+      "science-0010"
+    ],
+    "hints": [
+      "Relis ce dont une plante a besoin pour fabriquer sa matière.",
+      "Quel élément manque dans l'armoire ?",
+      "Sans lumière, pas de photosynthèse."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0012",
+    "category": "science",
+    "topic": "sci_plantes",
+    "difficulty": 6,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets dans l'ordre le trajet de la nutrition d'une plante verte.",
+    "options": [
+      "Les racines absorbent l'eau et les sels minéraux du sol",
+      "La sève brute monte vers les feuilles",
+      "Dans les feuilles éclairées, l'eau et le CO₂ sont transformés",
+      "La plante fabrique ses sucres et rejette du dioxygène"
+    ],
+    "answer": [
+      "Les racines absorbent l'eau et les sels minéraux du sol",
+      "La sève brute monte vers les feuilles",
+      "Dans les feuilles éclairées, l'eau et le CO₂ sont transformés",
+      "La plante fabrique ses sucres et rejette du dioxygène"
+    ],
+    "explanation": "L'eau et les sels minéraux entrent par les racines, montent dans la sève brute jusqu'aux feuilles, où la lumière permet la photosynthèse : sucres fabriqués, dioxygène rejeté.",
+    "tags": [
+      "photosynthèse",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_plantes",
+    "stars": 1,
+    "ladder": [
+      "science-0009",
+      "science-0010"
+    ],
+    "hints": [
+      "Commence par le sol, là où la plante puise l'eau.",
+      "La sève brute circule dans la tige avant d'arriver aux feuilles.",
+      "La fabrication des sucres est la toute dernière étape."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0013",
+    "category": "science",
+    "topic": "sci_biomes",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Biome désert : le dromadaire traverse des jours sans boire. Où garde-t-il sa réserve d'énergie ?",
+    "options": [
+      "Dans sa bosse, sous forme d'eau",
+      "Dans sa bosse, sous forme de graisse",
+      "Dans ses sabots, sous forme de sucre",
+      "Dans sa queue, sous forme de graisse"
+    ],
+    "answer": 1,
+    "explanation": "La bosse du dromadaire est un réservoir de graisse (et non d'eau) : elle fournit de l'énergie quand la nourriture manque.",
+    "tags": [
+      "biome",
+      "adaptation",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_biomes",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "La bosse n'est pas une outre remplie d'eau, contrairement à ce qu'on croit souvent.",
+      "Que stockent les animaux pour passer l'hiver ou la sécheresse ? Pas du sucre, pas de l'eau…",
+      "Pense à la graisse, comme chez l'ours avant l'hiver."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0014",
+    "category": "science",
+    "topic": "sci_biomes",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Au fond de l'océan, comment un poisson respire-t-il ?",
+    "options": [
+      "Avec des poumons, en remontant sans cesse à la surface",
+      "Avec sa peau, qui absorbe le sable",
+      "Avec ses branchies, qui captent le dioxygène dissous dans l'eau",
+      "Il ne respire pas : il vit grâce au sel de l'eau"
+    ],
+    "answer": 2,
+    "explanation": "Les branchies filtrent l'eau et récupèrent le dioxygène qui y est dissous. Les poissons n'ont pas de poumons, contrairement aux mammifères marins.",
+    "tags": [
+      "biome",
+      "adaptation",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_biomes",
+    "stars": 0,
+    "ladder": [
+      "science-0002"
+    ],
+    "hints": [
+      "Un poisson ne remonte pas toutes les minutes pour respirer.",
+      "Cet organe ressemble à des petites lamelles de chaque côté de la tête.",
+      "Les mammifères marins (baleine) ont des poumons ; les poissons ont des branchies."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0015",
+    "category": "science",
+    "topic": "sci_biomes",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Les épines du cactus l'aident à survivre dans le désert en limitant les pertes d'eau.",
+    "options": [
+      "Elles servent à capturer des insectes pour les manger.",
+      "Elles servent uniquement à sécher la plante au soleil.",
+      "Ce sont des feuilles très réduites : elles perdent très peu d'eau, et la tige charnue stocke l'eau."
+    ],
+    "answer": {
+      "value": true,
+      "reason": 2
+    },
+    "explanation": "Les épines du cactus sont des feuilles transformées. Plus petites qu'une feuille ordinaire, elles font perdre beaucoup moins d'eau. La tige épaisse garde la réserve.",
+    "tags": [
+      "biome",
+      "adaptation",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_biomes",
+    "stars": 1,
+    "ladder": [
+      "science-0013"
+    ],
+    "hints": [
+      "Dans le désert, le plus grand danger est de manquer d'eau.",
+      "Une grande feuille perd de l'eau par évaporation. Et une épine ?",
+      "Les épines protègent aussi des animaux, mais ce n'est pas leur rôle principal ici."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0016",
+    "category": "science",
+    "topic": "sci_biomes",
+    "difficulty": 6,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Forêt tropicale : la canopée (le « toit » des grands arbres) laisse passer très peu de lumière. Pourquoi beaucoup de plantes du sous-bois ont-elles de très grandes feuilles ?",
+    "options": [
+      "Pour capter le plus de lumière possible",
+      "Pour stocker de l'eau comme le cactus",
+      "Pour se protéger du gel la nuit",
+      "Pour mieux résister aux tempêtes de sable"
+    ],
+    "answer": 0,
+    "explanation": "Dans le sous-bois il fait sombre : de grandes feuilles captent la lumière rare, indispensable à la photosynthèse. Il pleut beaucoup, donc inutile de stocker l'eau.",
+    "tags": [
+      "biome",
+      "adaptation",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_biomes",
+    "stars": 1,
+    "ladder": [
+      "science-0009",
+      "science-0013"
+    ],
+    "hints": [
+      "De quoi les plantes ont-elles besoin pour la photosynthèse ? Que manque-t-il au sol de la forêt ?",
+      "Il pleut beaucoup en forêt tropicale : le problème n'est pas l'eau.",
+      "Une grande surface capte plus de lumière qu'une petite."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0017",
+    "category": "science",
+    "topic": "sci_chaines",
+    "difficulty": 2,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans une chaîne alimentaire, qui fabrique sa propre matière organique à partir de la lumière ?",
+    "options": [
+      "Les loups",
+      "Les plantes vertes (les producteurs)",
+      "Les lapins",
+      "Les vers de terre"
+    ],
+    "answer": 1,
+    "explanation": "Les plantes vertes sont les producteurs : grâce à la photosynthèse, elles fabriquent leur matière. Les animaux, eux, doivent manger d'autres êtres vivants.",
+    "tags": [
+      "chaîne alimentaire",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_chaines",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Qui n'a pas besoin de manger d'autres êtres vivants ?",
+      "Les animaux mangent des plantes ou d'autres animaux.",
+      "Pense à ce qui est vert et pousse au soleil."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0018",
+    "category": "science",
+    "topic": "sci_chaines",
+    "difficulty": 3,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Remets cette chaîne alimentaire dans l'ordre : de celui qui est mangé en premier jusqu'au dernier prédateur.",
+    "options": [
+      "L'herbe",
+      "La sauterelle",
+      "La grenouille",
+      "Le héron"
+    ],
+    "answer": [
+      "L'herbe",
+      "La sauterelle",
+      "La grenouille",
+      "Le héron"
+    ],
+    "explanation": "L'herbe est mangée par la sauterelle, qui est mangée par la grenouille, elle-même mangée par le héron. La flèche d'une chaîne alimentaire signifie « est mangé par ».",
+    "tags": [
+      "chaîne alimentaire",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_chaines",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Une chaîne alimentaire commence toujours par un végétal.",
+      "Qui mange l'herbe ? Qui mange cet animal ?",
+      "Le héron est tout en haut : personne ne le mange dans cette chaîne."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0019",
+    "category": "science",
+    "topic": "sci_chaines",
+    "difficulty": 4,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Dans le sol de la forêt, des champignons et des vers de terre transforment les feuilles mortes en matière minérale. Quel est leur rôle ?",
+    "options": [
+      "Ce sont des producteurs",
+      "Ce sont des prédateurs",
+      "Ce sont des décomposeurs",
+      "Ce sont des herbivores"
+    ],
+    "answer": 2,
+    "explanation": "Les décomposeurs transforment les déchets et les êtres vivants morts en sels minéraux, que les plantes peuvent ensuite absorber. Ils referment la boucle de la chaîne.",
+    "tags": [
+      "chaîne alimentaire",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_chaines",
+    "stars": 0,
+    "ladder": [
+      "science-0017",
+      "science-0018"
+    ],
+    "hints": [
+      "Que deviennent les feuilles mortes qui tombent au sol ?",
+      "Ils ne chassent pas et ne fabriquent pas leur matière à la lumière.",
+      "Leur nom commence par « dé » et parle de « décomposer »."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0020",
+    "category": "science",
+    "topic": "sci_chaines",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Si tous les décomposeurs disparaissaient d'une forêt, le sol resterait aussi riche pour les plantes.",
+    "options": [
+      "Sans décomposeurs, les déchets ne seraient plus transformés en sels minéraux que les plantes absorbent.",
+      "Les plantes se nourrissent directement des animaux morts.",
+      "Les décomposeurs ne servent qu'à produire de la lumière."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "Les décomposeurs recyclent la matière : ils produisent des sels minéraux que les racines absorbent. Sans eux, les déchets s'accumuleraient et le sol s'appauvrirait.",
+    "tags": [
+      "chaîne alimentaire",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_chaines",
+    "stars": 1,
+    "ladder": [
+      "science-0017",
+      "science-0019"
+    ],
+    "hints": [
+      "Que font les décomposeurs avec les feuilles mortes ?",
+      "Les plantes absorbent des sels minéraux par leurs racines : d'où viennent-ils ?",
+      "Pas de décomposeurs = pas de sels minéraux recyclés."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0021",
+    "category": "science",
+    "topic": "sci_matiere",
+    "difficulty": 3,
+    "type": "order",
+    "lang": "fr",
+    "prompt": "Tu chauffes un glaçon dans une casserole. Remets dans l'ordre ce que tu observes.",
+    "options": [
+      "Un glaçon solide",
+      "Le glaçon fond en eau liquide",
+      "L'eau bout et des bulles apparaissent",
+      "L'eau liquide disparaît en vapeur d'eau (gaz)"
+    ],
+    "answer": [
+      "Un glaçon solide",
+      "Le glaçon fond en eau liquide",
+      "L'eau bout et des bulles apparaissent",
+      "L'eau liquide disparaît en vapeur d'eau (gaz)"
+    ],
+    "explanation": "Chauffée, l'eau passe de l'état solide (glace) à l'état liquide (fusion), puis à l'état gazeux (vaporisation, à partir de 100 °C).",
+    "tags": [
+      "états de la matière",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_matiere",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Solide, liquide, gaz : dans quel ordre quand on chauffe ?",
+      "La glace fond avant de bouillir.",
+      "La vapeur d'eau est le tout dernier état."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0022",
+    "category": "science",
+    "topic": "sci_energie",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pour alimenter ta base Minecraft sans épuiser les ressources de la Terre, quelle source d'énergie est renouvelable ?",
+    "options": [
+      "Le vent (éoliennes)",
+      "Le charbon",
+      "Le pétrole",
+      "Le gaz naturel"
+    ],
+    "answer": 0,
+    "explanation": "Le vent, le soleil et l'eau sont des énergies renouvelables : elles se renouvellent en permanence. Charbon, pétrole et gaz sont des énergies fossiles, qui s'épuisent.",
+    "tags": [
+      "énergie",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_energie",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Quelle source ne s'épuise jamais à l'échelle humaine ?",
+      "Charbon, pétrole et gaz se sont formés en millions d'années.",
+      "Pense aux grandes hélices qui tournent sur les collines."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0023",
+    "category": "science",
+    "topic": "sci_energie",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Le pétrole est une énergie renouvelable, car il y en a des réserves un peu partout sur la Terre.",
+    "options": [
+      "Il se reforme chaque année grâce à la pluie.",
+      "Il est renouvelable parce qu'on peut le recycler dans les puits.",
+      "Il a mis des millions d'années à se former : on l'utilise bien plus vite qu'il ne se reforme."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 2
+    },
+    "explanation": "Une énergie est renouvelable si elle se reconstitue à l'échelle d'une vie humaine (vent, soleil). Le pétrole, lui, est une énergie fossile : ses réserves finissent par s'épuiser.",
+    "tags": [
+      "énergie",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_energie",
+    "stars": 1,
+    "ladder": [
+      "science-0022"
+    ],
+    "hints": [
+      "« Renouvelable » veut dire qu'elle se reforme vite.",
+      "Combien de temps le pétrole met-il à se former ?",
+      "Charbon, pétrole, gaz : ce sont des énergies fossiles."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0024",
+    "category": "science",
+    "topic": "sci_mecanismes",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pour soulever un gros bloc de pierre, tu glisses une barre sous le bloc, avec un caillou comme point d'appui. Quelle machine simple utilises-tu ?",
+    "options": [
+      "Une poulie",
+      "Un engrenage",
+      "Un levier",
+      "Une vis"
+    ],
+    "answer": 2,
+    "explanation": "Une barre rigide qui pivote autour d'un point d'appui est un levier. Pied-de-biche, balançoire et ciseaux fonctionnent aussi comme des leviers.",
+    "tags": [
+      "mécanisme",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_mecanismes",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Pense au pied-de-biche ou à la balançoire.",
+      "Une barre qui pivote autour d'un point fixe…",
+      "Son nom contient « lever » : il sert à soulever."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0025",
+    "category": "science",
+    "topic": "sci_mecanismes",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Avec un levier, où faut-il placer le point d'appui pour soulever un bloc lourd avec le moins d'effort ?",
+    "options": [
+      "Le plus loin possible du bloc, tout près de tes mains",
+      "Exactement sous tes mains",
+      "Peu importe : l'effort est toujours le même",
+      "Le plus près possible du bloc, en poussant loin du point d'appui"
+    ],
+    "answer": 3,
+    "explanation": "Plus ta main est loin du point d'appui par rapport au bloc, moins tu as besoin de forcer. C'est ce qu'on appelle l'effet de levier.",
+    "tags": [
+      "mécanisme",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_mecanismes",
+    "stars": 0,
+    "ladder": [
+      "science-0024"
+    ],
+    "hints": [
+      "Fais un essai avec une règle et une gomme : où faut-il pousser ?",
+      "Plus le « bras de levier » est long de ton côté, plus c'est facile.",
+      "Rapproche le point d'appui du bloc et éloigne ta main."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0026",
+    "category": "science",
+    "topic": "sci_electricite",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pour construire un circuit électrique dans ta base, quel matériau laisse passer le courant ?",
+    "options": [
+      "Le cuivre (un conducteur)",
+      "Le plastique",
+      "Le caoutchouc",
+      "Le verre"
+    ],
+    "answer": 0,
+    "explanation": "Les métaux, comme le cuivre, sont des conducteurs. Plastique, caoutchouc et verre sont des isolants : ils ne laissent pas passer le courant.",
+    "tags": [
+      "électricité",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_electricite",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Regarde les fils électriques : qu'y a-t-il à l'intérieur ? Et autour ?",
+      "Les isolants protègent les mains ; ils ne conduisent pas.",
+      "Les métaux conduisent l'électricité."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0027",
+    "category": "science",
+    "topic": "sci_electricite",
+    "difficulty": 5,
+    "type": "boolean_explain",
+    "lang": "fr",
+    "prompt": "Une lampe est reliée à une seule borne d'une pile par un fil : elle s'allume.",
+    "options": [
+      "Le circuit n'est pas fermé : le courant ne peut pas faire une boucle complète pile – lampe – pile.",
+      "La lampe est trop grande pour la pile.",
+      "Le fil de cuivre est un isolant."
+    ],
+    "answer": {
+      "value": false,
+      "reason": 0
+    },
+    "explanation": "Pour que le courant circule, il faut un circuit fermé : une boucle sans interruption qui relie les deux bornes de la pile à la lampe.",
+    "tags": [
+      "électricité",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_electricite",
+    "stars": 1,
+    "ladder": [
+      "science-0026"
+    ],
+    "hints": [
+      "Dessine le trajet du courant : revient-il à la pile ?",
+      "Une pile a deux bornes (+ et −).",
+      "Circuit ouvert = lampe éteinte."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0028",
+    "category": "science",
+    "topic": "sci_astro",
+    "difficulty": 3,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Chaque soir, tu notes l'aspect de la Lune dans ton carnet. En combien de temps passe-t-elle par toutes ses phases (de la nouvelle Lune à la suivante) ?",
+    "options": [
+      "Environ une journée",
+      "Environ une semaine",
+      "Environ un mois",
+      "Environ une année"
+    ],
+    "answer": 2,
+    "explanation": "Le cycle des phases de la Lune dure environ 29,5 jours : c'est l'origine de notre mois.",
+    "tags": [
+      "astronomie",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_astro",
+    "stars": 0,
+    "ladder": [],
+    "hints": [
+      "Le mot « mois » vient du mot « lune ».",
+      "Une semaine, c'est seulement un quart du cycle.",
+      "Quatre semaines environ."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0029",
+    "category": "science",
+    "topic": "sci_astro",
+    "difficulty": 5,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pourquoi la Lune nous apparaît-elle tantôt ronde, tantôt en croissant ?",
+    "options": [
+      "L'ombre de la Terre la cache en partie chaque soir",
+      "La Lune grandit puis rétrécit",
+      "Des nuages la cachent peu à peu",
+      "On voit, selon sa position autour de la Terre, une partie différente de sa moitié éclairée par le Soleil"
+    ],
+    "answer": 3,
+    "explanation": "La Lune est toujours à moitié éclairée par le Soleil. En tournant autour de la Terre, elle nous présente plus ou moins sa face éclairée : ce sont les phases.",
+    "tags": [
+      "astronomie",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_astro",
+    "stars": 0,
+    "ladder": [
+      "science-0028"
+    ],
+    "hints": [
+      "La Lune ne change pas de taille.",
+      "Qui éclaire la Lune ? Où est-elle par rapport à la Terre au cours du mois ?",
+      "L'ombre de la Terre ne cause pas les phases ordinaires, seulement les éclipses de Lune."
+    ],
+    "image": null
+  },
+  {
+    "id": "science-0030",
+    "category": "science",
+    "topic": "sci_astro",
+    "difficulty": 6,
+    "type": "choice",
+    "lang": "fr",
+    "prompt": "Pourquoi y a-t-il des saisons sur Terre ?",
+    "options": [
+      "Parce que l'axe de la Terre est incliné pendant qu'elle tourne autour du Soleil",
+      "Parce que la Terre se rapproche du Soleil en été et s'en éloigne en hiver",
+      "Parce que la Lune cache le Soleil en hiver",
+      "Parce que la Terre tourne plus vite sur elle-même en été"
+    ],
+    "answer": 0,
+    "explanation": "L'axe de la Terre est incliné : selon l'endroit sur son orbite, l'hémisphère nord ou sud reçoit les rayons du Soleil plus directement. Quand c'est l'été chez nous, c'est l'hiver en Australie !",
+    "tags": [
+      "astronomie",
+      "saisons",
+      "EIST",
+      "Pont CM→6e"
+    ],
+    "skill": "sci_astro",
+    "stars": 1,
+    "ladder": [
+      "science-0028",
+      "science-0029"
+    ],
+    "hints": [
+      "Quand c'est l'été au Luxembourg, c'est l'hiver en Australie : la distance au Soleil ne peut pas être la cause.",
+      "Pense à l'inclinaison de la Terre, comme une toupie penchée.",
+      "Un hémisphère est plus incliné vers le Soleil que l'autre, selon la période de l'année."
+    ],
+    "image": null
+  }
+]

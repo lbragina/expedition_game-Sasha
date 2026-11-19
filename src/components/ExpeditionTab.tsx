@@ -13,6 +13,7 @@ import {
 import { canSubmit, describeCorrect, emptyDraft } from '../game/answers'
 import { getMode, levelOf, rankName } from '../game/progress'
 import { questionMap } from '../game/questions'
+import { tierOf } from '../game/seasonData'
 import { sfx } from '../game/sound'
 import { useGame } from '../game/store'
 import { t, tObj } from '../i18n'
@@ -315,6 +316,7 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
   // expédition « énigme » (impaire) : le pays n'est pas encore ouvert, on le fait deviner
   const riddle = questionMap(state).get(`riddle-${session.countryId}`)
   const mystery = !(session.opensCountry ?? true) && !state.visited.includes(session.countryId) && !!riddle
+  const seasonTiersGained = tierOf(state.season.points) - tierOf(Math.max(0, state.season.points - (session.seasonPoints ?? 0)))
   const justOpened = (session.opensCountry ?? true) && state.visited.includes(session.countryId)
 
   useEffect(() => {
@@ -345,12 +347,18 @@ function Summary({ session, onBackup }: { session: Session; onBackup: () => void
               {RES_ICON[k]} +{v}
             </span>
           ))}
+          {(session.seasonPoints ?? 0) > 0 && (
+            <span className="chip text-gold">🏅 {t('summary.season_points', { points: session.seasonPoints ?? 0 })}</span>
+          )}
           {session.compass > 0 && <span className="chip text-diamond">🧭 +{session.compass}</span>}
         </div>
         {leveledUp && (
           <p className="animate-trick font-pixel font-bold text-gold">
             🎉 {t('summary.level_up', { rank: rankName(level) })}
           </p>
+        )}
+        {seasonTiersGained > 0 && (
+          <p className="animate-trick font-pixel font-bold text-gold">🏅 {t('summary.season_tier', { tier: tierOf(state.season.points) })}</p>
         )}
         {state.streak.count > 1 && <p className="text-sm">🔥 {t('hud.streak', { count: state.streak.count })}</p>}
       </div>

@@ -1,5 +1,5 @@
-export type Category = 'math' | 'logic' | 'iq' | 'critical' | 'world'
-export const CATEGORIES: Category[] = ['math', 'logic', 'iq', 'critical', 'world']
+export type Category = 'math' | 'logic' | 'iq' | 'critical' | 'world' | 'science'
+export const CATEGORIES: Category[] = ['math', 'logic', 'iq', 'critical', 'world', 'science']
 
 export type QType = 'number' | 'choice' | 'boolean_explain' | 'order' | 'highlight'
 
@@ -82,6 +82,8 @@ export interface Session {
   hintsShown: number
   mentor: boolean
   countryId: string
+  /** points de saison gagnés pendant cette expédition (affichés dans le bilan) */
+  seasonPoints?: number
   /** true = à la fin de cette expédition, le pays s'ouvre sur la carte (expéditions paires) */
   opensCountry?: boolean
   levelBefore: number
@@ -156,6 +158,22 @@ export interface WorkshopState {
   blockName: string
 }
 
+/** Saison (boîte « Pass » façon Fortnite) : 30 paliers, défis hebdomadaires, cadeaux choisis par un parent. */
+export interface SeasonState {
+  id: number
+  points: number
+  /** dernier palier dont le petit cadeau du jeu (boussole / ressources) a déjà été donné */
+  granted: number
+  /** paliers à cadeau réel que Sasha a marqués « reçus » (confirmé par le PIN) */
+  claimed: number[]
+  /** paliers 5, 10, 15, 20, 25, 30 → texte du cadeau écrit par le parent */
+  rewards: Record<string, string>
+  /** semaine ISO des défis en cours */
+  week: string
+  progress: Record<string, number>
+  done: string[]
+}
+
 export interface SaveState {
   version: 1
   xp: number
@@ -176,9 +194,10 @@ export interface SaveState {
   session: Session | null
   backup: { lastCount: number; promptedCount: number; lastAt: number | null }
   settings: { sound: boolean }
-  parent: { pin: string; warmup: 'auto' | 'on' | 'off'; offset: number }
+  parent: { pin: string; warmup: 'auto' | 'on' | 'off'; offset: number; bridge: boolean }
   customQuestions: Question[]
   base: BaseState
   workshop: WorkshopState
+  season: SeasonState
   createdAt: number
 }
